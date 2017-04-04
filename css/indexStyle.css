@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+
+#top,#logo,#nav,#banner,#boutique,#skincare,#homeStore,#redDates,#numericalCode,#clothes,#hotProduct,#partingLine,#bottom{width: 100%;}
+#topCon,#logoCon,#navCon,#bannerCon,#boutiqueCon,#skincare,#homeStoreCon,.redDates,#numericalCodeCon,#clothesCon,#hotProductCon,#bottomCon{margin: 0 auto;width: 1200px;}
+/*top*/
+#topCon h4 a{width: 40px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+#topCon h6{font-size: 12px;line-height: 32px;color: #919191;margin: 0 32px 0 396px;}
+
+/*nav*/
+#nav{height: 38px;background: #C6004B;}
+#navCon{height: 38px;background: #c6004b;}
+#navCon #nav_1{height: 38px;position: relative;z-index: 998;}
+#navCon #nav_1>li{float: left;height: 38px;text-align: center;line-height: 38px;}
+#navCon #nav_1>li a{font-size: 14px;color: #fff;font-weight: 600;}
+#navCon #nav_1>.li1{width: 168px;border:solid #af0039;border-width: 0 2px; padding-left: 38px;text-align: left;}
+#navCon #nav_1>.li2{width: 90px;background: #af0039;}
+#navCon #nav_1>.li3{width: 60px;}
+#navCon #nav_1>.li4{width: 62px;float: right;height: 38px;line-height: 38px;padding: 0 10px 0 30px;background: url(../img/pp.png) no-repeat left -82px;margin-right: 10px;}
+#navCon #nav_1>.li4 a{font-size: 12px;color: #fff;}
+#navCon #nav_1 #nav_2{position: absolute;left: 0;top: 38px;width: 210px;line-height: 33px;background: #C6004B;min-height: 400px;_height:400px;z-index: 9999;}
+#navCon #nav_1 #nav_2 li{height: 33px;}
+#navCon #nav_1 #nav_2 li a{margin-left: 40px;font-size: 14px;color: #fff;float: left;height: 33px;line-height: 33px;}
+
+#navCon #nav_1 #menu_2{position: absolute;min-height:399px;width: 500px;top: 38px;left: 160px;background: #fff;border: solid #E6E6E6;border-width: 0 1px 1px 0;z-index: 10000;}
+#navCon #nav_1 #menu_2 .fenkuai{position: absolute;min-height:40px;width: 100%;display: block;}
+#navCon #nav_1 #menu_2 .fenkuai a{font-size: 14px;color: #666666;white-space: nowrap;line-height: 18px;}
+#navCon #nav_1 #menu_2 .fenkuai a:hover{color: #dc1259;}
+#navCon #nav_1 #menu_2 .fenkuai .zonglei_a{float: left;}
+#navCon #nav_1 #menu_2 .fenkuai .dalei{width: 130px;float: left;padding-top: 10px;text-align: center;}
+#navCon #nav_1 #menu_2 .fenkuai .dalei a{font-size: 14px;font-weight: 600;color: #000;}
+#navCon #nav_1 #menu_2 .fenkuai .dalei a:hover{color: #dc1259;}
+#navCon #nav_1 #menu_2 .fenkuai .dalei span{font-size: 10px;color: #A5A5A5;}
+#navCon #nav_1 #menu_2 .fenkuai .dalei .wide{width: 24px;height: 14px;display: inline-block;}
+#navCon #nav_1 #menu_2 .fenkuai .second_level{width: 360px;border-bottom: 1px dashed #e6e6e6;float: left;padding: 10px 0;padding-right: 10px;}
+#navCon #nav_1 #menu_2 .fenkuai .borderBig{border-bottom: 5px solid #f2f2f2; margin-bottom:0px;}
+#navCon #nav_1 #menu_2 .fenkuai .violet{color: #DC1259;}
+/*banner*/
+#banner{height: 410px;}
+#bannerCon{height: 400px;background: #fff;padding: 10px 0 0 220px;width: 980px;position: relative;}
+#bannerCon #bannerImg{overflow: hidden;width: 720px;height: 390px;position: absolute;top: 10px;left: 220px;}
+#bannerCon #bannerImg ul{width: 1440px;height: 390px;position: absolute;}
+#bannerCon #bannerImg ul li{width: 720px;height: 390px;float: left;}
+#bannerCon #bannerImg ul img{width: 720px;height: 390px;}
+#bannerCon #notic{width: 248px;height: 388px;border: 1px solid #e2e2e2;position: absolute;top: 10px;right: 0;}
+#bannerCon #notic .noticTitle{height: 35px;}
+#bannerCon #notic .noticTitle p{height: 35px;width: 124px;border-bottom: 1px solid #fff;float: left;text-align: center;line-height: 35px;font-size:14px;}
+#bannerCon #notic .noticTitle .p2{color: #dc1259;background: #F3F3F3;border-bottom: 1px solid #efefef;}
+
+#bannerCon #notic .noticCon{height: 133px;border-bottom: 1px dashed #E2E2E2;padding-top: 10px;}
+#bannerCon #notic .noticCon ul li{height: 24px;padding:0 0 0 15px;}
+#bannerCon #notic .noticCon ul li a{font-size: 12px;color: #000;padding-top: 12px;}
+#bannerCon #notic .noticCon_1{display: none;height: 24px;}
+#bannerCon #notic .noticCon_1 li{padding: 0 0 0 15px;height: 30px;border-bottom: 1px dashed #E2E2E2;}
+#bannerCon #notic .noticCon_1 li a{line-height: 30px;font-size: 12px;color: #DC1259;float: left;height: 30px;}
+#bannerCon #notic .video{width: 248px;height: 208px;}
+/*boutique*/
+#boutique{min-height: 332px;_height:332px;margin-bottom: 24px;}
+#boutiqueCon{min-height: 312px;_height:332px;background: #f5f5f5;padding-top: 20px;}
+#boutiqueCon h2{height: 42px;}
+#boutiqueCon h2 .p1{font-size: 22px;float: left;margin-right: 5px;margin-left: 42%;}
+#boutiqueCon h2 .p2{font-size: 14px;float: left;line-height: 22px;margin-left: 5px;}
+#boutiqueCon ul{height: 270px;}
+#boutiqueCon ul li{float: left;height: 270px;width: 232px;margin-right: 10px;}
+#boutiqueCon ul li a{height: 270px;width: 232px;}
+#boutiqueCon ul .li5{margin-right: 0;}
+
+/*----------------common------------------*/
+.commodity{min-height: 510px;_height:510px;}
+.commodityCon{min-height: 510px;_height:510px;}
+.commodityCon .commodity_F{height: 28px;overflow: hidden;border-bottom: 2px solid #bd0040;}
+.commodityCon .commodity_F h3{float: left;height: 24px;width: 45px;line-height: 24px;text-align: center;color: #fff;font-size: 18px;background: #000;margin: 1px 12px 0 0;}
+.commodityCon .commodity_F h4{font-size: 24px;float: left;line-height: 24px;}
+.commodityCon .commodity_F h5{font-size: 12px;float: right;margin: 10px 14px 0 0;}
+.commodityCon .commodityCon_1{height: 479px;width: 100%;border-top: 1px solid #e5e5e5;}
+.commodityCon .commodityCon_1 .commodityTitle{float: left;height: 478px;width: 209px;border: solid #E5E5E5;border-width: 0 1px 1px 1px;margin-right: 4px;}
+.commodityCon .commodityCon_1 .commodityTitle .brandCom{width: 209px;height: 141px;}
+.commodityCon .commodityCon_1 .commodityTitle .brandCom a{float: left;width: 69px;height: 69px;background: #fff;}
+.commodityCon .commodityCon_1 .commodityTitle .brandCom .bor1{border: solid #e5e5e5;border-width: 0 1px 1px 0;}
+.commodityCon .commodityCon_1 .commodityTitle .brandCom .bor2{border: solid #E5E5E5;border-width: 0 1px;}
+.commodityCon .commodityCon_1 .commodityTitle .brandCom .bor3{border-bottom: 1px solid #e5e5e5;}
+
+.commodityCon .commodityCon_1 .productCom{width: 985px;height: 478px;margin-top: 1px;float: left;}
+.commodityCon .commodityCon_1 .productCom .product_1{float: left;width: 196px;height: 238px;border: solid #e5e5e5;border-width: 0 1px 1px 0;}
+.commodityCon .commodityCon_1 .productCom .product_1 .productImgBox{width: 150px;height: 150px;margin: 10px auto;}
+.commodityCon .commodityCon_1 .productCom .product_1 .productImgBox img{width: 150px;height: 150px;}
+.commodityCon .commodityCon_1 .productCom .product_1 .productName{width: 160px;height: 38px;padding: 0 18px;}
+.commodityCon .commodityCon_1 .productCom .product_1 .productName>a{font-size: 12px;color: #666;line-height: 18px;}
+.commodityCon .commodityCon_1 .productCom .product_1 .productName>a:hover{color: #c80000;}
+.commodityCon .commodityCon_1 .productCom .product_1 .productPrice{width: 160px;height: 20px;padding: 0 18px;font-size: 16px;line-height: 24px;color: #c80000;font-family: Verdana;}
+/*skincare*/
+#skincare{margin-bottom: 24px;}
+
+/*homeStore*/
+#homeStore{margin-bottom: 20px;}
+
+/*xinjiang red dates*/
+#redDates .redDates{width: 1200px;height: 87px;margin-bottom: 23px;}
+
+/*numerical code*/
+#numericalCode{margin-bottom: 24px;}
+
+/*clothes*/
+#clothes{margin-bottom: 26px;}
+
+/*hotProduct*/
+#hotProduct{min-height: 362px;margin-bottom: 30px;}
+#hotProductCon{min-height: 362px;}
+#hotProductCon .title_hot{height: 27px;overflow: hidden;border-bottom: 2px solid #bd0040;}
+#hotProductCon .title_hot h4{font-size: 24px;float: left;line-height: 24px;margin-left: 11px;color: #c6004b;}
+#hotProductCon .title_hot h5{font-size: 12px;float: right;margin: 10px 14px 0 0;}
+#hotProductCon .homeStoreCon{height: 323px;width: 1190px;border: 5px solid #f7f7f7;background: #f7f7f7;}
+#hotProductCon .homeStoreCon .homeStoreCon_1{width: 238px;height: 323px;background: #fff;float: left;box-shadow: 0 0 10px #CECECE;}
+#hotProductCon .homeStoreCon .homeStoreCon_1 .productImgBox{width: 238px;height: 224px;overflow: hidden;}
+#hotProductCon .homeStoreCon .homeStoreCon_1 .productImgBox img{width: 180px;height: 180px;margin: 20px auto;}
+#hotProductCon .homeStoreCon .homeStoreCon_1 .productName{width: 190px;height: 38px;padding: 0 24px;}
+#hotProductCon .homeStoreCon .homeStoreCon_1 .productName>a{font-size: 12px;color: #666;line-height: 18px;}
+#hotProductCon .homeStoreCon .homeStoreCon_1 .productName>a:hover{color: #c80000;}
+#hotProductCon .homeStoreCon .homeStoreCon_1 .productPrice{width: 190px;height: 50px;padding: 0 24px;font-size: 16px;line-height: 50px;color: #c80000;font-family: Verdana;}
+/*parting line*/
+#partingLine{height: 30px;background: #c4004a;}
+
+
+
+
+

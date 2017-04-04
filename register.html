@@ -1,0 +1,2120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>register</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/register.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
+	<script src="js/cookieUtil.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/selfLib.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-ui.js" type="text/javascript" charset="utf-8"></script>
+	<body>
+		<!--top-->
+		<div id="top">
+			<div id="topCon">
+				<h3>您好：欢迎来2688商城！</h3>
+				<h4><a href="login.html">请登录</a></h4>
+				<h5><a href="register.html">免费注册</a></h5>
+				<h6>全场正品 假一赔三 免费送货 货到付款</h6>
+				<div id="phoneC">
+					<a href="#" class="phoneC">手机客户端</a>
+					<div id="ewm">
+						<img src="img/rwm.jpg"/>
+					</div>	
+				</div>
+				<a href="shoppingCar.html" class="shopCar">购物车<span  class="gouwuche">(00)</span></a>
+				<div id="my2688">
+					<a href="my2688.html" class="my2688">我的2688</a>
+					<ul id="my2688_1">
+						<li><a href="#">我的订单</a></li>
+						<li><a href="#">我的收藏</a></li>
+						<li><a href="#">我的评价</a></li>
+					</ul>
+				</div>
+				<a style="BEHAVIOR: url(#default#homepage)" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage(this.href);return(false);" href="http://www.2688.com">设为主页</a>
+			</div>
+		</div>
+		
+		<!--logo-->
+		<div id="logo">
+			<div id="logoCon">
+				<a href="index.html" class="logo"><img src="img/logo.gif"/></a>
+				<span class="span1">北京</span>
+				<div class="address">
+					切换城市
+				</div>
+				<div id="ssBox">	
+					<form action="" method="post" class="sousuo">
+						<input type="text" value="奔腾" autocomplete="off"/>
+						<a href="#"></a>
+					</form>
+					<p>
+						<a class="a1">热门：</a>
+						<a href="#" class="a2">连衣裙</a>
+						<a href="#">护肤</a>
+						<a href="#">防晒</a>
+						<a href="#">四件套</a>
+						<a href="#">手机</a>
+						<span>客服：400-888-2688</span>
+					</p>
+				</div>
+				
+				<div class="city-select" id="JS_hide_city_menu_11" style="z-index: 10001;position: absolute; left: 310px; top: 42px;display: none;">
+					<!--待添加数据-->
+					<div class="hide_city_group" id="JS_header_city_bar_box">
+						<div class="hideMap">
+							<div class="showPanel clearfix">
+								<div class="Left mycity">
+									<div id="JS_current_city_box">当前城市：
+										<strong id="JS_city_current_city">北京</strong><span style=" color:#c6033b;"> &nbsp;&nbsp;请选择您所在的城市</span>
+										<a class="red" id="JS_set_default_city_header" href="javascript:City.setDefaultCity(" 35 ')'=""></a>
+									</div>
+									<div id="JS_default_city_delete" style="display: none;"></div>
+								</div>
+								<a class="Right near" id="JS_my_near_expr" href="http://www.2688.com/#" style="display:none">附近的体验馆</a>
+							</div>
+							<div class="showPanel showPanel2 clearfix">
+								<div class="hot_city" id="JS_header_city_hot">
+									<a class="site_all Left" href="javascript:void(0)"><strong style="color: #000;">热门城市</strong> </a>&nbsp;
+									<a href="javascript:void(0)" onclick="setCity(this)" value="370900">泰安</a>
+									<a href="javascript:void(0)" onclick="setCity(this)" value="410500">安阳</a>
+									<a href="javascript:void(0)" onclick="setCity(this)" value="610100">西安</a>
+									<a href="javascript:void(0)" onclick="setCity(this)" value="610400">咸阳</a>
+									<a href="javascript:void(0)" onclick="setCity(this)" value="211200">铁岭</a>
+									<a href="javascript:void(0)" onclick="setCity(this)" value="140900">忻州</a>
+									<a href="javascript:void(0)" onclick="setCity(this)" value="530100">昆明</a>
+									<a href="javascript:void(0)" onclick="setCity(this)" value="130100">石家庄</a>
+									<div class="mt10" style="display:none;">
+										<div class="search_city_tip" id="JS_search_city_tip_header" style="display: none;">抱歉，该城市暂无设点！</div><input class="search_city_input" type="text" id="JS_search_city_input_header" placeholder="城市名称/字母/邮编" onkeydown="executeSearchBtn(event)"><input class="search_city_submit" id="JS_search_city_submit_header" onclick=" return submitSearchInput() " type="button" value="搜索"></div>
+									<div class="city_words mt10" id="JS_header_city_char">
+										<a href="javascript:;">A</a>
+										<a href="javascript:;">B</a>
+										<a href="javascript:;">C</a>
+										<a href="javascript:;">D</a>
+										<a href="javascript:;">E</a>
+										<a href="javascript:;">F</a>
+										<a href="javascript:;">G</a>
+										<a href="javascript:;">H</a>
+										<a href="javascript:;">J</a>
+										<a href="javascript:;">K</a>
+										<a href="javascript:;">L</a>
+										<a href="javascript:;">M</a>
+										<a href="javascript:;">N</a>
+										<a href="javascript:;">P</a>
+										<a href="javascript:;">Q</a>
+										<a href="javascript:;">R</a>
+										<a href="javascript:;">S</a>
+										<a href="javascript:;">T</a>
+										<a href="javascript:;">W</a>
+										<a href="javascript:;">X</a>
+										<a href="javascript:;">Y</a>
+										<a href="javascript:;">Z</a>
+									</div>
+								</div>
+								<div class="scrollBody">
+									<div class="cityMap clearfix" style="position: absolute;">
+										<table class="city_list" id="JS_header_city_list" style="margin-top: 0px;float: left;">
+											<tbody>
+												<tr>
+													<th>
+														<div>A</div>
+													</th>
+													<td>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="410500">安阳</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="152900">阿拉善</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="210300">鞍山</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="340800">安庆</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="410500">安阳</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="513200">阿坝藏族羌族</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="520400">安顺</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="542500">阿里</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="610900">安康</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="652900">阿克苏</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="654300">阿勒泰</a>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div>B</div>
+													</th>
+													<td>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="110000">北京</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="130600">保定</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="150200">包头</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="150800">巴彦淖尔</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="210500">本溪</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="220600">白山</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="220800">白城</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="340300">蚌埠</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="341600">亳州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="371600">滨州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="450500">北海</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="451000">百色</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="511900">巴中</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="522400">毕节</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="530500">保山</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="610300">宝鸡</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="620400">白银</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="652700">博尔塔拉</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="652800">巴音郭楞</a>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div>C</div>
+													</th>
+													<td>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="500000">重庆</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="130800">承德</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="130900">沧州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="140400">长治</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="150400">赤峰</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="211300">朝阳</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="220100">长春</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="320400">常州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="341100">滁州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="341400">巢湖</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="341700">池州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="430100">长沙</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="430700">常德</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="431000">郴州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="445100">潮州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="451400">崇左</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="510100">成都</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="532300">楚雄彝族</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="542100">昌都</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="652300">昌吉回族</a>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div>D</div>
+													</th>
+													<td>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="140200">大同</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="210200">大连</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="210600">丹东</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="230600">大庆</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="232700">大兴安岭</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="370500">东营</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="371400">德州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="441900">东莞</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="510600">德阳</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="511700">达州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="532900">大理白族</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="533100">德宏傣族景颇族</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="533400">迪庆藏族</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="621100">定西</a>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div>E</div>
+													</th>
+													<td>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="150600">鄂尔多斯</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="420700">鄂州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="422800">恩施土家族苗族</a>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div>F</div>
+													</th>
+													<td>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="210400">抚顺</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="210900">阜新</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="341200">阜阳</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="350100">福州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="361000">抚州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="440600">佛山</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="450600">防城港</a>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div>G</div>
+													</th>
+													<td>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="440100">广州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="360700">赣州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="440100">广州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="450300">桂林</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="450800">贵港</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="510800">广元</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="511600">广安</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="513300">甘孜藏族</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="520100">贵阳</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="623000">甘南藏族</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="632600">果洛藏族</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="640400">固原</a>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div>H</div>
+													</th>
+													<td>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="130400">邯郸</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="131100">衡水</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="150100">呼和浩特</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="150700">呼伦贝尔</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="211400">葫芦岛</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="230100">哈尔滨</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="230400">鹤岗</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="231100">黑河</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="320800">淮安</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="330100">杭州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="330500">湖州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="340100">合肥</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="340400">淮南</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="340600">淮北</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="341000">黄山</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="371700">荷泽</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="410600">鹤壁</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="420200">黄石</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="421100">黄冈</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="430400">衡阳</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="431200">怀化</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="441300">惠州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="441600">河源</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="451100">贺州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="451200">河池</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="460100">海口</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="532500">红河哈尼族彝族</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="610700">汉中</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="632100">海东</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="632200">海北藏族</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="632300">黄南藏族</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="632500">海南藏族</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="632800">海西蒙古族藏族</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="652200">哈密</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="653200">和田</a>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div>J</div>
+													</th>
+													<td>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="140500">晋城</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="140700">晋中</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="210700">锦州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="220200">吉林</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="230300">鸡西</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="230800">佳木斯</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="330400">嘉兴</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="330700">金华</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="360200">景德镇</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="360400">九江</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="360800">吉安</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="370100">济南</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="370800">济宁</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="410800">焦作</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="420800">荆门</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="421000">荆州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="440700">江门</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="445200">揭阳</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="620200">嘉峪关</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="620300">金昌</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="620900">酒泉</a>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div>K</div>
+													</th>
+													<td>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="410200">开封</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="530100">昆明</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="650200">克拉玛依</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="653000">克孜勒苏柯尔克孜</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="653100">喀什</a>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div>L</div>
+													</th>
+													<td>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="131000">廊坊</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="141000">临汾</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="141100">吕梁</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="211000">辽阳</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="220400">辽源</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="320700">连云港</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="331100">丽水</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="341500">六安</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="350800">龙岩</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="371200">莱芜</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="371300">临沂</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="371500">聊城</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="410300">洛阳</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="411100">漯河</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="431300">娄底</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="450200">柳州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="451300">来宾</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="510500">泸州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="511100">乐山</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="513400">凉山彝族</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="520200">六盘水</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="530700">丽江</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="530900">临沧</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="540100">拉萨</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="542600">林芝</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="620100">兰州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="621200">陇南</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="622900">临夏回族</a>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div>M</div>
+													</th>
+													<td>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="231000">牡丹江</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="340500">马鞍山</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="440900">茂名</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="441400">梅州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="510700">绵阳</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="511400">眉山</a>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div>N</div>
+													</th>
+													<td>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="320100">南京</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="320600">南通</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="330200">宁波</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="350700">南平</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="350900">宁德</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="360100">南昌</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="411300">南阳</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="450100">南宁</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="511000">内江</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="511300">南充</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="533300">怒江傈僳族</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="542400">那曲</a>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div>P</div>
+													</th>
+													<td>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="211100">盘锦</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="350300">莆田</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="360300">萍乡</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="410400">平顶山</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="410900">濮阳</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="510400">攀枝花</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="530800">普洱</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="620800">平凉</a>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div>Q</div>
+													</th>
+													<td>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="130300">秦皇岛</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="230200">齐齐哈尔</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="230900">七台河</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="330800">衢州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="350500">泉州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="370200">青岛</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="441800">清远</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="450700">钦州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="522300">黔西南布依族苗族</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="522600">黔东南苗族侗族</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="522700">黔南布依族苗族</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="530300">曲靖</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="621000">庆阳</a>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div>R</div>
+													</th>
+													<td>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="371100">日照</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="542300">日喀则</a>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div>S</div>
+													</th>
+													<td>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="310000">上海</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="130100">石家庄</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="140600">朔州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="210100">沈阳</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="220300">四平</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="220700">松原</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="230500">双鸭山</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="231200">绥化</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="320500">苏州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="321300">宿迁</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="330600">绍兴</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="341300">宿州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="350400">三明</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="361100">上饶</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="411200">三门峡</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="411400">商丘</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="420300">十堰</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="421300">随州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="430500">邵阳</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="440200">韶关</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="440300">深圳</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="440500">汕头</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="441500">汕尾</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="460200">三亚</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="510900">遂宁</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="542200">山南</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="611000">商洛</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="640200">石嘴山</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="659000">石河子</a>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div>T</div>
+													</th>
+													<td>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="120000">天津</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="130200">唐山</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="140100">太原</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="150500">通辽</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="211200">铁岭</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="220500">通化</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="321200">泰州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="331000">台州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="340700">铜陵</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="370900">泰安</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="522200">铜仁</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="610200">铜川</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="620500">天水</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="652100">吐鲁番</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="654200">塔城</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="710100">台北</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="370900">泰安</a>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div>W</div>
+													</th>
+													<td>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="150300">乌海</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="150900">乌兰察布</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="320200">无锡</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="330300">温州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="340200">芜湖</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="370700">潍坊</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="371000">威海</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="420100">武汉</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="450400">梧州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="532600">文山壮族苗族</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="610500">渭南</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="620600">武威</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="640300">吴忠</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="650100">乌鲁木齐</a>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div>X</div>
+													</th>
+													<td>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="610100">西安</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="130500">邢台</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="140900">忻州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="152200">兴安</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="152500">锡林郭勒</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="320300">徐州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="341800">宣城</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="350200">厦门</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="360500">新余</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="410700">新乡</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="411000">许昌</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="411500">信阳</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="420600">襄樊</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="420900">孝感</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="421200">咸宁</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="430300">湘潭</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="433100">湘西土家族苗族</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="532800">西双版纳傣族</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="610100">西安</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="610400">咸阳</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="630100">西宁</a>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div>Y</div>
+													</th>
+													<td>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="140300">阳泉</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="140800">运城</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="210800">营口</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="222400">延边朝鲜族</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="230700">伊春</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="320900">盐城</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="321000">扬州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="360600">鹰潭</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="360900">宜春</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="370600">烟台</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="420500">宜昌</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="430600">岳阳</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="430900">益阳</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="431100">永州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="441700">阳江</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="445300">云浮</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="450900">玉林</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="511500">宜宾</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="511800">雅安</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="530400">玉溪</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="610600">延安</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="610800">榆林</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="632700">玉树藏族</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="640100">银川</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="654000">伊犁哈萨克</a>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div>Z</div>
+													</th>
+													<td>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="130700">张家口</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="321100">镇江</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="330900">舟山</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="350600">漳州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="370300">淄博</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="370400">枣庄</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="410100">郑州</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="411600">周口</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="411700">驻马店</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="430200">株洲</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="430800">张家界</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="440400">珠海</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="440800">湛江</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="441200">肇庆</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="442000">中山</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="510300">自贡</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="512000">资阳</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="520300">遵义</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="530600">昭通</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="620700">张掖</a>
+														<a href="javascript:void(0)" onclick="setCity(this)" value="640500">中卫</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="scrollBar" style="position: relative;"><span id="JS_header_city_bar" style="margin-top: 0px;position: absolute;"></span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<!--nav-->
+		<div id="nav">
+			<div id="navCon">
+				<ul id="nav_1">
+					<li class="li1"><a href="#">全部商品分类</a>
+						<ul style="display: none;">
+							<li><a href="http://www.2688.com/Search/iResult.aspx?Mt=COSMETIC&Pt=COSMETIC">· 美容美妆护肤</a>
+								<div class="menu_2 clearfix" style="display: none;">
+									<div class="menu_2_left">
+										<dl class="fore">
+											<dt>选择分类</dt>
+								            <dt>
+								             	<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=12">美容护肤</a>
+								            </dt>
+								            <dd>
+								             	<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=12.02">面膜</a>
+							                 	<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=12.01">洁面</a>
+							                 	<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=12.04">面霜</a>
+							                 	<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=12.03">化妆水</a>
+							                 	<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=12.05">乳液</a>
+							                 	<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=12.0g">精油</a>
+							                	<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=12.0n">护肤套装</a>
+							                 	<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=12.0r">卸妆</a>
+							                 	<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=12.07">面部精华</a>
+							                 	<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=12.09">隔离/防晒</a>
+							                 	<a href="http://search.2688.com/search.aspx?q=%D1%DB%CB%AA&image2.x=0&image2.y=0">眼霜</a>
+							                 	<a href="http://search.2688.com/search.aspx?q=%C3%C0%B0%D7&image2.x=0&image2.y=0">美白</a>
+							                 	<a href="http://search.2688.com/search.aspx?q=%u539F%u6DB2&mt=&fd=0">原液</a>
+							                 	<a href="http://search.2688.com/search.aspx?q=%CB%AC%B7%F4%CB%AE&image2.x=0&image2.y=0">爽肤水</a>
+							                	<a href="http://search.2688.com/search.aspx?q=%BE%AB%BB%AA%C2%B6&image2.x=0&image2.y=0">精华露</a>
+							                 	<a href="http://search.2688.com/search.aspx?q=%CE%FC%D3%CD&image2.x=0&image2.y=0">吸油</a>
+								            </dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=13">时尚彩妆</a>
+											</dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=13.01">粉底</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=13.0d">唇膏/唇彩</a> 
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=13.0q">BB霜</a> 
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=13.0c">睫毛膏</a> 
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=13.0k">美甲</a> 
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=13.06">眼影</a> 
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=13.08">眼线笔</a> 
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=13.0a">眉妆</a> 
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=13.0h">腮红</a> 
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=13.0o">粉饼</a> 
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=13.0g">散粉粉蜜</a> 
+												<a href="http://search.2688.com/search.aspx?q=%B7%DB%B5%D7%D2%BA&image2.x=0&image2.y=0">粉底液</a> 
+											</dd>
+										</dl>
+										<dl>
+											<dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=COSMETIC&Pt=14">香水</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=14.02">女士</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=14.01">男士</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=14.04">Q版</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=14.05">套装</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=18">身体护理</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=18.03">手足护理</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=18.01">身体乳/霜</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=18.02">香氛</a>
+												<a href="http://search.2688.com/search.aspx?q=%BF%DA%C7%BB%BB%A4%C0%ED&image2.x=0&image2.y=0">口腔护理</a>
+												<a href="http://search.2688.com/search.aspx?q=%u773C%u90E8%u62A4%u7406&mt=&fd=0">眼部护理</a>
+												<a href="http://search.2688.com/search.aspx?q=%u5507%u90E8&mt=&fd=0">唇部护理</a>
+												<a href="http://search.2688.com/search.aspx?q=%CD%D1%C3%AB%B8%E0&image2.x=0&image2.y=0">脱毛膏</a>
+												<a href="http://search.2688.com/search.aspx?q=%C9%ED%CC%E5%C8%E9&image2.x=0&image2.y=0">身体乳霜</a>
+												<a href="http://search.2688.com/search.aspx?q=%u62A4%u53D1&mt=&fd=0">护发</a>
+												<a href="http://search.2688.com/search.aspx?q=%E3%E5%D4%A1&image2.x=0&image2.y=0">沐浴</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt><a href="http://www.2688.com/shop/fenlei.aspx">其它</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=16">美容工具</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=COSMETIC&Pt=19">婴幼儿护肤品</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=15">问题肌肤</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=17">美体塑身</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=cosmetic&Pt=12.0o">男士护肤</a>
+												<a href="http://www.2688.com/Search/brandsResult.aspx?Bid=8093">老年人护理清洁</a>
+											</dd>
+										</dl>
+									</div>
+									<div class="menu_2_right">
+										<dl class="brands">
+											<dt>推荐品牌</dt>
+											<dd>
+											   <a href="http://wetherm.shop.2688.com/bindexmb2.aspx?">温碧泉</a> 
+											   <a href="http://dazuihou.shop.2688.com/bindexmb2.aspx?&s=1">大嘴猴</a> 
+											   <a href="http://yolanna.shop.2688.com/bindexmb2.aspx?&s=1">素恋</a> 
+											   <a href="http://fayazi1.shop.2688.com/bindexmb2.aspx?&s=1">法雅姿</a> 
+											   <a href="http://herborist.shop.2688.com/bindexmb2.aspx?&s=1">佰草集</a> 
+											   <a href="http://dansmo.shop.2688.com/bindexmb2.aspx?&s=1"> 黛熙慕</a> 
+											   <a href="http://fengnuo.shop.2688.com/bindexmb2.aspx?&s=1">柏卡姿</a> 
+											   <a href="http://trbs.shop.2688.com/bindexmb2.aspx?&s=1">自然堂</a> 
+											   <a href="http://marykayyh.shop.2688.com/bindexmb2.aspx?&s=1">玫琳凯</a> 
+											   <a href="http://eliancare2006.shop.2688.com/bindexmb2.aspx?&s=1">爱岚柯</a> 
+											   <a href="http://jiabohua.shop.2688.com/bindexmb2.aspx?&s=1">百雀羚</a> 
+											   <a href="http://marubi.shop.2688.com/bindexmb2.aspx?">丸美</a> 
+											   <a href="http://osmyh.shop.2688.com/bindexmb2.aspx?&s=1">欧诗漫</a> 
+											   <a href="http://aimeili123.shop.2688.com/bindexmb2.aspx?&s=1">朵曼丝</a> 
+											   <a href="http://olay.shop.2688.com/bindexmb2.aspx?&s=1">玉兰油</a> 
+											   <a href="http://taiyangxiang.shop.2688.com/bindexmb2.aspx?&s=1">太阳香</a> 
+											   <a href="http://inoherb-yh.shop.2688.com/bindexmb2.aspx?&s=1">相宜本草</a> 
+											   <a href="http://ypxy.shop.2688.com/bindexmb2.aspx?&s=1">一品宣言</a>  
+											</dd> 	  
+										</dl>
+									</div>
+								</div>
+							</li>
+							<li><a href="http://www.2688.com/shop/ryjj11.aspx">· 日用厨卫家居</a>
+								<div class="menu_2 clearfix" style="display: none;">
+									<div class="menu_2_left">
+										<dl class="fore"><dt>选择分类</dt>
+											<dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2i">厨房用品</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2i.08">水壶/水杯</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2i.01">保鲜盒/饭盒</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2i.05">刀具/削皮器</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2i.0f">餐具</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2i.0d">锅/铲/勺/盆</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2i.0b">剪刀</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2i.0o">菜板/洗米器</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2i.04">果盘/果篮</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2i.09">保鲜袋/膜</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=COMMODITY&Pt=2I.0N">油壶</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=COMMODITY&Pt=2I.02">调味盒/调料球</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2i.01">保鲜盒/饭盒</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2i.0w">整理篮/沥水篮</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2i.06">牙签盒/筷笼/食物罩</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=COMMODITY&Pt=2I.0K">食物搅碎机/榨汁机</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2i.0x">捣蒜器/打蛋器</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2i.0y">封口夹/密封夹</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2i.0t">茶具/茶杯</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2i.07">冰格/酒开</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2i.0z">酒具/酒架</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2i.0v">饮水器/过滤器</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2i.03">手套/围裙</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2k">卧室用品</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2k.01">床品套装</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2k.02">靠垫/抱枕</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2k.07">被子</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2k.05">枕头/枕巾</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2k.04">毯子/毛巾被</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2k.0b">床垫</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=COMMODITY&Pt=2K.06">床单/被罩/床笠</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2n.01">凉席/凉枕/凉垫</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2n.06">夏凉被/空调被</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2a">卫浴用品</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2a.02">毛巾/浴巾</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2a.03">洗浴工具</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2w">洗浴用品</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2a.01">浴帽浴帘</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2a.04">浴室收纳</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?mt=commodity&pt=2a">皂盒/皂液器</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=COMMODITY&Pt=2A.0A">防滑垫</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?mt=commodity&pt=2a">手纸架/毛巾架</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=COMMODITY&Pt=2C">家居装饰用品</a></dt>
+											<dd>
+												<a href="   http://www.2688.com/Search/iResult.aspx?Mt=COMMODITY&Pt=2C.01">相框/相册</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2c.06">酒瓶套/冰箱贴</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2c.08">蕾丝装饰</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2c.07">温湿度计</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2c.09">香包/香袋</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2c.0c">布艺精品</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2c.0d">创意品</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2c.0f">熏香/精油</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=COMMODITY&Pt=2C.0L">十字绣</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=COMMODITY&Pt=2C.0N">书画</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2c.0j">烟灰缸/烟具</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2c.0g">储钱罐</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=COMMODITY&Pt=2W">洗护用品</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2w.02">香皂</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2w.04">洗发液</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2w.0l">沐浴露/足浴液</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2w.05">护发/焗油</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2w.0g">女士卫生用品</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2w.08">烫染</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2w.07">美发塑性</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2w.0e">洗手液</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2w.09">爽身粉</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2w.0a">花露水</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?mt=commodity&pt=2w">口腔护理</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2w.0c">眼部护理</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2w.0i">卫生棉棒</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2w.0d">手足护理刀具/石</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="  http://www.2688.com/Search/iResult.aspx?Mt=COMMODITY&Pt=2F">生活日用</a></dt>
+											<dd>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2n.05">驱虫防蚊用品</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2m.01">收纳盒</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2m.02">晾晒用品</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2m.03">护洗袋/脏衣篮</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=COMMODITY&Pt=2M.0G">粘钩/挂钩/夹子</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=COMMODITY&Pt=2M.08">储物柜/架</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2m.04">纸巾筒/盒</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2m.0m">整理袋/旅行袋</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2m.06">环保购物袋/购物车</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2n.09">扇子/小风扇</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2n.02">太阳伞/雨伞/雨衣</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2o.04">眼罩</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2o.03">保健按摩</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2o.06">戒烟用品</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2s.04">家用维修工具</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2s.09">手电筒</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2s.0b">剪刀/指甲剪/小刀</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2s.0e">多用刀具</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2s.0g">测量/定时/计数工具</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="  http://www.2688.com/Search/iResult.aspx?Mt=COMMODITY&Pt=2F">清洁</a></dt>
+											<dd>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=COMMODITY&Pt=2F.01">地板清/液体蜡/防滑剂</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2f.02">洁瓷宝/油烟净</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2f.03">洗洁净/消毒液</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2f.04">清洁工具</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2f.05">清洗液/管道除垢</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2f.07">洁厕液</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2f.0a">除味/除臭</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=COMMODITY&Pt=2G">衣服清洁</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2e.04">纸巾/湿纸巾</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=COMMODITY&Pt=2H">空气净化</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2m.0e">垃圾桶</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="  http://www.2688.com/Search/iResult.aspx?Mt=COMMODITY&Pt=2V">家居建材</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2v.01">家具</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2m.09">桌/凳</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2m.0b">门垫/地垫</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2m.0d">椅垫/沙发垫</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=COMMODITY&Pt=2M.0F">鞋架</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2m.0k">桌椅／脚垫保护条</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2m.0a">桌布/杯垫</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=COMMODITY&Pt=2Y">灯具</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2v.03">五金</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=commodity&Pt=2v.04">防盗/报警</a>
+											</dd>
+										</dl>
+									</div>
+									<div class="menu_2_right">
+										<dl class="brands"><dt>推荐品牌</dt>
+											<dd>
+												<a href="http://krljf.shop.2688.com/bindexmb2.aspx?&s=">皇家皇朝</a>
+												<a href="http://youfen.shop.2688.com/bindexmb2.aspx?&s=1">优芬</a>
+												<a href="http://lanfei.shop.2688.com/bindexmb2.aspx?&s=1">蘭妃</a>
+												<a href="http://qrjf.shop.2688.com/bindexmb2.aspx?&s=1">心聚纤成</a>
+												<a href="http://haers.shop.2688.com/bindexmb2.aspx?">哈尔斯</a>
+												<a href="http://kangjianfury.shop.2688.com/bindexmb2.aspx?&s=1">康健福</a>
+												<a href="http://wangmazi.shop.2688.com/bindexmb2.aspx?&s=1">王麻子</a>
+												<a href="http://chonggu.shop.2688.com/bindexmb2.aspx?&s=1">冲谷</a>
+												<a href="http://ks.shop.2688.com/bindexmb2.aspx?&s=1">KS</a>
+												<a href="http://silom.shop.2688.com/bindexmb2.aspx?&s=1">喜伦</a>
+												<a href="http://boqian.shop.2688.com/bindexmb2.aspx?&s=1">博倩</a>
+												<a href="http://yage.shop.2688.com/bindexmb2.aspx?&s=1">雅格斯丹</a>
+												<a href="http://ty.shop.2688.com/bindexmb2.aspx?&s=1">俏佳人</a>
+												<a href="http://xiangsiman.shop.2688.com/bindexmb2.aspx?&s=1">香思缦</a>
+												<a href="http://funeng.shop.2688.com/bindexmb2.aspx?&s=1">福能</a>
+											</dd>
+										</dl>
+									</div>
+								</div>
+							</li>
+							<li><a href="http://www.2688.com/shop/2013jdsm.aspx">· 健康家用电器</a>
+								<div class="menu_2 clearfix" style="display: none;">
+									<div class="menu_2_left">
+										<dl class="fore"><dt>选择分类</dt><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=02">厨房电器</a></dt>
+												<dd>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=02.1f">电饭煲</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=02.07">电水壶</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=02.1c">电压力锅</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=02.15">电磁炉</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=02.04">豆浆机</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=02.03">榨汁机</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=02.2e">料理机</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=02.1y">微波炉</a>
+													<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u51C0%u6C34%u5668&mt=&fd=0&sort=&cbxInsult=0&groupValue=APPLIANCE;;;&preCon=&PT=>家用电器&split=">净水器</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=02.1o">多功能机</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=02.16">酸奶机</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=02.1k">电饼铛</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=02.1r">电火锅</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=02.1w">煮蛋器</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=02.1x">咖啡机</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=02.1z">电烤箱</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=02.22">饮水机</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=02.2b">电蒸锅</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=02.2c">电炖锅</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=02.2a">绞肉机</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=02.2e">料理机</a>
+												</dd>
+											</dl>
+											<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=APPLIANCE&Pt=03">居室电器</a></dt>
+												<dd>
+													<a href="http://search.2688.com/Search.aspx?page=1&q=电风扇&groupValue=APPLIANCE;;;&display=&type=&fd=0&sort=0&PT=>家用电器&split=">电风扇</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=03.1k">插座</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=03.11">加湿器</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=03.14">吸尘器</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=03.09">电熨斗</a>
+													<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u6302%u70EB%u673A&mt=&fd=0&sort=&cbxInsult=0&groupValue=APPLIANCE;;;&preCon=&PT=>家用电器&split=">挂烫机</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=03.1o">空气净化器</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=03.12">毛球修剪器</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=03.1c">蒸汽挂烫机</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=03.1j">灭蚊灯/电蚊拍</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=03.1e">干衣机</a>
+												</dd>
+											</dl>
+											<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=01">个人护理</a></dt>
+												<dd>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=01.03">剃须</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=01.06">电吹风</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=01.07">美发器</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=01.04">脱毛器</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=01.10">美容器</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=01.15">电动牙刷</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=01.13">美容美发配件</a>
+												</dd>
+											</dl>
+											<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=04">健康家电</a></dt>
+												<dd>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=04.14">足浴盆</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=04.06">按摩器</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=04.19">护眼灯</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=04.1c">秤</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=04.1a">按摩垫</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=04.18">血糖仪</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=04.05">电子血压计</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=04.09">电子体温计</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=04.07">低频治疗仪</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=04.1f">助听器</a>
+												</dd>
+											</dl>
+											<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=BIGAPPLIAN&Pt=BIGAPPLIAN">大家电</a></dt>
+												<dd>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=bigapplian&Pt=01  ">平板电视</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=bigapplian&Pt=02">洗衣机</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=bigapplian&Pt=03">冰箱</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=bigapplian&Pt=04">空调</a>
+												</dd>
+											</dl>
+											<dl><dt><a href="http://www.2688.com/shop/fenlei.aspx">其它</a></dt>
+												<dd>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=05">视听电器</a>
+													<a href="http://www.2688.com/Search/iResult.aspx?Mt=appliance&Pt=05.02">收/录音机</a>
+													<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u5361%u62C9OK&mt=&fd=0&sort=&cbxInsult=0&groupValue=APPLIANCE;;;&preCon=&PT=>家用电器&split=">卡拉OK</a>
+												</dd>
+											</dl>	
+									</div>
+									<div class="menu_2_right">
+										<dl class="brands"><dt>推荐品牌</dt>
+											<dd>
+												<a href="http://banqiu.shop.2688.com/bindexmb2.aspx?&s=1">半球</a>
+												<a href="http://jianwang.shop.2688.com/bindexmb2.aspx?&s=1">箭王</a>
+												<a href="http://beinasi.shop.2688.com/bindexmb2.aspx?&s=1">贝纳斯</a>
+												<a href="http://geli.shop.2688.com/bindexmb2.aspx?&s=1">格力</a>
+												<a href="http://iqs.shop.2688.com/bindexmb2.aspx?&s=1">艾玛诗</a>
+												<a href="http://xf.shop.2688.com/bindexmb2.aspx?&s=1">新飞</a>
+												<a href="http://sp.shop.2688.com/bindexmb2.aspx?&s=1">舒派</a>
+												<a href="http://caihong.shop.2688.com/bindexmb2.aspx?&s=1">彩虹</a>
+												<a href="http://rs.shop.2688.com/bindexmb2.aspx?&s=1">容声</a>
+												<a href="http://flyco.shop.2688.com/bindexmb2.aspx?&s=1">飞科</a>
+												<a href="http://edei.shop.2688.com/bindexmb2.aspx?&s=1">宜阁</a>
+												<a href="http://yongli.shop.2688.com/bindexmb2.aspx?&s=1">飞利浦</a>
+												<a href="http://liven.shop.2688.com/bindexmb2.aspx?&s=1">利仁</a>
+												<a href="http://midea.shop.2688.com/bindexmb2.aspx?&s=1">美的</a>
+											</dd>
+										</dl>
+									</div>
+								</div>
+							</li>
+							<li><a href="http://www.2688.com/shop/fushi11.aspx">· 潮流服装配饰</a>
+								<div class="menu_2 clearfix" style="display: none;">
+									<div class="menu_2_left">
+										<dl class="fore"><dt>选择分类</dt><dt><a href="http://search.2688.com/search.aspx?q=%C4%D0%D7%B0&image2.x=0&image2.y=0&image2=Search">男装</a></dt>
+											<dd>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=CLOTHES&Pt=02.01">衬衣</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=02.0e">休闲西服/外套/风衣</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=02.08">长袖休闲T恤</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=02.0m">卫衣</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=02.03">短袖休闲T恤</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=02.07">休闲裤</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=02.0g">马夹</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=02.0h">牛仔裤</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=02.0k">POLO衫</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=02.0l">夹克</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u77ED%u88E4&mt=&fd=0&sort=&cbxInsult=0&groupValue=clothes.02;;;&preCon=&PT=>服装>男装&split=">短裤</a>
+												<a href="http://search.2688.com/search.aspx?q=%C9%B3%CC%B2%BF%E3&image2.x=0&image2.y=0&image2=Search">沙滩裤</a>
+											</dd>
+										</dl>
+										<dl><dt><a href=" http://search.2688.com/search.aspx?q=%u5973%u88C5&mt=&fd=0">女装</a></dt>
+											<dd>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=01.05">上装</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=01.04">裤装</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=01.06">裙子</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=01.07">套装</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u8FDE%u8863%u88D9&mt=&fd=0&sort=&cbxInsult=0&groupValue=clothes.01;;;&preCon=&PT=>服装>女装&split=">连衣裙</a>
+												<a href=" http://search.2688.com/Search.aspx?q=%u534A%u8EAB%u88D9&mt=&fd=0">半身裙</a>
+												<a href=" http://search.2688.com/Search.aspx?display=&page=1&q=%u536B%u8863&mt=&fd=0&sort=&cbxInsult=0&groupValue=clothes.01;;;&preCon=&PT=>服装>女装&split=">卫衣</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=t%u6064&mt=&fd=0&sort=&cbxInsult=0&groupValue=clothes.01;;;&preCon=&PT=>服装>女装&split=">T恤</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u77ED%u88E4&mt=&fd=0&sort=&cbxInsult=0&groupValue=clothes.01;;;&preCon=&PT=>服装>女装&split=">短裤</a>
+												<a href="  http://search.2688.com/Search.aspx?display=&page=1&q=%u725B%u4ED4%u88E4&mt=&fd=0&sort=&cbxInsult=0&groupValue=clothes.01;;;&preCon=&PT=>服装>女装&split=">牛仔裤</a>
+												<a href="  http://search.2688.com/Search.aspx?q=%u54C8%u4F26%u88E4&mt=&fd=0">哈伦裤</a>
+												<a href="  http://search.2688.com/Search.aspx?display=&page=1&q=%u5C0F%u897F%u88C5&mt=&fd=0&sort=&cbxInsult=0&groupValue=clothes.01;;;&preCon=&PT=>服装>女装&split=">小西装</a>
+												<a href="http://search.2688.com/search.aspx?q=%C6%EC%C5%DB&image2.x=0&image2.y=0">旗袍</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=CLOTHES&Pt=07">儿童服饰</a></dt>
+											<dd>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=07.05">男童服装</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=07.06">女童服装</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=07.07">儿童家居服</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=07.0a">童袜/鞋垫</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u5E3D%u5B50&mt=&fd=0&sort=&cbxInsult=0&groupValue=clothes.07;;;&preCon=&PT=>服装>儿童服饰&split=">帽子</a>
+												<a href="http://search.2688.com/Search.aspx?q=%u7AE5%u978B&mt=&fd=0">童鞋</a>
+												<a href="http://search.2688.com/Search.aspx?q=%u6CF3%u5E3D&mt=&fd=0">泳帽/泳镜</a>
+											</dd>
+										</dl>
+										<dl><dt><a href=" http://www.2688.com/Search/iResult.aspx?Mt=CLOTHES&Pt=06">服饰配件</a></dt>
+											<dd>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=06.06">眼镜</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=06.0g">袜子</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=06.0k">帽子</a>
+												<a href="http://search.2688.com/search.aspx?display=&page=1&q=%u6253%u5e95%u88e4&mt=&fd=0&cbxinsult=0&groupvalue=clothes;;;&precon=&pt=>服装&split=&sort=1">打底裤</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/shop/fenlei.aspx">其它</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=CLOTHES&Pt=0L">内衣</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=CLOTHES&Pt=0M">睡衣/家居服</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=CLOTHES&Pt=0J">情侣装/亲子装</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=04.01">防辐射服</a>
+												<a href="http://search.2688.com/Search.aspx?q=%u6CF3%u88C5&mt=&fd=0">泳装</a>
+												<a href="http://search.2688.com/Search.aspx?q=%u51B2%u950B%u8863&mt=&fd=0">冲锋衣</a>
+											</dd>
+										</dl>	
+									</div>
+									<div class="menu_2_right">
+										<dl class="brands"><dt>推荐品牌</dt>
+											<dd>
+												<a href="http://difanzhubao.shop.2688.com/bindexmb2.aspx?&s=1">蒂凡</a>
+												<a href="http://honupr.shop.2688.com/bindexmb2.aspx?&s=1">淳正</a>
+												<a href="http://tianxieduwu.shop.2688.com/bindexmb2.aspx?&s=1">天蝎独舞</a>
+												<a href="http://bjr.shop.2688.com/bindexmb2.aspx?&s=1">北极绒</a>
+												<a href="http://dayu.shop.2688.com/bindexmb2.aspx?&s=1">大羽</a>
+												<a href="http://hanakimi.shop.2688.com/bindexmb2.aspx?&s=1">花君</a>
+												<a href="http://rongqiu.shop.2688.com/bindexmb2.aspx?&s=1">绒秋</a>
+												<a href="http://maila.shop.2688.com/bindexmb2.aspx?&s=1">买啦啦</a>
+												<a href="http://yuyue.shop.2688.com/bindexmb2.aspx?&s=1">京元宝</a>
+												<a href="http://beimeifen.shop.2688.com/bindexmb2.aspx?&s=1">贝美芬</a>
+												<a href="http://zhenshi.shop.2688.com/bindexmb2.aspx?&s=1">臻饰</a>
+												<a href="http://skb.shop.2688.com/bindexmb2.aspx?&s=1">思酷巴</a>
+												<a href="http://dancingriver.shop.2688.com/bindexmb2.aspx?&s=1">蒂睿</a>
+												<a href="http://yaqifushi.shop.2688.com/bindexmb2.aspx?&s=1">B.SJ</a>
+												<a href="http://baoshantxu.shop.2688.com/bindexmb2.aspx?">宝山T恤</a>
+												<a href="http://dashouzhang.shop.2688.com/bindexmb2.aspx?&s=1">大手掌</a>
+											</dd>
+										</dl>
+									</div>
+								</div>
+							</li>
+							<li><a href="http://search.2688.com/search.aspx?q=%CF%E4%B0%FC&image2.x=0&image2.y=0&image2=Search">· 鞋帽配件箱包</a>
+								<div class="menu_2 clearfix" style="display: none;">
+									<div class="menu_2_left">
+										<dl class="fore"><dt>选择分类</dt><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=CLOTHES&Pt=0C">鞋/靴</a></dt>
+											<dd>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=0c.01">女鞋</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=0c.02">男鞋</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=0c.08">中性鞋</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=0c.06">童鞋</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=0c.05">拖鞋/家居鞋/保健鞋</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=clothes&Pt=0c.07">鞋垫/鞋塞/鞋带</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u76AE%u978B&mt=&fd=0&sort=&cbxInsult=0&groupValue=CLOTHES;;;&preCon=&PT=>服装&split=0&groupValue=clothes.02;;;&preCon=&PT=>服装>男装&split=">皮鞋</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u8FD0%u52A8%u978B&mt=&fd=0&sort=&cbxInsult=0&groupValue=CLOTHES;;;&preCon=&PT=>服装&split=nsult=0&groupValue=clothes.01;;;&preCon=&PT=>服装>女装&split=">运动鞋</a>
+												<a href="http://search.2688.com/search.aspx?q=%D0%DD%CF%D0%D0%AC&image2.x=0&image2.y=0">休闲鞋</a>
+												<a href="http://search.2688.com/search.aspx?q=%u51C9%u978B&mt=&fd=00&groupValue=clothes.01;;;&preCon=&PT=>服装>女装&split=">凉鞋</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u5E03%u978B%20&mt=&fd=0&sort=&cbxInsult=0&groupValue=CLOTHES;;;&preCon=&PT=>服装&split=upValue=clothes.01;;;&preCon=&PT=>服装>女装&split=">布鞋</a>
+												<a href="http://search.2688.com/search.aspx?q=%u5355%u978B&mt=&fd=00&groupValue=clothes.01;;;&preCon=&PT=>服装>女装&split=">单鞋</a>
+												<a href="http://search.2688.com/search.aspx?q=%u5E73%u5E95%u978B&mt=&fd=0">平底鞋</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u9C7C%u5634%u978B&mt=&fd=0&sort=&cbxInsult=0&groupValue=CLOTHES;;;&preCon=&PT=>服装&split=">鱼嘴鞋</a>
+												<a href="http://search.2688.com/Search.aspx?q=%u589E%u9AD8%u978B&mt=&fd=0">增高鞋</a>
+												<a href="http://search.2688.com/Search.aspx?q=%u677F%u978B&mt=&fd=0">板鞋</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u9AD8%u8DDF%u978B&mt=&fd=0&sort=&cbxInsult=0&groupValue=CLOTHES;;;&preCon=&PT=>服装&split=">高跟鞋</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0q">通用包</a></dt>
+											<dd>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0q.01">单、双肩运动包</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0q.02">钥匙包/零钱包</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0q.03">旅行包/箱</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0q.05">单、双肩电脑包/内胆</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0q.06">相机包</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0q.0a">多功能包</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0q.0c">腰包</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0q.0d">单肩/斜挎包</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0q.0f">休闲包</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0q.0i">通用钱包/钱夹</a>
+												<a href="http://search.2688.com/search.aspx?q=%20%u767B%u5C71%u5305&mt=&fd=0">登山包</a>
+												<a href="http://search.2688.com/search.aspx?q=%C0%AD%B8%CB%CF%E4&image2.x=37&image2.y=15=">拉杆箱</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u6D17%u6F31%u5305&mt=&fd=0&sort=&cbxInsult=0&groupValue=BAG;;;&preCon=&PT=>皮具箱包&split=">洗漱包</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u540D%u7247%u5939&mt=&fd=0&sort=&cbxInsult=0&groupValue=BAG;;;&preCon=&PT=>皮具箱包&split=">名片夹</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u94A5%u5319%u5305&mt=&fd=0&sort=&cbxInsult=0&groupValue=BAG;;;&preCon=&PT=>皮具箱包&split=">钥匙包</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u7535%u8111%u5305&mt=&fd=0&sort=&cbxInsult=0&groupValue=BAG;;;&preCon=&PT=>皮具箱包&split=">电脑包</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0o">女款包包</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0o.01">单肩包/手提包</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0o.02">斜挎包</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0o.03">钱夹/手包/银包</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0o.07">两用包</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0o.08">双肩包</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0o.09">化妆包</a>
+												<a href="http://search.2688.com/Search.aspx?q=%u624B%u62FF%u5305&mt=&fd=0">手拿包</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0p">男款包</a></dt>
+											<dd>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0p.01">公文包</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=BAG&Pt=0P.02">单肩/斜挎包</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0p.03">钱夹/包/银包</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0p.04">手包</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0p.05">双肩包</a>
+												<a href="http://search.2688.com/search.aspx?q=%u5546%u52A1%u516C%u6587%u5305&mt=&fd=0nsult=0&groupValue=clothes.01;;;&preCon=&PT=>服装>女装&split=">商务公文包</a>
+												<a href="http://search.2688.com/Search.aspx?q=%u725B%u76AE%u7537%u5305&mt=&fd=0">牛皮男包</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=BAG&Pt=03">腰带</a></dt>
+											<dd>
+												<a href="   http://www.2688.com/Search/iResult.aspx?Mt=BAG&Pt=03.01">男士</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=03.02">女士</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=03.03">中性/休闲</a>
+											</dd>
+										</dl>
+										<dl><dt><a href=" http://www.2688.com/shop/fenlei.aspx">其它</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=BAG&Pt=0R">学生包</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0h">皮具礼品</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u4E66%u5305&mt=&fd=0&sort=&cbxInsult=0&groupValue=BAG;;;&preCon=&PT=>皮具箱包&split=">书包</a>
+												<a href="http://search.2688.com/Search.aspx?q=%u513F%u7AE5%u5305&mt=&fd=0">儿童包</a>
+											</dd>
+										</dl>	
+									</div>
+									<div class="menu_2_right">
+										<dl class="brands"><dt>推荐品牌</dt>
+											<dd>
+												<a href="http://fkzbag.shop.2688.com/bindexmb2.aspx?&s=1">方块字</a>
+												<a href="http://modini.shop.2688.com/bindexmb2.aspx?&s=1">莫迪妮</a>
+												<a href="http://weifulong.shop.2688.com/bindexmb2.aspx?&s=1">威富龙</a>
+												<a href="http://tiechuixiangbao.shop.2688.com/bindexmb2.aspx?&s=1">迈克皇冠</a>
+												<a href="http://jinhouxieye.shop.2688.com/bindexmb2.aspx?&s=1">金猴</a>
+												<a href="http://dhl.shop.2688.com/bindexmb2.aspx?&s=1">登好路</a>
+												<a href="http://bl.shop.2688.com/bindexmb2.aspx?&s=1">百利</a>
+												<a href="http://euni.shop.2688.com/bindexmb2.aspx?&s=1">优妮</a>
+												<a href="http://yezi.shop.2688.com/bindexmb2.aspx?&s=1">凯蒂氏</a>
+												<a href="http://qipilang.shop.2688.com/bindexmb2.aspx?&s=1">七匹狼</a>
+												<a href="http://wolisiwei.shop.2688.com/bindexmb2.aspx?&s=1">沃立斯威</a>
+												<a href="http://langsha.shop.2688.com/bindexmb2.aspx?&s=1">浪莎</a>
+												<a href="http://plover.shop.2688.com/bindexmb2.aspx?&s=1">啄木鸟</a>
+											</dd>
+										</dl>
+									</div>
+								</div>
+							</li>
+							<li><a href="http://search.2688.com/search.aspx?q=%u793C&mt=&fd=0">· 珠宝手表礼品</a>
+								<div class="menu_2 clearfix" style="display: none;">
+									<div class="menu_2_left">
+										<dl class="fore"><dt>选择分类</dt><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=JEWELRY&Pt=JEWELRY">珠宝</a></dt>
+											<dd>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u9EC4%u91D1%20&mt=&fd=0&sort=&cbxInsult=0&groupValue=JEWELRY;;;&preCon=&PT=>饰品&split=">黄金</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u94C2%u91D1&mt=&fd=0&sort=&cbxInsult=0&groupValue=JEWELRY;;;&preCon=&PT=>饰品&split=">铂金</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u73CD%u73E0&mt=&fd=0&sort=&cbxInsult=0&groupValue=JEWELRY;;;&preCon=&PT=>饰品&split=">珍珠</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u7FE1%u7FE0&mt=&fd=0&sort=&cbxInsult=0&groupValue=JEWELRY;;;&preCon=&PT=>饰品&split=">翡翠</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u739B%u7459&mt=&fd=0&sort=&cbxInsult=0&groupValue=JEWELRY;;;&preCon=&PT=>饰品&split=">玛瑙</a>
+												<a href="http://search.2688.com/Search.aspx?q=%u78A7%u73BA&mt=&fd=0">碧玺</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=JEWELRY&Pt=JEWELRY">精美饰品</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=JEWELRY&Pt=23">钥匙扣/手机链</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=JEWELRY&Pt=2A">耳饰</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=JEWELRY&Pt=1K">首饰配饰</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=JEWELRY&Pt=2B">项饰/胸花/胸针</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=JEWELRY&Pt=2C">腰饰/毛衣链</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=JEWELRY&Pt=2E">手饰/脚链</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=JEWELRY&Pt=2F">宝宝饰品</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=JEWELRY&Pt=2D">首饰套装</a>
+												<a href="    http://www.2688.com/Search/iResult.aspx?Mt=JEWELRY&Pt=17">头饰</a>
+											</dd>
+										</dl>
+										<dl><dt><a href=" http://www.2688.com/Search/iResult.aspx?Mt=PRESENT&Pt=PRESENT">礼品</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=PRESENT&Pt=19">工艺礼品</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=PRESENT&Pt=1K">节庆礼品</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=PRESENT&Pt=1L">餐具厨具礼品</a>
+												<a href="    http://www.2688.com/Search/iResult.aspx?Mt=present&Pt=1m">办公商务礼品</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=present&Pt=1o">日用礼品</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=present&Pt=1p">玩具类礼品</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=present&Pt=1s">鲜花/植物类礼品</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=bag&Pt=0h">皮具礼品</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="  http://www.2688.com/Search/iResult.aspx?Mt=present&Pt=08">钟表</a></dt>
+											<dd>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=present&Pt=08.0s">钟/闹钟/座钟 </a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=present&Pt=08.0t">男表</a>
+												<a href="	http://www.2688.com/Search/iResult.aspx?Mt=present&Pt=08.0u">女表</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=present&Pt=08.0y">儿童/卡通手表</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=present&Pt=08.0w">对表/情侣表</a>
+												<a href="http://search.2688.com/Search.aspx?q=%u673A%u68B0%u8868&mt=&fd=0">机械表</a>
+												<a href="http://search.2688.com/Search.aspx?q=%u8FD0%u52A8%u8868&mt=&fd=0">运动表</a>
+												<a href="http://search.2688.com/Search.aspx?q=%u9632%u6C34%u8868&mt=&fd=0">防水表</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="  http://www.2688.com/shop/fenlei.aspx#11">其它</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=PRESENT&Pt=04">Zippo打火机</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=present&Pt=05">瑞士军刀</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=16">学生玩偶</a>
+											</dd>
+										</dl>	
+									</div>
+									<div class="menu_2_right">
+										<dl class="brands"><dt>推荐品牌</dt>
+											<dd>
+												<a href="http://hwxfc.shop.2688.com/bindexmb2.aspx?&s=1">惠文祥</a>
+												<a href="http://haobopengda.shop.2688.com/bindexmb2.aspx?&s=1">得意鸟</a>
+												<a href="http://handlove.shop.2688.com/bindexmb2.aspx?&s=1">汉爱</a>
+												<a href="http://meiyurenshengjade.shop.2688.com/bindexmb2.aspx?&s=1">美玉人生</a>
+												<a href="http://juepeijade.shop.2688.com/bindexmb2.aspx?&s=1">珏珮</a>
+												<a href="http://eyki.shop.2688.com/bindexmb2.aspx?&s=1">金米欧</a>
+												<a href="http://deruitianheng.shop.2688.com/bindexmb2.aspx?&s=1">ZIPPO</a>
+											</dd>
+										</dl>
+									</div>
+								</div>
+							</li>
+							<li><a href="http://www.2688.com/shop/2013jdsm.aspx">· 数码电脑配件</a>
+								<div class="menu_2 clearfix" style="display: none;">
+									<div class="menu_2_left">
+										<dl class="fore"><dt>选择分类</dt><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=COMMUNICAT&Pt=COMMUNICAT">手机通讯</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=communicat&Pt=01.4k">直板</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=communicat&Pt=01.4e">滑盖</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=communicat&Pt=01.4m">翻盖</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u667A%u80FD%u624B%u673A&mt=&fd=0&sort=&cbxInsult=0&groupValue=COMMUNICAT;;;&preCon=&PT=>通讯产品&split=">智能手机</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=communicat&Pt=01.4m">3G手机</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://search.2688.com/Search.aspx?display=&page=1&q=3G%u624B%u673A&mt=&fd=0&sort=&cbxInsult=0&groupValue=COMMUNICAT;;;&preCon=&PT=>通讯产品&split=">手机配件</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=DIGITAL&Pt=10.1B">移动电源</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=communicat&Pt=02.02">手机充电器</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=communicat&Pt=02.01">电池</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=communicat&Pt=02.03">手机耳机</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=communicat&Pt=02.09">手机套/袋</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=communicat&Pt=02.15&Sort=1&PageNow=1">手机饰品</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=DIGITAL&Pt=01">移动存储</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=digital&Pt=01.02">U盘</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=digital&Pt=01.01">移动硬盘</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=digital&Pt=01.03">移动硬盘盒</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=digital&Pt=01.01">移动硬盘</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=digital&Pt=10.01&Sort=1&PageNow=1">存储卡</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=DIGITAL&Pt=02">时尚影音</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=digital&Pt=02.01">mp3</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=digital&Pt=02.02">mp4</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=digital&Pt=02.03">mp5</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=digital&Pt=02.08">数码相框</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=digital&Pt=10.09">MP3/4配件</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=digital&Pt=02.09">复读机</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=digital&Pt=02.07">数码录音笔/扫描笔/扫描翻译</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=digital&Pt=02.06">电子书</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=digital&Pt=02.05">电子辞典/学习机/音乐通</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=digital&Pt=02.04">移动/高清播放器</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=digital&Pt=05">数码影像</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=digital&Pt=10">数码配件</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=digital&Pt=10.12">电池</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=digital&Pt=10.04">数码包</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=digital&Pt=05.04">数码相机</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=digital&Pt=05.09">数码摄像机</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=digital&Pt=05.06">单反相机</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=COMPUTER&Pt=COMPUTER">电脑用品</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=computer&Pt=01.01">笔记本</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=computer&Pt=05.03">3g无线上网卡</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=computer&Pt=02.07">音箱</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=computer&Pt=02.06">摄像头</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=computer&Pt=02.13">鼠标</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=computer&Pt=02.12">USB工具</a>
+												<a href="http://search.2688.com/search.aspx?q=%BC%FC%C5%CC&image2.x=0&image2.y=0">键盘</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=computer&Pt=02.1f">套装</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=computer&Pt=06">电脑相关</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=computer&Pt=06.05">保护膜</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=computer&Pt=06.07">电脑包/内胆包</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=computer&Pt=06.03">鼠标垫</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=computer&Pt=03.1b">散热器</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=computer&Pt=02.08">手写输入/OCR</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=computer&Pt=02.11">适配器/线缆</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=computer&Pt=02.07">耳麦/音箱/耳机/麦克</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=digital&Pt=10.08">USB/火线接口产品</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=computer&Pt=02.18">电源插座</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=computer&Pt=02.1b">电脑清洁</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=computer&Pt=05.05">路由器</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=computer&Pt=05.06">网络交换机</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=SOFT&Pt=SOFT">软件</a> <a href="http://www.2688.com/Search/iResult.aspx?Mt=soft&Pt=08">课堂教育</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=soft&Pt=01">游戏软件</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=soft&Pt=04">外语学习</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=soft&Pt=06">电脑知识</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=soft&Pt=09">工具软件</a>
+											</dd>
+										</dl>	
+									</div>
+									<div class="menu_2_right">
+										<dl class="brands"><dt>推荐品牌</dt>
+											<dd>
+												<a href="http://shoujipeijian.shop.2688.com/bindexmb2.aspx?&s=1">机乐堂</a>
+												<a href="http://penghengbijiben.shop.2688.com/bindexmb2.aspx?&s=1">盛泰斯</a>
+												<a href="http://xhf.shop.2688.com/bindexmb2.aspx?&s=1">夏新</a>
+												<a href="http://habala.shop.2688.com/bindexmb2.aspx?&s=1">哈巴拉</a>
+												<a href="http://aipuwang.shop.2688.com/bindexmb2.aspx?&s=1">爱谱王</a>
+												<a href="http://toshiba.shop.2688.com/bindexmb2.aspx?&s=1">东芝</a>
+												<a href="http://ssk.shop.2688.com/bindexmb2.aspx?&s=1">飚王</a>
+												<a href="http://sandisk.shop.2688.com/bindexmb2.aspx?&s=1">闪迪</a>
+												<a href="http://colortx.shop.2688.com/bindexmb2.aspx?&s=1">莫凡</a>
+												<a href="http://hflh.shop.2688.com/bindexmb2.aspx?&s=1">索信</a>
+												<a href="http://teclast.shop.2688.com/bindexmb2.aspx?&s=1">台电</a>
+												<a href="http://sam.shop.2688.com/bindexmb2.aspx?&s=1">E元素</a>
+											</dd>
+										</dl>
+									</div>
+								</div>
+							</li>
+							<li><a href="http://www.2688.com/shop/food.aspx">· 美味零食保健</a>
+								<div class="menu_2 clearfix" style="display: none;">
+									<div class="menu_2_left">
+										<dl class="fore"><dt>选择分类</dt><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=01">休闲食品</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=01.0d">糖果/巧克力</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=01.09">饼干/糕点</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=01.03">蜜饯/果脯类</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=01.05">干果类</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=01.01">炒货类</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=01.0h">水果干/蔬菜干</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=01.0j">豆制品</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=01.08">肉干肉脯肉松</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=GROCERY&Pt=01.0C">膨化食品</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=05">茶叶</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=05.08">花果茶</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=05.06">绿茶</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=05.07">红茶</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=05.02">青茶</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=04.05">速溶茶</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=05.03">黑茶</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u82E6%u835E&mt=&fd=0&sort=&cbxInsult=0&groupValue=grocery.05.0a;;;&preCon=&PT=>食品>茶叶>苦荞茶&split=">苦荞茶</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=05.09">礼盒</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=05">冲饮品</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=04.01&Sort=1&PageNow=1">营养饮品</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=04.02">果汁饮品</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=GROCERY&Pt=04.03">咖啡</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=04.08">蜂蜜/蜂浆</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/shop/fenlei.aspx">其它</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=09">进口食品</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=07">地方特产</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=0a">副食/粮油</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=grocery&Pt=0c">方便食品</a>
+											</dd>
+										</dl>							
+									</div>
+									<div class="menu_2_right">
+										<dl class="brands"><dt>推荐品牌</dt>
+											<dd>
+												<a href="http://hongtaok.shop.2688.com/bindexmb2.aspx?&s=1">红桃K</a>
+												<a href="http://xixixiang.shop.2688.com/bindexmb2.aspx?&s=1">艾依玛</a>
+												<a href="http://jiuzhouyun.shop.2688.com/bindexmb2.aspx?&s=1">九州韵</a>
+												<a href="http://lurun.shop.2688.com/bindexmb2.aspx?&s=1">鲁润</a>
+												<a href="http://haodongshipin.shop.2688.com/bindexmb2.aspx?&s=1">口水娃</a>
+												<a href="http://alilang.shop.2688.com/bindexmb2.aspx?&s=1">阿里郎</a>
+												<a href="http://dxlangmanshiguang.shop.2688.com/bindexmb2.aspx?&s=1">浪漫时光</a>
+												<a href="http://yishengwuyou.shop.2688.com/bindexmb2.aspx?&s=1">一生无忧</a>
+												<a href="http://impra.shop.2688.com/bindexmb2.aspx?&s=1">英伯伦</a>
+												<a href="http://fenguo.shop.2688.com/bindexmb2.aspx?&s=1">粉果一家亲</a>
+												<a href="http://hjgd.shop.2688.com/bindexmb2.aspx?&s=1">馨香</a>
+												<a href="http://jiuzhouyun.shop.2688.com/bindexmb2.aspx?&s=1">九洲韵</a>
+												<a href="http://honeyfood.shop.2688.com/bindexmb2.aspx?">金喜雀</a>
+												<a href="http://haodongshipin.shop.2688.com/bindexmb2.aspx?">维之王</a>
+												<a href="http://taieryh.shop.2688.com/bindexmb2.aspx?&s=1">泰尔</a>
+											</dd>
+										</dl>
+									</div>
+								</div>
+							</li>
+							<li><a href="http://www.2688.com/shop/baby11.aspx">· 母婴早教玩具</a>
+								<div class="menu_2 clearfix" style="display: none;">
+									<div class="menu_2_left">
+										<dl class="fore"><dt>选择分类</dt><dt><font color="#a4164e">热门</font></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0c">奶粉</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=09">辅食</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0d">保健食品</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=04">妈妈用品</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=04.01">防辐射服</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=04.0a">美容护肤</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=04.05">瘦身</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=04.0i">保健贴</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=04.04">吸奶器</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=04.0c">防溢乳垫</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=04.08">哺乳文胸/内裤</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=04.0h">护腰/护腰枕</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=04.06">卫生清洁</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=01">喂养工具</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=01.01">奶瓶</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=01.09">学饮杯</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=01.02">奶嘴</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=01.0a">保温加热</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=01.07">餐具</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=01.02">奶嘴</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=01.08">牙胶/牙刷</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=01.0G">礼盒套装</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0b">睡寝护理</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0b.01">床单被罩</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0b.07">地垫/爬行毯</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0b.05">睡枕</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0b.03">睡袋</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0b.04">毛毯/抱毯</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0b.08">夏凉被</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0b.06">凉席系列</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=TOY&Pt=TOY">玩具模型</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=toy&Pt=0b">益智</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=toy&Pt=01">毛绒</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=toy&Pt=05">婴儿玩具</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=toy&Pt=04">主题玩偶</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=toy&Pt=03">模型</a>
+												<a href="http://search.2688.com/Search.aspx?page=1&q=早教&groupValue=&display=&type=&fd=0&sort=0&PT=&split=">书籍</a>
+												<a href="http://search.2688.com/search.aspx?page=1&q=%BA%C3%D1%A7%B1%A6&groupValue=&display=&type=&fd=0&sort=0&PT=&split=">电子教育</a>
+												<a href="http://search.2688.com/search.aspx?q=%D4%E7%BD%CC%BB%FA&image2.x=46&image2.y=1">早教机</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=toy&Pt=0c">交通</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=toy&Pt=0d">木制</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=toy&Pt=07">动物/人物</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=toy&Pt=0f">整人</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=toy&Pt=0a">充气</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=toy&Pt=06">军事</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0c">宝宝奶粉</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?mt=matherson&pt=0c&Bid=%c8%b8%b3%b2">雀巢</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?mt=matherson&pt=0c&Bid=%b4%cd%b6%e0%c0%fb">赐多利</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?mt=matherson&pt=0c&Bid=%b0%b2%b6%f7%b1%a6">安恩宝</a>
+												<a href=" http://search.2688.com/search.aspx?q=%B1%B4%D2%F2%C3%C0&image2.x=20&image2.y=19">贝因美</a>
+												<a href=" http://search.2688.com/search.aspx?q=%u9633%u5149%u5B9D%u5B9D&mt=&fd=0">阳光宝宝</a>
+												<a href="http://search.2688.com/search.aspx?q=%u5EB7%u5B9D%u745E%20&mt=&fd=0">康宝瑞 </a>
+												<a href=" http://search.2688.com/search.aspx?q=%u5361%u6D1B%u5854%u59AE&mt=&fd=0">卡洛塔妮</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?mt=matherson&pt=0c&Bid=%b0%b2%b6%f7%b1%a6">雅士利</a>
+												<a href=" http://search.2688.com/search.aspx?q=%u96C5%u57F9&mt=&fd=0">雅培</a>
+												<a href=" http://search.2688.com/search.aspx?q=%u5B8C%u8FBE%u5C71&mt=&fd=0">完达山</a>
+												<a href=" http://search.2688.com/search.aspx?q=%u591A%u7F8E%u6ECB&mt=&fd=0">多美滋</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=09">宝宝辅食</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=09.02">米粉类</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=09.06">果蔬粉/鱼粉/肉粉</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=09.0a">饼干/磨牙棒</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=09.0c">营养品</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=02">洗护用品</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=02.01">洗发/沐浴</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=02.05">护肤</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=02.08">爽身粉/去痱</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=02.0a">湿巾</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=02.0e">防蚊系列</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=02.0f">润唇</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0h.09">口腔清洁/护理</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0h.01">浴巾/毛巾</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0h.04">游泳池/泳圈</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0F">健康/日常</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0D.04">消火开胃</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0f.01">环境安全</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0f.05">体温计</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0f.07">鼻腔护理</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0f.08">降温用品</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0e.01">奶瓶清洗</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0e.02">洗衣液</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0g.01">纸尿裤</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0g.02">布尿裤/片</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0g.03">隔尿垫</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=08">宝宝服饰/饰品</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=08.02">套装</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=08.03">内衣</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=08.04">鞋帽袜</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=08.05">围嘴罩衣手帕</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=08.06">肚兜</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=jewelry&Pt=2f.01">镯/链</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=JEWELRY&Pt=2F.02">长命锁</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=matherson&Pt=0A">纪念品</a>
+											</dd>
+										</dl>
+									</div>
+									<div class="menu_2_right">
+										<dl class="brands"><dt>推荐品牌</dt>
+											<dd>
+												<a href="http://babymatee.shop.2688.com/bindexmb2.aspx?&s=1">婴之侣</a>
+												<a href="http://hmbb.shop.2688.com/bindexmb2.aspx?&s=1">海绵宝宝</a>
+												<a href="http://renshuobaby.shop.2688.com/bindexmb2.aspx?&s=1">小浣熊</a>
+												<a href="http://disney.shop.2688.com/bindexmb2.aspx?&s=1">迪士尼</a>
+												<a href="http://yayayoutong.shop.2688.com/bindexmb2.aspx?&s=1">雅雅优童</a>
+												<a href="http://shangai2013.shop.2688.com/bindexmb2.aspx?&s=1">上爱</a>
+												<a href="http://eachli.shop.2688.com/bindexmb2.aspx?&s=1">互理互理</a>
+												<a href="http://mother-baby.shop.2688.com/bindexmb2.aspx?&s=1">缪尚</a>
+												<a href="http://liangliang.shop.2688.com/bindexmb2.aspx?&s=1">良良</a>
+												<a href="http://pinai.shop.2688.com/bindexmb2.aspx?&s=1">品爱</a>
+												<a href="http://aijiabei.shop.2688.com/bindexmb2.aspx?">婴倍爱</a>
+												<a href="http://lantianbaobei.shop.2688.com/bindexmb2.aspx?">宾尼兔</a>
+												<a href="http://canthy.shop.2688.com/bindexmb2.aspx?&s=1">丹瑞肤乐宝</a>
+												<a href="http://mother-baby.shop.2688.com/bindexmb2.aspx?&s=1">安贝儿</a>
+												<a href="http://gzboda.shop.2688.com/bindexmb2.aspx?">宝德</a>
+												<a href="http://baby.shop.2688.com/bindexmb2.aspx?">御信堂</a>
+												<a href="http://lanmei.shop.2688.com/bindexmb2.aspx?">蓝莓</a>
+												<a href="http://muying.shop.2688.com/bindexmb2.aspx?">亿婴儿</a>
+												<a href="http://wise-box.shop.2688.com/bindexmb2.aspx?">婴侍卫</a>
+												<a href="http://qingwawangzi.shop.2688.com/bindexmb2.aspx?">青蛙王子</a>
+											</dd>
+										</dl>	
+										
+									</div>
+								</div>
+							</li>
+							<li><a href="http://www.2688.com/shop/2014car.aspx">· 户外运动成人</a>
+								<div class="menu_2 clearfix" style="display: none;">
+									<div class="menu_2_left">
+										<dl class="fore"><dt>选择分类</dt><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=sport&Pt=11">运动服装</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=sport&Pt=11.0c">运动鞋</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=sport&Pt=11.0d">运动服</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=sport&Pt=11.0f">瑜珈服</a>
+												<a href="http://www.2688.com/Search/brandsResult.aspx?Bid=1681">手表</a>
+												<a href="http://search.2688.com/search.aspx?q=%D4%CB%B6%AF%CD%E0&image2.x=0&image2.y=0">运动袜</a>
+												<a href="http://search.2688.com/search.aspx?q=%u6CF3%u88C5&mt=&fd=0">泳装</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=sport&Pt=18">护具</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=sport&Pt=08">户外野营工具</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=SPORT&Pt=08.0F">充气垫</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=sport&Pt=08.0l">生存用具</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=sport&Pt=08.02">帐篷</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=sport&Pt=08.01">炊具</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=sport&Pt=08.0g">望远镜</a>
+												<a href="http://search.2688.com/search.aspx?q=%u767B%u5C71%u5305&mt=&fd=0">登山包</a>
+												<a href="http://search.2688.com/search.aspx?q=%u8170%u5305&mt=&fd=0">腰包</a>
+												<a href="http://search.2688.com/search.aspx?q=%u624B%u6756&mt=&fd=0">手杖</a>
+												<a href="http://search.2688.com/search.aspx?q=%u767B%u5C71%u6C34%u58F6&mt=&fd=0">水壶</a>
+												<a href="http://search.2688.com/Search.aspx?q=%u745E%u58EB%u519B%u5200&mt=&fd=0">瑞士军刀</a>
+												<a href="http://search.2688.com/Search.aspx?q=%u624B%u7535%u7B52&mt=&fd=0">手电筒</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u5E10%u7BF7&mt=&fd=0&sort=&cbxInsult=0&groupValue=SPORT;;;&preCon=&PT=>运动休闲&split=">帐篷</a>
+												<a href="http://search.2688.com/Search.aspx?q=%u9632%u6F6E%u57AB&mt=&fd=0">防潮垫</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u7761%u888B&mt=&fd=0&sort=&cbxInsult=0&groupValue=SPORT;;;&preCon=&PT=>运动休闲&split=">睡袋</a>
+												<a href="http://search.2688.com/Search.aspx?q=%u6298%u53E0%u5E8A&mt=&fd=0">折叠床</a>
+												<a href="http://search.2688.com/Search.aspx?q=%u6298%u53E0%u6905&mt=&fd=0">折叠椅</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u6307%u5357%u9488&mt=&fd=0&sort=&cbxInsult=0&groupValue=SPORT;;;&preCon=&PT=>运动休闲&split=">指南针</a>
+											</dd>
+										</dl>
+										<dl><dt><font color="#a4164e">健身器材</font></dt>
+											<dd>
+												<a href="http://search.2688.com/search.aspx?q=%u8E0F%u6B65%u673A&mt=&fd=0">踏步机</a>
+												<a href="http://search.2688.com/search.aspx?q=%u6536%u8179%u673A&mt=&fd=0">收腹机</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u7529%u8102%u673A&mt=&fd=0&sort=&cbxInsult=0&groupValue=APPLIANCE;;;&preCon=&PT=>家用电器&split=">甩脂机</a>
+												<a href="http://search.2688.com/search.aspx?q=%u8DF3%u821E%u6BEF&mt=&fd=0">跳舞毯</a>
+												<a href="http://search.2688.com/Search.aspx?q=%u62C9%u529B%u5668&mt=&fd=0">拉力器</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=sport&Pt=1g.0b">跳绳</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=sport&Pt=1g.0a">溜冰鞋</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=sport&Pt=1g.03">呼啦圈</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=sport&Pt=1g.09">滑板车</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=sport&Pt=1g.0h">空竹</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/shop/fenlei.aspx#11">体育用品</a></dt>
+											<dd>
+												<a href="  http://search.2688.com/Search.aspx?display=&page=1&q=%u8DB3%u7403&mt=&fd=0&sort=&cbxInsult=0&groupValue=SPORT;;;&preCon=&PT=>运动休闲&split=">足球</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u7FBD%u6BDB%u7403&mt=&fd=0&sort=&cbxInsult=0&groupValue=SPORT;;;&preCon=&PT=>运动休闲&split=">羽毛球</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u4E52%u4E53%u7403&mt=&fd=0&sort=&cbxInsult=0&groupValue=SPORT;;;&preCon=&PT=>运动休闲&split=">乒乓球</a>
+												<a href="  http://search.2688.com/Search.aspx?display=&page=1&q=%u6392%u7403&mt=&fd=0&sort=&cbxInsult=0&groupValue=SPORT;;;&preCon=&PT=>运动休闲&split=">排球</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u7F51%u7403&mt=&fd=0&sort=&cbxInsult=0&groupValue=SPORT;;;&preCon=&PT=>运动休闲&split=">网球</a>
+												<a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u6CF3%u955C&mt=&fd=0&sort=&cbxInsult=0&groupValue=SPORT;;;&preCon=&PT=>运动休闲&split=">泳镜</a>
+												<a href="http://search.2688.com/search.aspx?q=%E8%A4%D9%A4%B5%E6&image2.x=0&image2.y=0&image2=Search">瑜伽垫</a>
+							
+											</dd>
+										</dl>
+										<dl class="fore">
+											<dt>成人用品避孕</dt>
+											<dt>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=ADULTUSE&Pt=04">男用器具</a>
+										        <a href="  http://www.2688.com/Search/iResult.aspx?Mt=ADULTUSE&Pt=05">女用器具</a>
+										        <a href="http://www.2688.com/Search/iResult.aspx?Mt=adultuse&Pt=06">调情器具</a>
+									         </dt>
+										</dl>
+										<dl><dt><a href="  http://www.2688.com/Search/iResult.aspx?Mt=ADULTUSE&Pt=01">避孕/润滑</a></dt>
+											<dd>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=adultuse&Pt=01.01">安全套</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=adultuse&Pt=01.02">测孕用品</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=adultuse&Pt=01.03">人体润滑剂 </a>
+											</dd>
+										</dl>	
+									</div>
+									<div class="menu_2_right">
+										<dl class="brands"><dt>推荐品牌</dt>
+											<dd>
+												<a href="http://bjjfj.shop.2688.com/bindexmb2.aspx?&s=1">星特朗</a>
+												<a href="http://oxxy.shop.2688.com/bindexmb2.aspx?&s=1">车爱人</a>
+												<a href="http://threerunners.shop.2688.com/bindexmb2.aspx?&s=1">思丽兰娜</a>
+												<a href="http://haohaojia2688.shop.2688.com/bindexmb2.aspx?">好好家</a>
+												<a href="http://falconplan.shop.2688.com/bindexmb2.aspx?">猎鹰计划</a>
+												<a href="http://czly.shop.2688.com/bindexmb2.aspx?&s=1">绰资丽影</a>
+											</dd>
+										</dl>
+									</div>
+								</div>
+							</li>
+							<li><a href="http://www.2688.com/shop/2014car.aspx">· 汽车装饰车品</a>
+								<div class="menu_2 clearfix" style="display: none;">
+									<div class="menu_2_left">
+										<dl class="fore"><dt>选择分类</dt><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=CARLINK&Pt=02">装饰用品</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=02.01">车用香水/香水袋</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=02.02">方向盘套</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=02.04">安全带护套/安全带扣</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=02.05">抱枕/头枕/腰靠</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=02.07">防滑垫</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=02.0a">脚垫</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=02.0j">坐垫/座套</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=02.0k">车贴</a>
+											</dd>
+										</dl>
+										<dl><dt><a href=" http://www.2688.com/Search/iResult.aspx?Mt=CARLINK&Pt=01">汽车电器</a></dt>
+											<dd>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=CARLINK&Pt=01.08">逆变电源</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=01.01">车载氧吧/净化器 </a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=01.02">车载剃须刀</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=01.03">车载吸尘器</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=01.04">冰箱/保温箱/冰包</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=01.07">车载充电器</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=01.0b">车载MP3/MP4</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=01.0c">车用加热设备</a>
+												<a href=" http://search.2688.com/Search.aspx?q=%u884C%u8F66%u8BB0%u5F55%u4EEA&mt=&fd=0">行车记录仪</a>
+												<a href=" http://search.2688.com/Search.aspx?display=&page=1&q=%u5145%u6C14%u6CF5&mt=&fd=0&sort=&cbxInsult=0&groupValue=CARLINK;;;&preCon=&PT=>汽车用品&split=">充气泵</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="  http://www.2688.com/Search/iResult.aspx?Mt=CARLINK&Pt=06">养护美容</a></dt>
+											<dd>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=06.03">车蜡</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=06.04">清洁剂</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=06.06">护理剂</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=06.07">净化/杀菌/除臭剂</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=06.09">雨敌/雾敌</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=06.0b">智擦车巾/除尘/除静电</a>
+												<a href="http://search.2688.com/Search.aspx?q=%u6D17%u8F66&mt=&fd=0">洗车用具</a>
+												<a href="http://search.2688.com/Search.aspx?q=%u63B8%u5B50&mt=&fd=0">掸子</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="  http://www.2688.com/Search/iResult.aspx?Mt=CARLINK&Pt=05">车备工具</a></dt>
+											<dd>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=CARLINK&Pt=05.08">医用急救包</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=05.02">应急工具箱</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=05.05">洗车工具</a>
+											</dd>
+										</dl>
+										<dl><dt><a href=" http://www.2688.com/Search/iResult.aspx?Mt=CARLINK&Pt=07">通讯导航</a></dt>
+											<dd>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=07.01">定位导航</a>
+											</dd>
+										</dl>
+										<dl><dt><a href=" http://www.2688.com/Search/iResult.aspx?Mt=CARLINK&Pt=0B">功能用品</a></dt>
+											<dd>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=0b.01">指南针</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=0b.02">雨刷</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=CARLINK&Pt=0B.05">洗车工具</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=carlink&Pt=0b.09">大视野蓝镜</a>
+											</dd>
+										</dl>
+										<dl><dt><a href=" http://www.2688.com/shop/fenlei.aspx#11">其它</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=CARLINK&Pt=04">安全防盗</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=CARLINK&Pt=0C">车迷精品</a>
+												<a href="http://search.2688.com/Search.aspx?q=%u8F66%u8863&mt=&fd=0">车衣</a>
+											</dd>
+										</dl>
+									</div>
+									<div class="menu_2_right">
+										<dl class="brands"><dt>推荐品牌</dt>
+											<dd>
+												<a href="http://yilumei.shop.2688.com/bindexmb2.aspx?&s=1">一路美</a>
+												<a href="http://lczp1.shop.2688.com/bindexmb2.aspx?">极限</a>
+												<a href="http://bjcxa.shop.2688.com/bindexmb2.aspx?">车行安</a>
+												<a href="http://chezaijiongtu.shop.2688.com/bindexmb2.aspx?">车在囧途</a>
+												<a href="http://caref.shop.2688.com/bindexmb2.aspx?">卡护</a>
+											</dd>
+										</dl>
+									</div>
+								</div>
+							</li>
+							<li><a href="http://search.2688.com/search.aspx?q=%B0%EC%B9%AB&image2.x=54&image2.y=8&image2=Search">· 图书办公用品</a>
+								<div class="menu_2 clearfix" style="display: none;">
+									<div class="menu_2_left">
+										<dl class="fore">
+											<dt>图书</dt>
+											<dt><a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u56FE%u4E66&mt=&fd=0&sort=&cbxInsult=0&groupValue=book.29;;;&preCon=&PT=%3E%CD%BC%CA%E9%3E%C9%D9%B6%F9&split=">少儿 </a>
+										        <a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u56FE%u4E66&mt=&fd=0&sort=&cbxInsult=0&groupValue=book.35;;;&preCon=&PT=%3E%CD%BC%CA%E9%3E%CE%C4%D1%A7&split=">文学</a>
+										        <a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u56FE%u4E66&mt=&fd=0&sort=&cbxInsult=0&groupValue=book.36;;;&preCon=&PT=%3E%CD%BC%CA%E9%3E%D0%A1%CB%B5&split=">小说</a>
+										        <a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u56FE%u4E66&mt=&fd=0&sort=&cbxInsult=0&groupValue=book.38;;;&preCon=&PT=%3E%CD%BC%CA%E9%3E%D2%D5%CA%F5&split=">艺术 </a>
+										        <a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u56FE%u4E66&mt=&fd=0&sort=&cbxInsult=0&groupValue=book.30;;;&preCon=&PT=%3E%CD%BC%CA%E9%3E%C9%E7%BB%E1%BF%C6%D1%A7&split=">社会科学</a>
+										        <a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u56FE%u4E66&mt=&fd=0&sort=&cbxInsult=0&groupValue=book.41;;;&preCon=&PT=%3E%CD%BC%CA%E9%3E%D5%FE%D6%CE%BE%FC%CA%C2&split=">军事</a>
+										        <a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u56FE%u4E66&mt=&fd=0&sort=&cbxInsult=0&groupValue=book.24;;;&preCon=&PT=%3E%CD%BC%CA%E9%3E%C2%C3%D3%CE&split=">旅游 </a>
+										        <a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u56FE%u4E66&mt=&fd=0&sort=&cbxInsult=0&groupValue=book.26;;;&preCon=&PT=%3E%CD%BC%CA%E9%3E%C3%C0%CA%B3&split=">美食</a>
+										        <a href="http://search.2688.com/Search.aspx?display=&page=1&q=%u56FE%u4E66&mt=&fd=0&sort=&cbxInsult=0&groupValue=book.05;;;&preCon=&PT=%3E%CD%BC%CA%E9%3E%B6%AF%C2%FE/%D3%C4%C4%AC&split=">动漫/幽默</a>         
+										    </dt>
+										</dl>
+							
+										<dl class="fore"><dt>办公用品</dt>
+											<dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=01">办公用纸</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=01.05">传真纸</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=07">展示用品</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=07.04">白板</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=07.06">磁粒</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=02">办公文具</a></dt>
+											<dd>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=02.02">笔类</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=02.03">文件管理</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=02.04">财务用品</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=02.05">簿/本/册</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=02.06">计算器</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=02.07">裁剪用品</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=02.1b">文具礼盒套装</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=02.08.05">订书机</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=02.08.01">打孔机</a>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=02.08.03">三针一钉</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=02.08.04">夹子</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=OFFICE1&Pt=02.18">学习文具</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=02.15">涂改用品</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=OFFICE1&Pt=02.11">胶粘用品</a>
+											</dd>
+										</dl>
+										<dl><dt><a href=" http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=17">办公设备 </a></dt>
+											<dd>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=17.02">电话机</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=17.03">点钞机</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=17.04">考勤机</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=17.09">碎纸机</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=OFFICE1&Pt=17.05">装订机</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=OFFICE1&Pt=17.01">打印机</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=OFFICE1&Pt=17.07">塑封机</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=OFFICE1&Pt=17.0A">扫描仪</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=OFFICE1&Pt=07.04">白板</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=OFFICE1&Pt=07.06">磁粒</a>
+											</dd>
+										</dl>
+										<dl><dt><a href="  http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=18">办公耗材</a></dt>
+											<dd>
+												<a href=" http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=18.01">墨盒</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=18.04">墨粉</a>
+												<a href="http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=18.03">色带</a>
+												<a href="  http://www.2688.com/Search/iResult.aspx?Mt=office1&Pt=18.02">硒鼓</a>
+											</dd>
+										</dl>		
+									</div>
+									<div class="menu_2_right">
+										<dl class="brands"><dt>推荐品牌</dt>
+											<dd>
+												<a href="http://esezan.shop.2688.com/bindexmb2.aspx?&s=1">爱赞</a>
+												<a href="http://deli.shop.2688.com/bindexmb2.aspx?&s=1">得力</a>
+												<a href="http://phx.shop.2688.com/bindexmb2.aspx?&s=1">菲尼克斯</a>
+												<a href="http://aqs.shop.2688.com/bindexmb2.aspx?&s=1">爱轻松</a>
+												<a href="http://zhencai.shop.2688.com/bindexmb2.aspx?&s=1">真彩</a>
+											</dd>
+										</dl>
+										
+									</div>
+								</div>	
+							</li>
+							
+							<div class="extra"><a href="http://www.2688.com/shop/fenlei.aspx"><font color="#a2174e">所有商品分类>></font></a></div>
+						</ul>
+					</li>
+					<li class="li2"><a href="index.html">首页</a></li>
+					<li class="li3"><a href="#">新品</a></li>
+					<li class="li4"><a href="#">客户端下载</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--register-->
+		<div id="login">
+			<div id="loginCon">
+				<div class="login_1">
+					<form action="" method="post">
+						<div class="loginInput">	
+							<span><em>*</em>用户名&nbsp;：</span><input type="text" value="" class="focus"/>
+							<b style="display: block;color: #999;">4-40位字符，可由中文、英文、数字及“_”、“-”、“@”、“.”组成</b>
+							<b>请输入用户名</b>
+							<s class="through" style="display: none;position: absolute;width: 16px;height: 16px;background: url(img/globalpwd1.png) no-repeat -150px -50px;top: 10px;left: 355px;"></s>
+						</div>
+						<div class="loginInput">	
+							<span><em>*</em>设置密码：</span><input type="password" value="" />
+							<b style="display: none;color: #999;">6-16位字符，可由英文、数字及“_”、“-”组成,非全角</b>
+							<b style="color: #000;display: none;width: 200px;height: 14px;" class="strong">
+								<a style="float: left;">安全程度：</a><strong style="float: left;width: 92px;height: 14px;padding: 1px;border-radius: 10px;background: #fff;"><u style="display: block;height: 12px;border-radius: 10px;"></u></strong>
+								<i style="float: left;margin-left: 10px;">弱</i>
+							</b>
+							<b>请输入密码</b>
+							<s class="through" style="display: none;position: absolute;width: 16px;height: 16px;background: url(img/globalpwd1.png) no-repeat -150px -50px;top: 10px;left: 355px;"></s>
+							
+						</div>
+						<div class="loginInput">	
+							<span><em>*</em>确认密码：</span><input type="password" value="" />
+							<b style="display: none;color: #999;">请再次输入密码</b>
+							<b>请输入密码</b>
+							<s class="through" style="display: none;position: absolute;width: 16px;height: 16px;background: url(img/globalpwd1.png) no-repeat -150px -50px;top: 10px;left: 355px;"></s>
+						</div>
+						<div class="loginInput">	
+							<span>电子信箱：</span><input type="text" value="" />
+							<b style="display: none;color: #999;">请输入您经常用的电子邮箱，只能在40个字符以内，可用来找回密码</b>
+							<b></b>
+							<s class="through" style="display: none;position: absolute;width: 16px;height: 16px;background: url(img/globalpwd1.png) no-repeat -150px -50px;top: 10px;left: 355px;"></s>
+							
+						</div>
+						<div class="loginInput">	
+							<span>手&nbsp;&nbsp;机：</span><input type="text" value="" />
+							<b style="display: none;color: #999;">数字，非全角</b>
+							<b></b>
+							<s class="through" style="display: none;position: absolute;width: 16px;height: 16px;background: url(img/globalpwd1.png) no-repeat -150px -50px;top: 10px;left: 355px;"></s>
+							
+						</div>
+						<div class="loginInput">	
+							<span><em>*</em>验证码&nbsp;：</span><input type="text" value="" class="yanzheng focus1"/>
+							<b style="display: none;color: #999;">请输入验证码</b><b>请输入验证码</b>
+							<div class="createYZ" style="text-align: center;">
+								
+							</div>
+							<div class="changeYZ">
+								&nbsp;看不清？
+								<a class="tlink08" onclick="changeYZM()" href="javascript:void(0)">换一张</a>
+							</div>
+							<s class="through" style="display: none;position: absolute;width: 16px;height: 16px;background: url(img/globalpwd1.png) no-repeat -150px -50px;top: 10px;left: 195px;"></s>
+							
+						</div>
+						
+						<div class="register">
+							<input type="button" tabindex="8" value="同意以下协议，注册" id="registerSubmit">
+						</div>
+						<div style="position: absolute;left: 370px;top: 67px;font-size: 12px;padding-left: 15px;" class="showBox">
+							<label for="showMM" style="color: #999;"><input type="checkbox" name="" id="showMM" value="" style="width: 12px;height:12px;position: absolute;top: 2px;left: 0;"/>显示密码字符</label>
+						</div>
+						<div style="position: absolute;left: 370px;top: 184px;font-size: 12px;padding-left: 15px;" class="showBox">
+							<label for="userName_email" style="color: #999;"><input type="checkbox" name="" id="userName_email" value="" style="width: 12px;height:12px;position: absolute;top: 2px;left: 0;"/>邮箱设置为用户名</label>
+						</div>
+						<div style="position: absolute;left: 370px;top: 238px;font-size: 12px;padding-left: 15px;" class="showBox">
+							<label for="userName_phone" style="color: #999;"><input type="checkbox" name="" id="userName_phone" value="" style="width: 12px;height:12px;position: absolute;top: 2px;left: 0;"/>手机设置为用户名</label>
+						</div>
+						<div class="xieyi">
+							<h3>2688商城用户注册协议</h3>
+							<div class="txt3">&nbsp;&nbsp;本协议是您与2688商城的所有者北京二六八八电子商务有限公司共同缔结，本协议具有合同效力。本协议中协议双方合称协议方，北京二六八八电子商务有限公司在协议中亦称为“2688商城”，网址：www.2688.com。请您仔细阅读本注册协议，您点击“同意以下协议，提交”按钮后，本协议即构成对双方有约束力的法律文件。</div>
+							<div class="txt2">	一、协议内容及签署</div>
+							<div class="txt1">
+							1、2688商城的各项电子服务的所有权和运作权归北京二六八八电子商务有限公司所有。用户同意所有注册协议条款并完成注册程序，才能成为2688商城的正式用户。用户确认：本协议条款是处理双方权利义务的契约，始终有效，法律另有强制性规定或双方另有特别约定的，依其规定。</div>
+							<div class="txt1">
+							2、用户需要确认，在完成注册程序和使用2688商城服务时，您应当是具备完全民事权利能力和完全民事行为能力的自然人、法人或其他组织。若您不具备前述主体资格，则您及您的监护人应承担因此而导致的一切后果，且2688商城有权注销（永久冻结）您的账户，并向您及您的监护人索偿。</div>	
+							<div class="txt1">
+							3、如果您在18周岁以下，您只能在父母或监护人的监护参与下才能使用本站。</div>	
+							<div class="txt1">4、2688商城保留在中华人民共和国大陆地区法施行之法律允许的范围内独自决定拒绝服务、关闭用户账户、清除或编辑内容或取消订单的权利。</div>
+							
+							<div class="txt2">二、用户信息</div>
+							<div class="txt1">
+							1、用户应自行诚信向2688商城提供注册资料，用户同意其提供的注册资料真实、准确、完整、合法有效，用户注册资料如有变动的，应及时更新其注册资料。如果用户提供的注册资料不合法、不真实、不准确、不详尽的，用户需承担因此引起的相应责任及后果，并且2688商城保留终止用户使用网店各项服务的权利。</div>	
+							<div class="txt1">	2、用户在网店进行浏览、咨询、下单购物等活动时，涉及用户真实姓名/名称、通信地址、联系电话、电子邮箱等隐私信息的，本站将予以严格保密，除非得到用户的授权，或根据相应法律法规的要求，或应政府部门（包括司法及行政部门）的要求，向其提供您在2688商城填写的注册信息和交易纪录等必要信息，2688商城不会向外界披露用户隐私信息。如您涉嫌侵犯他人知识产权，则2688商城亦有权在初步判断涉嫌侵权行为存在的情况下，向权利人提供您必要的身份信息。</div>
+							<div class="txt1">	3、用户注册成功后，网店系统将产生用户名和密码等账户信息，您可以根据网店规定改变您的密码。用户应谨慎合理的保存、使用其用户名和密码。用户若发现任何非法使用用户账号或存在安全漏洞的情况，请立即通知本站并向公安机关报案。</div>
+							<div class="txt1">
+							4、用户同意，2688商城拥有通过邮件、短信、电话等形式，向在本网店注册、购物用户、收货人发送订单信息、促销活动等告知信息的权利。</div>	
+							<div class="txt1">
+							5、用户不得将在本网店注册获得的账户借给他人使用，否则用户应承担由此产生的全部责任，并与实际使用人承担连带责任。</div>	
+							
+							
+							<div class="txt2">三、用户依法言行义务</div>
+							<div class="txt1">
+							本协议依据国家相关法律法规规章制定，用户同意严格遵守以下义务：</div>
+							<div class="txt1">
+							1、不得传输或发表：煽动抗拒、破坏宪法和法律、行政法规实施的言论，煽动颠覆国家政权，推翻社会主义制度的言论，煽动分裂国家、破坏国家统一的的言论，煽动民族仇恨、民族歧视、破坏民族团结的言论；不得传输或发表任何违法犯罪的、骚扰性的、中伤他人的、辱骂性的、恐吓性的、伤害性的、庸俗的，淫秽的、不文明的等信息资料；不得传输或发表损害国家社会公共利益和涉及国家安全的信息资料或言论；</div>	
+							<div class="txt1">
+							2、从中国大陆向境外传输资料信息时必须符合中国有关法规；</div>	
+							<div class="txt1">
+							3、不得利用本站从事洗钱、窃取商业秘密、窃取个人信息等违法犯罪活动；</div>
+							<div class="txt1">
+							4、不得干扰本网店的正常运转，不得侵入本网店系统及国家计算机信息系统；</div>
+							<div class="txt1">
+							5、不得教唆他人从事本条所禁止的行为；</div>
+							<div class="txt1">
+							6、不得发布任何侵犯他人著作权、商标权等知识产权或合法权利的内容；</div>
+							<div class="txt1">
+							7、用户应不时关注并遵守本站不时公布或修改的各类合法规则规定；</div>
+							<div class="txt1">
+							8、用户须对自己在网上的言论和行为承担法律责任。	本网店保有删除网站中各类不符合法律政策或不真实的信息内容而无须通知用户的权利。若用户未遵守以上规定的，本网店有权作出独立判断并采取暂停或关闭用户帐号等措施。</div>
+							
+							<div class="txt2">四、2688商城服务</div>
+							<div class="txt1">
+							1、2688商城通过互联网依法为用户提供互联网信息等服务，用户在完全同意本协议及本站规定的情况下，方有权使用本站的相关服务。</div>
+							<div class="txt1">
+							2、用户必须自行准备如下设备和承担如下开支：</div>
+							<div class="txt1">
+							（1）上网设备，包括并不限于电脑或者其他上网终端、调制解调器及其他必备的上网装置；</div>
+							<div class="txt1">
+							（2）上网开支，包括并不限于网络接入费、上网设备租用费、手机流量费等。</div>
+							
+							<div class="txt2">五、商品信息</div>
+							<div class="txt1">	2688商城的商品价格、是否有货等商品信息随时都有可能发生变动，本网店不作特别通知。由于网店商品信息的数量极其庞大，虽然网店会尽最大努力保证您所浏览商品信息的准确性，但由于众所周知的互联网技术因素等客观原因存在，本网店页面显示的信息可能会有一定的滞后性或差错，对此请您知悉并理解。</div>
+							
+							<div class="txt2">	六、订单信息</div>
+							<div class="txt1">	1、在您下订单时，请您仔细确认所购商品的名称、型号、规格、尺寸、价格、数量、联系地址、电话、收货人等信息。收货人与用户本人不一致的，收货人的行为和意思表示视为用户的行为和意思表示，用户应对收货人的行为及意思表示的法律后果承担连带责任。</div>
+							<div class="txt1">	2、除法律另有强制性规定外，协议双方约定如下：2688商城展示的商品和价格等信息仅仅是要约邀请，您下单时须填写您希望购买的商品数量、价款及支付方式、收货人、联系方式、收货地址（合同履行地点）、合同履行方式等内容；系统生成的订单信息是计算机信息系统根据您填写的内容自动生成的数据，仅是您向2688商城发出的合同要约；2688商城收到该订单信息后，已将货物实际直接向您发出时，方视为您与2688商城之间就发出的货物建立了合同关系；如果您在一份订单里订购了多种商品并且2688商城只给您发出了部分商品时，您与2688商城之间仅就实际向您发出的商品建立了合同关系。
+							2688商城保留对商品订购数量的限制权。</div>
+							<div class="txt1">
+							3、由于市场变化及各种以合理商业努力难以控制的因素的影响，2688商城无法保证您提交的订单信息中希望购买的商品都会有货；如您拟购买的商品，发生缺货，您有权取消订单。</div>
+							
+							
+							<div class="txt2">七、配送货物</div>
+							<div class="txt1">
+							1、2688商城将会把商品（货物）送到您所指定的收货地址，所有在网店上列出的送货时间为参考时间。</div>
+							<div class="txt1">
+							2、因如下情况造成订单延迟或无法配送等，2688商城将无法承担延迟配送的责任：</div>
+							<div class="txt1">
+							（1）用户提供的信息错误、地址不详等原因导致的；</div>
+							<div class="txt1">
+							（2）货物送达后无人签收，导致无法配送或延迟配送的；</div>
+							<div class="txt1">
+							（3）不可抗力因素导致的，例如：自然灾害、交通戒严、突发战争等。</div>
+							
+							<div class="txt2">八、所有权及知识产权条款</div>
+							<div class="txt1">	1、用户一旦接受本协议，即表明该用户主动将其在任何时间段在2688商城上发表的任何形式的信息内容（包括但不限于客户评价、客户咨询、各类话题文章等信息内容）的财产性权利，如著作权财产权（包括并不限于：复制权、发行权、出租权、展览权、表演权、放映权、广播权、信息网络传播权、摄制权、改编权、翻译权、汇编权以及应当由著作权人享有的其他可转让权利），全部独家且不可撤销地转让给2688商城所有，用户同意2688商城有权就任何主体侵权而单独提起诉讼。</div>
+							<div class="txt1">	2、本协议已经构成《中华人民共和国著作权法》第二十五条（条文序号依照2011年版著作权法确定）及相关法律规定的著作财产权转让书面协议，其效力及于用户在2688商城上发布的任何受著作权法保护的作品内容，无论该等内容形成于本协议订立前还是本协议订立后。</div>
+							<div class="txt1">	3、用户同意并已充分了解本协议的条款，承诺不将已发表于本站的信息，以任何形式发布或授权其它主体以任何方式使用（包括但限于在各类网站、媒体上使用）。</div>
+							<div class="txt1">	4、2688商城拥有网站内容及资源的著作权等合法权利,受国家法律保护,有权不时地对本协议及网店的内容进行修改，并在网店张贴，无须另行通知用户。在法律允许的最大限度范围内，2688商城对本协议及本站内容拥有解释权。</div>
+							<div class="txt1">	5、除法律另有强制性规定外，未经2688商城明确的特别书面许可,任何单位或个人不得以任何方式非法地全部或部分复制、转载、引用、链接、抓取或以其他方式使用本站的信息内容，否则，2688商城有权追究其法律责任。</div>
+							<div class="txt1">	6、网店中所刊登的资料信息（诸如文字、图表、标识、按钮图标、图像、声音文件片段、数字下载、数据编辑和软件），均是2688商城或其内容提供者的财产，受中国和国际版权法的保护。网店中所有内容的汇编是2688商城的排他财产，受中国和国际版权法的保护。本站上所有软件都是京东商城或其关联公司或其软件供应商的财产，受中国和国际版权法的保护。</div>
+							
+							<div class="txt2">九、责任限制及不承诺担保</div>
+							<div class="txt1">	1、除非另有明确的书面说明,2688商城及其所包含的或以其它方式提供给您的全部信息、内容、材料、产品（包括软件）和服务，均是在“按现状”和“按现有”的基础上提供的。</div>
+							<div class="txt1">	2、除非另有明确的书面说明,2688商城不对其运营及其包含在网店中的信息、内容、材料、产品（包括软件）或服务作任何形式的、明示或默示的声明或担保（根据中华人民共和国法律另有规定的以外）。</div>
+							<div class="txt1">	3、2688商城不担保本站所包含的或以其它方式通过网店提供给您的全部信息、内容、材料、产品（包括软件）和服务、其服务器或电子信件、信息没有病毒或其他有害成分。</div>
+							<div class="txt1">	4、如因不可抗力或其它2688商城无法控制的原因使网店销售系统崩溃或无法正常使用导致网上交易无法完成或丢失有关的信息、记录等，2688商城会合理地尽力协助处理善后事宜。</div>
+							<div class="txt2">
+								十、协议更新及用户关注义务
+							</div>
+							<div class="txt1">	根据国家法律法规变化及网店运营需要，2688商城有权对本协议条款不时地进行修改，修改后的协议一旦被张贴在网店上即生效，并代替原来的协议。用户可随时登陆查阅最新协议；用户有义务不时关注并阅读最新版的协议及网店公告。如用户不同意更新后的协议，可以且应立即停止接受2688商城依据本协议提供的服务；如用户继续使用本网店提供的服务的，即视为同意更新后的协议。2688商城建议您在使用本网店服务之前阅读本协议及网店的公告。如果本协议中任何一条被视为废止、无效或因任何理由不可执行，该条应视为可分的且并不影响任何其余条款的有效性和可执行性。</div>
+							
+							
+							<div class="txt2">	十一、法律管辖和适用</div>
+							<div class="txt1">
+								本协议的订立、执行和解释及争议的解决均应适用在中华人民共和国大陆地区适用之有效法律（但不包括其冲突法规则）。如发生本网店服务条款与适用之法律相抵触时，则这些条款将完全按法律规定重新解释，而其它有效条款继续有效。如缔约方就本协议内容或其执行发生任何争议，双方应尽力友好协商解决；协商不成时，任何一方均可向有管辖权的中华人民共和国大陆地区法院提起诉讼。
+							</div>
+						</div>
+						<div class="tanchu" style="position: absolute;top: 0;left: 0;width: 100%;height: 200px;text-align: center;background: black;opacity: 0.5;color: #FF0;padding-top: 200px;display: none;">
+							客户编号为：<span style="color: red;font-size: 20px;display: block;position: absolute;top: 195px;left: 292px;"></span>
+							<br />
+							<button type="button">立即登录</button><button type="button">稍后登录</button>
+						</div>
+					</form>
+						
+				</div>
+				<div class="login_2">
+					<h5>我已经注册,现在就<a href="login.html" style="color: #007FFF;font-size: 12px;">登录</a></h5>
+					<h6><div class="friend_link">
+							<label class="txt24">使用合作网站账号登录2688商城：	</label>
+							<span class="btns sina">
+								<s></s>
+								<a onclick="window.location='http://www.2688.com/Member/loginsina.aspx'+window.location.search;return false;" href="javascript:void(0)" title="新浪微博账号登录">新浪微博</a>
+							</span>
+							<span class="btns qq">
+								<s></s>
+								<a onclick="window.location='http://www.2688.com/Member/loginqq.aspx'+window.location.search;return false;" href="javascript:void(0)" title="QQ账号登录">QQ登录</a>
+							</span>
+							<span class="btns renren">
+								<s></s>
+								<a onclick="window.location='http://www.2688.com/Member/loginrenren.aspx'+window.location.search;return false;" href="javascript:void(0)" title="人人网账号登录">人人网</a>
+							</span>
+							<div class="appLogin">
+								手机登录<a href="#">m.2688.com</a>随时随地登录
+							</div>
+						</div>
+					</h6>
+					<p>立即享受便宜又放心送货到家的购物乐趣。</p>
+					<div class="ad">
+						<a href="#"><img src="img/dltp02.jpg"/></a>	
+					</div>
+					<div class="help">
+						<span></span>
+						<a href="#">进入帮助中心</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--分割线-->
+		<div id="fenge">
+			
+		</div>
+		<!--bottom-->
+		<div id="bottom">
+			<div id="bottomCon">
+				<p>
+					Copyright 2014 - 2015 www.2688.com All Rights Reserved   2688商城 版权所有 
+					<br />
+        			邮政地址：(100084)北京市海淀区清华科技园创业大厦11层 客服热线：400-888-2688 传真：(010) 62790628
+        			<br />
+        			北京市公安局海淀分局备案编号:110108902133
+				</p>
+				<div class="link">
+					<a href="#"><img src="img/footer_haidian.jpg"/></a>
+					<a href="#"><img src="img/footer_yinlian.jpg"/></a>
+				</div>
+			</div>	
+		</div>
+		
+		
+	</body>
+</html>
+							

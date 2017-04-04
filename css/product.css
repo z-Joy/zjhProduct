@@ -1,0 +1,105 @@
+@charset "utf-8";
+#top,#logo,#nav,#product,#bottom,#pageXZ{width: 100%;}
+#topCon,#logoCon,#navCon,#productCon,#bottomCon,#fenge,#pageXZCon{margin: 0 auto;width: 1024px;}
+/*top*/
+#topCon h4 a{width: 40px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+#topCon h6{font-size: 12px;line-height: 32px;color: #919191;margin: 0 32px 0 237px;}
+
+/*nav*/
+#nav{height: 38px;background: #fff;margin-bottom: 10px;}
+#navCon{height: 38px;background: #c6004b;}
+#navCon #nav_1{height: 38px;position: relative;z-index: 998;z-index: 9;}
+#navCon #nav_1>li{float: left;height: 38px;text-align: center;line-height: 38px;}
+#navCon #nav_1>li a{font-size: 14px;color: #fff;font-weight: 600;}
+#navCon #nav_1>.li1{width: 124px;padding: 10px 0 10px 24px;text-align: left;height: 18px;line-height: 18px;overflow: hidden;}
+#navCon #nav_1>.li1>a{padding-right: 30px;background: url(../img/fl.png) no-repeat right -3px;height: 18px;float: left;}
+#navCon #nav_1>.li1:hover a{background-position-y: -24px;}
+#navCon #nav_1>.li2{width: 60px;margin-left: 40px;}
+#navCon #nav_1>.li3{width: 60px;}
+#navCon #nav_1>.li2:hover{background: #af0039;}
+#navCon #nav_1>.li3:hover{background: #af0039;}
+#navCon #nav_1>.li4{width: 62px;float: right;height: 38px;line-height: 38px;padding: 0 10px 0 30px;background: url(../img/pp.png) no-repeat left -82px;margin-right: 10px;}
+#navCon #nav_1>.li4 a{font-size: 12px;color: #fff;}
+/*menu*/
+#navCon #nav_1>.li1 ul{background: #fff;z-index: 9; width: 150px;padding: 0 3px;border: solid #a2174e;border-width: 0 1px 1px 1px;position: absolute;left: 0;top: 38px;min-height: 200px;_height:200px;}
+#navCon #nav_1>.li1 ul .extra{height: 31px;width: 150px;}
+#navCon #nav_1>.li1 ul .extra a{float: left; width: 120px;height: 31px;font-size: 12px;color: #f00;font-weight: 600;text-align:center;line-height: 30px;}
+#navCon #nav_1>.li1 ul li{width: 150px;height: 30px;border-bottom: 1px solid #C5C5C5;position: relative;background: url(../img/fltp.png) no-repeat right 13px;}
+#navCon #nav_1>.li1 ul li>a{float: left; width: 121px;height: 25px;padding: 3px 10px 0 0;border: solid #fff;border-width: 1px 0 1px 1px;font-size: 12px;line-height: 22px;font-weight: 100;position: absolute;left: 0;top: 0;z-index: 10;color: #000000;}
+#navCon #nav_1>.li1 ul li>a:hover{border:1px solid #f00;border-right: 1px solid #fff;}
+/*menu_2*/
+#navCon #nav_1>li ul .menu_2{width: 886px;min-height: 100px;background: #fff;border: 1px solid #f00;overflow: hidden;position: absolute;left: 132px;top: 0;z-index: 9;} 
+#navCon #nav_1>li ul .menu_2 .menu_2_left{width: 700px;min-height: 100px;padding: 0 4px 0 8px;float: left;background: #fff;} 
+#navCon #nav_1>li ul .menu_2 .menu_2_left dl{width: 700px;overflow: hidden;}
+#navCon #nav_1>li ul .menu_2 .menu_2_left dl dt{height: 20px;font-size: 12px;line-height: 20px;padding-left: 6px;font-weight: 600;}
+#navCon #nav_1>li ul .menu_2 .menu_2_left dl dt>a{font-size: 12px;line-height: 20px;color: #FF0000;}
+#navCon #nav_1>li ul .menu_2 .menu_2_left dl dt>a:hover{color: #000;text-decoration: underline;}
+#navCon #nav_1>li ul .menu_2 .menu_2_left dl dd{width: 700px;padding: 5px 0;border-bottom: 1px dashed #C5C5C5;min-height: 16px;overflow: hidden;margin-bottom: 3px;}
+#navCon #nav_1>li ul .menu_2 .menu_2_left dl dd>a{float:left;border-left: 1px solid #C5C5C5;font-size: 12px;padding: 0 6px;color: #000;font-weight: 100;line-height: 12px;margin-bottom: 6px;}
+#navCon #nav_1>li ul .menu_2 .menu_2_left dl dd>a:hover{text-decoration: underline;}
+
+#navCon #nav_1>li ul .menu_2 .menu_2_right{width: 123px;padding: 6px 8px 1000px 15px;position:absolute;background: #fcf8f8;right: 0;top: 0;} 
+#navCon #nav_1>li ul .menu_2 .menu_2_right dl dt{height: 20px;font-size: 12px;line-height: 20px;padding-left: 3px;font-weight: 600;}
+#navCon #nav_1>li ul .menu_2 .menu_2_right dl dd{padding-left: 3px;}
+#navCon #nav_1>li ul .menu_2 .menu_2_right dl dd a{width: 60px;font-size: 12px;float: left;color: #000;font-weight: 100;line-height: 14px;margin-bottom: 6px;}
+/*product*/
+#product{min-height: 100px;}
+#productCon{min-height: 100px;}
+#productCon .FilterTop{width: 1020px;height: 56px;padding-bottom: 2px;overflow: hidden;border: 2px solid #ddd;}
+#productCon .FilterTop .subNav{width: 1024px;height: 25px;margin-bottom: 6px;float: left;background: #F6F6F6;}
+#productCon .FilterTop .subNav h2{width: 56px;height: 25px;line-height: 25px;padding: 2px 0 0 13px;font-size: 14px;}
+#productCon .FilterTop>span{width: 73px;height: 25px;padding-left: 12px;float: left;font-size: 12px;color:#666;}
+#productCon .FilterTop dl{width: 882px;height: 25px;float: left;}
+#productCon .FilterTop dl a{height: 25px;padding: 0 35px;float: left;font-size: 12px;color: #005aa0;}
+#productCon .FilterTop dl a:hover{color: #f00;}
+#productCon .FilterTop .More{width: 36px;height: 25px;padding-right: 14px;background: url(../img/Next.gif) no-repeat 30px 6px;font-size: 12px;float: left;color: #005aa0;}
+#productCon #Panel1{width: 1024px;height: 62px;}
+#productCon #Panel1 .ProShow_List_2{width: 1022px;height: 25px;padding: 3px 0 2px 0;border:solid #ddd;border-width: 0 1px 1px 1px;}
+#productCon #Panel1 .ProShow_List_2 ul li span{width: 73px;height: 25px;padding-left: 12px;float: left;font-size: 12px;color:#666;}
+#productCon #Panel1 .ProShow_List_2 ul li dl{width: 882px;height: 25px;float: left;}
+#productCon #Panel1 .ProShow_List_2 ul li dl a{height: 25px;padding: 0 35px;float: left;font-size: 12px;color: #005aa0;}
+#productCon #Panel1 .ProShow_List_2 ul li dl a:hover{color: #f00;}
+
+#productCon .sortNav{width: 1022px;height: 47px;border: solid #ddd;border-width: 1px 1px 0 1px; margin-top: 10px;font-size: 12px;}
+#productCon .sortNav .fir{width: 36px;height: 24px;float: left;padding: 12px 0 0 15px;line-height: 24px;}
+#productCon .sortNav .tab li{height: 25px;overflow: hidden;float: left;position: relative;background-color: #FFF;border: 1px solid #cecbce;margin: 10px 5px 10px 0;} 
+#productCon .sortNav .tab li a{padding: 2px 10px 0 10px;line-height: 24px;color: #333;}
+#productCon .sortNav .tab .curr{background: #ca014e;border: 1px solid #ca014e;}
+#productCon .sortNav .tab .curr a{color: #fff;font-weight: 600;}
+#productCon .navex{height: 26px;padding-left: 10px;border: 1px solid #ddd;}
+#productCon .navex .navrecord .navrecord_l{width: 500px;float: left;}
+#productCon .navex .navrecord .navrecord_l span{color: #005AA0;font-size: 12px;}
+#productCon .navex .navrecord .Page{float: right;width: 300px;}
+#productCon .navex .navrecord .Page a{color: #005AA0;font-size: 12px;}
+#productCon .navex .navrecord .Page span{color: #f00;font-size: 12px;}
+#productCon .mainCon{width: 1024px;min-height: 425px;margin-bottom: 20px;}
+#productCon .mainCon ul{width: 1024px;min-height: 425px;overflow: hidden;}
+#productCon .mainCon ul li{width: 256px;height: 425px;float: left;background: #fff;}
+#productCon .mainCon ul li dl{width: 254px;height: 413px;padding-top: 10px;border: 1px solid #fff;border-bottom: 1px solid #ddd;}
+#productCon .mainCon ul li .addBor{border: 1px solid #ddd;}
+#productCon .mainCon ul li dl dt a img{width: 224px;height: 220px;margin: 0 3px;padding: 0 12px 4px 12px;}
+#productCon .mainCon ul li dl .proName{width: 224px;height: 38px;padding: 0 10px 0 15px;margin-top: 30px;}
+#productCon .mainCon ul li dl .proName a{font-size: 12px;color: #000;}
+#productCon .mainCon ul li dl .proName a b{color: #f00;}
+#productCon .mainCon ul li dl .proName a:hover{color: #f00;text-decoration: underline;}
+#productCon .mainCon ul li dl .num{width: 224px;height: 18px;padding: 0 10px 0 15px;margin: 3px 0 5px 0;}
+#productCon .mainCon ul li dl .num em{font-family: Tahoma, "Microsoft Yahei", Arial;font-size: 11pt;float: left;color: #f00;line-height: 18px;margin-right: 5px;}
+#productCon .mainCon ul li dl .num .Price{font-family: Tahoma, "Microsoft Yahei", Arial;padding-right: 2px;float: left;color: #777;font-size: 12px;line-height: 18px;}
+#productCon .mainCon ul li dl .num .Word{padding: 0 2px;background: #ca014e;color: #fff;float: right;font-size: 12px;line-height: 18px;}
+#productCon .mainCon ul li dl .Evaluate{padding: 0 10px 0 15px;width: 224px;height: 16px;}
+#productCon .mainCon ul li dl .Little_Star{background: url(../img/star2.gif) no-repeat left 2px;margin: 1px 3px 0 0;display: block;height: 15px;float: left;width: 70px;}  
+#productCon .mainCon ul li dl .proButton{width: 224px;height: 25px;padding: 10px 3px 5px 15px;}
+#productCon .mainCon ul li dl .proButton a{padding: 3px 6px 1px 6px;border: 1px solid #ddd;font-size: 12px;color: #000;}
+/*pageXZ*/
+#pageXZ{height: 25px;}
+#pageXZCon{height: 25px;text-align: center;font-size: 12px;}
+#pageXZCon .a1{text-align: center;font-size: 12px;padding: 5px;border: 1px solid #ddd;color: #f00;}
+#pageXZCon a{text-align: center;font-size: 12px;line-height: 23px;padding: 5px;border: 1px solid #ddd;}
+
+/*fenge*/
+#fenge{height: 32px;border-bottom: 1px solid #CCCCCC;margin-bottom: 15px;}
+/*bottom*/
+
+
+
+

@@ -1,0 +1,71 @@
+@charset "utf-8";
+#top,#logo,#nav,#bottom{width: 100%;}
+#topCon,#logoCon,#navCon,#bottomCon,#fenge{margin: 0 auto;width: 1024px;}
+/*top*/
+#topCon h6{font-size: 12px;line-height: 32px;color: #919191;margin: 0 32px 0 237px;}
+#topCon h4 a{width: 40px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+/*nav*/
+#nav{height: 38px;background: #fff;}
+#navCon{height: 38px;background: #c6004b;}
+#navCon #nav_1{height: 38px;position: relative;z-index: 998;z-index: 9;}
+#navCon #nav_1>li{float: left;height: 38px;text-align: center;line-height: 38px;}
+#navCon #nav_1>li a{font-size: 14px;color: #fff;font-weight: 600;}
+#navCon #nav_1>.li1{width: 124px;padding: 10px 0 10px 24px;text-align: left;height: 18px;line-height: 18px;overflow: hidden;}
+#navCon #nav_1>.li1>a{padding-right: 30px;background: url(../img/fl.png) no-repeat right -3px;height: 18px;float: left;}
+#navCon #nav_1>.li1:hover a{background-position-y: -24px;}
+#navCon #nav_1>.li2{width: 60px;margin-left: 40px;}
+#navCon #nav_1>.li3{width: 60px;}
+#navCon #nav_1>.li2:hover{background: #af0039;}
+#navCon #nav_1>.li3:hover{background: #af0039;}
+#navCon #nav_1>.li4{width: 62px;float: right;height: 38px;line-height: 38px;padding: 0 10px 0 30px;background: url(../img/pp.png) no-repeat left -82px;margin-right: 10px;}
+#navCon #nav_1>.li4 a{font-size: 12px;color: #fff;}
+/*menu*/
+#navCon #nav_1>.li1 ul{background: #fff;z-index: 9; width: 150px;padding: 0 3px;border: solid #a2174e;border-width: 0 1px 1px 1px;position: absolute;left: 0;top: 38px;min-height: 200px;_height:200px;}
+#navCon #nav_1>.li1 ul .extra{height: 31px;width: 150px;}
+#navCon #nav_1>.li1 ul .extra a{float: left; width: 120px;height: 31px;font-size: 12px;color: #f00;font-weight: 600;text-align:center;line-height: 30px;}
+#navCon #nav_1>.li1 ul li{width: 150px;height: 30px;border-bottom: 1px solid #C5C5C5;position: relative;background: url(../img/fltp.png) no-repeat right 13px;}
+#navCon #nav_1>.li1 ul li>a{float: left; width: 121px;height: 25px;padding: 3px 10px 0 0;border: solid #fff;border-width: 1px 0 1px 1px;font-size: 12px;line-height: 22px;font-weight: 100;position: absolute;left: 0;top: 0;z-index: 10;color: #000000;}
+#navCon #nav_1>.li1 ul li>a:hover{border:1px solid #f00;border-right: 1px solid #fff;}
+/*menu_2*/
+#navCon #nav_1>li ul .menu_2{width: 886px;min-height: 100px;background: #fff;border: 1px solid #f00;overflow: hidden;position: absolute;left: 132px;top: 0;z-index: 9;} 
+#navCon #nav_1>li ul .menu_2 .menu_2_left{width: 700px;min-height: 100px;padding: 0 4px 0 8px;float: left;background: #fff;} 
+#navCon #nav_1>li ul .menu_2 .menu_2_left dl{width: 700px;overflow: hidden;}
+#navCon #nav_1>li ul .menu_2 .menu_2_left dl dt{height: 20px;font-size: 12px;line-height: 20px;padding-left: 6px;font-weight: 600;}
+#navCon #nav_1>li ul .menu_2 .menu_2_left dl dt>a{font-size: 12px;line-height: 20px;color: #FF0000;}
+#navCon #nav_1>li ul .menu_2 .menu_2_left dl dt>a:hover{color: #000;text-decoration: underline;}
+#navCon #nav_1>li ul .menu_2 .menu_2_left dl dd{width: 700px;padding: 5px 0;border-bottom: 1px dashed #C5C5C5;min-height: 16px;overflow: hidden;margin-bottom: 3px;}
+#navCon #nav_1>li ul .menu_2 .menu_2_left dl dd>a{float:left;border-left: 1px solid #C5C5C5;font-size: 12px;padding: 0 6px;color: #000;font-weight: 100;line-height: 12px;margin-bottom: 6px;}
+#navCon #nav_1>li ul .menu_2 .menu_2_left dl dd>a:hover{text-decoration: underline;}
+
+#navCon #nav_1>li ul .menu_2 .menu_2_right{width: 123px;padding: 6px 8px 1000px 15px;position:absolute;background: #fcf8f8;right: 0;top: 0;} 
+#navCon #nav_1>li ul .menu_2 .menu_2_right dl dt{height: 20px;font-size: 12px;line-height: 20px;padding-left: 3px;font-weight: 600;}
+#navCon #nav_1>li ul .menu_2 .menu_2_right dl dd{padding-left: 3px;}
+#navCon #nav_1>li ul .menu_2 .menu_2_right dl dd a{width: 60px;font-size: 12px;float: left;color: #000;font-weight: 100;line-height: 14px;margin-bottom: 6px;}
+/*my2688*/
+#list{width: 990px;height: 381px;background: #fff;margin: 0 auto;padding-top: 10px;}
+#list .list_left{float: left;width: 150px;}
+#list .list_left .list_left_wode{width: 150px;height: 32px;background: url(../img/wode.jpg) no-repeat;overflow: hidden;line-height: 32px;}
+#list .list_left .list_left_wode a{font-size: 12px;color: #fff;margin-left: 10px;}
+#list .list_left .list_left_bj1{border: solid #e0e0e0;border-width: 0 0 1px 1px;width: 125px;height: 27px;padding-left: 25px;font-size: 12px;color: #000;font-weight: 600;line-height: 27px;background: url(../img/bj1.jpg) no-repeat;}
+#list .list_left .list_left_bj1 .fuhao{width: 125px;height: 27px;}
+#list .list_left .list_left_bj1 .fuhao img{float: left;padding: 6px 2px 0 0;}
+#list .list_left .list_left_liebiao{border: solid #E0E0E0;border-width: 0 1px 1px 1px;width: 123px;padding: 10px 0 5px 25px;}
+#list .list_left .list_left_liebiao ul li{width: 123px;height: 22px;}
+#list .list_left .list_left_liebiao ul li a{width: 123px;height: 22px;font-size: 12px;color: #000;float: left;}
+#list .list_left .list_left_liebiao ul li a:hover{font-weight: 600;}
+#list .list_right{float: right;width: 825px;overflow: hidden;}
+#list .list_right .list_right_title{width: 808px;height: 35px;border: solid #e0e0e0;border-width: 1px 1px 0 1px;border-bottom: 2px solid #af1a54;padding-left: 15px;color: #A2174E;font-size: 14px;font-weight: 600;line-height: 35px;}
+#list .list_right .list_right_pjneir{width: 823px;min-height: 57px;border: solid #e0e0e0;border-width: 0 1px 1px 1px;font-size: 12px;}
+#list .list_right .list_right_pjneir p input{text-align: center;cursor: default;padding: 1px 6px;border-width: 2px;border-style: outset;border-color: buttonface;border-image: initial;}
+#list .list_right .list_right_pjneir .daoh{height: 32px;background: url(../img/qie.png) repeat-x;overflow: hidden;}
+#list .list_right .list_right_pjneir .daoh td{height: 32px;line-height: 32px;}
+#list .list_right .list_right_pjneir .dingdannr td{height: 20px;line-height: 20px;padding: 12px 0;border: 1px solid #e6e6e6;}
+#list .list_right .list_right_pjneir table td a{color: #005ea7;}
+#list .list_right .list_right_pjneir table td a:hover{color: #f00;}
+/*fenge*/
+#fenge{height: 32px;border-bottom: 1px solid #CCCCCC;margin-bottom: 15px;}
+/*bottom*/
+
+
+
+

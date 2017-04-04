@@ -1,0 +1,123 @@
+@charset "utf-8";
+#top,#logo,#nav,#bottom,#DetailPages{width: 100%;}
+#topCon,#logoCon,#navCon,#bottomCon,#fenge,#DetailPagesCon{margin: 0 auto;width: 1024px;}
+/*top*/
+#topCon h6{font-size: 12px;line-height: 32px;color: #919191;margin: 0 32px 0 237px;}
+#topCon h4 a{width: 40px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+/*nav*/
+#nav{height: 38px;background: #fff;}
+#navCon{height: 38px;background: #c6004b;}
+#navCon #nav_1{height: 38px;position: relative;z-index: 998;z-index: 9;}
+#navCon #nav_1>li{float: left;height: 38px;text-align: center;line-height: 38px;}
+#navCon #nav_1>li a{font-size: 14px;color: #fff;font-weight: 600;}
+#navCon #nav_1>.li1{width: 124px;padding: 10px 0 10px 24px;text-align: left;height: 18px;line-height: 18px;overflow: hidden;}
+#navCon #nav_1>.li1>a{padding-right: 30px;background: url(../img/fl.png) no-repeat right -3px;height: 18px;float: left;}
+#navCon #nav_1>.li1:hover a{background-position-y: -24px;}
+#navCon #nav_1>.li2{width: 60px;margin-left: 40px;}
+#navCon #nav_1>.li3{width: 60px;}
+#navCon #nav_1>.li2:hover{background: #af0039;}
+#navCon #nav_1>.li3:hover{background: #af0039;}
+#navCon #nav_1>.li4{width: 62px;float: right;height: 38px;line-height: 38px;padding: 0 10px 0 30px;background: url(../img/pp.png) no-repeat left -82px;margin-right: 10px;}
+#navCon #nav_1>.li4 a{font-size: 12px;color: #fff;}
+/*menu*/
+#navCon #nav_1>.li1 ul{background: #fff;z-index: 9; width: 150px;padding: 0 3px;border: solid #a2174e;border-width: 0 1px 1px 1px;position: absolute;left: 0;top: 38px;min-height: 200px;_height:200px;}
+#navCon #nav_1>.li1 ul .extra{height: 31px;width: 150px;}
+#navCon #nav_1>.li1 ul .extra a{float: left; width: 120px;height: 31px;font-size: 12px;color: #f00;font-weight: 600;text-align:center;line-height: 30px;}
+#navCon #nav_1>.li1 ul li{width: 150px;height: 30px;border-bottom: 1px solid #C5C5C5;position: relative;background: url(../img/fltp.png) no-repeat right 13px;}
+#navCon #nav_1>.li1 ul li>a{float: left; width: 121px;height: 25px;padding: 3px 10px 0 0;border: solid #fff;border-width: 1px 0 1px 1px;font-size: 12px;line-height: 22px;font-weight: 100;position: absolute;left: 0;top: 0;z-index: 10;color: #000000;}
+#navCon #nav_1>.li1 ul li>a:hover{border:1px solid #f00;border-right: 1px solid #fff;}
+/*menu_2*/
+#navCon #nav_1>li ul .menu_2{width: 886px;min-height: 100px;background: #fff;border: 1px solid #f00;overflow: hidden;position: absolute;left: 132px;top: 0;z-index: 9;} 
+#navCon #nav_1>li ul .menu_2 .menu_2_left{width: 700px;min-height: 100px;padding: 0 4px 0 8px;float: left;background: #fff;} 
+#navCon #nav_1>li ul .menu_2 .menu_2_left dl{width: 700px;overflow: hidden;}
+#navCon #nav_1>li ul .menu_2 .menu_2_left dl dt{height: 20px;font-size: 12px;line-height: 20px;padding-left: 6px;font-weight: 600;}
+#navCon #nav_1>li ul .menu_2 .menu_2_left dl dt>a{font-size: 12px;line-height: 20px;color: #FF0000;}
+#navCon #nav_1>li ul .menu_2 .menu_2_left dl dt>a:hover{color: #000;text-decoration: underline;}
+#navCon #nav_1>li ul .menu_2 .menu_2_left dl dd{width: 700px;padding: 5px 0;border-bottom: 1px dashed #C5C5C5;min-height: 16px;overflow: hidden;margin-bottom: 3px;}
+#navCon #nav_1>li ul .menu_2 .menu_2_left dl dd>a{float:left;border-left: 1px solid #C5C5C5;font-size: 12px;padding: 0 6px;color: #000;font-weight: 100;line-height: 12px;margin-bottom: 6px;}
+#navCon #nav_1>li ul .menu_2 .menu_2_left dl dd>a:hover{text-decoration: underline;}
+
+#navCon #nav_1>li ul .menu_2 .menu_2_right{width: 123px;padding: 6px 8px 1000px 15px;position:absolute;background: #fcf8f8;right: 0;top: 0;} 
+#navCon #nav_1>li ul .menu_2 .menu_2_right dl dt{height: 20px;font-size: 12px;line-height: 20px;padding-left: 3px;font-weight: 600;}
+#navCon #nav_1>li ul .menu_2 .menu_2_right dl dd{padding-left: 3px;}
+#navCon #nav_1>li ul .menu_2 .menu_2_right dl dd a{width: 60px;font-size: 12px;float: left;color: #000;font-weight: 100;line-height: 14px;margin-bottom: 6px;}
+/*detailPages*/
+#DetailPages{min-height: 571px;}
+#DetailPagesCon{min-height: 571px;overflow: hidden;}
+#DetailPagesCon .mainCon{height: 571px;width: 1024px;margin-top: 8px;}
+#DetailPagesCon .mainCon .classify{width: 800px;float: left;padding-top: 0;padding-right: 5px;padding-bottom: 5px;padding-left: 5px;font-size: 12px;line-height: 16px;}
+#DetailPagesCon .mainCon .Product_Info{width: 1024px;min-height: 545px;}
+#DetailPagesCon .mainCon .product_left{width: 350px;height: 460px;float: left;}
+#DetailPagesCon .mainCon .product_left #showBox{width: 150px;height: 150px;background: #007BC4;opacity: 0.3;position: absolute;left: 0;top: 0;display: none;}
+#DetailPagesCon .mainCon #Product_AssLittlePic{width: 350px;height: 62px;padding: 5px 0;margin-bottom: 10px;background: #fff;float: left;}
+#DetailPagesCon .mainCon .Product_Info .btnLeft{width: 15px;height: 58px;border: 1px solid #ddd;background: url(../img/left.gif) no-repeat center;float: left;margin-top: 1px;cursor: pointer;}
+#DetailPagesCon .mainCon .Product_Info .btnRight{width: 15px;height: 58px;border: 1px solid #ddd;background: url(../img/right.gif) no-repeat center;float: left;margin-top: 1px;cursor: pointer;}
+#DetailPagesCon .mainCon .Product_Info .ImgCon{width: 316px;height: 62px;float: left;}
+#DetailPagesCon .mainCon .Product_Info .ImgCon ul{width: 362px;height: 60px;padding: 1px 0;}
+#DetailPagesCon .mainCon .Product_Info .ImgCon ul li{width: 50px;height: 50px;border: 1px solid #ddd;margin: 0 4px;padding: 4px 1px;float: left;cursor: pointer;}
+#DetailPagesCon .mainCon .Product_Info .ImgCon ul .changeBor1{border: 1px solid #f00;}
+#DetailPagesCon .mainCon .xuanZ{background: url(../img/b_v5.png) no-repeat right bottom;}
+#DetailPagesCon .mainCon .Product_Info .ImgCon ul li img{width: 50px;height: 50px;}
+#DetailPagesCon .mainCon .Product_Info #Product_OppInfo{width: 48px;height: 16px;font-size: 12px;padding: 4px 20px;line-height: 16px;border: 1px solid #ddd;float: left;margin-right: 5px;}
+#DetailPagesCon .mainCon .Product_Info #Product_OppInfo a{color: #000;}
+#DetailPagesCon .mainCon .Product_Info .ckepop_share{padding: 4px 0 4px 19px;border: solid #ddd;border-width: 1px 0 1px 1px;width: 48px;height: 16px;font-size: 12px;line-height: 16px;float: left;}
+#DetailPagesCon .mainCon .Product_Info #ckepop{padding: 4px 0;border: solid #ddd;border-width: 1px 1px 1px 0;width: 186px;height: 16px;float: left;}
+
+#DetailPagesCon .mainCon .Product_Info .jiathis_txt{float: left;font-size: 12px;text-decoration: none;line-height: 18px!important;}  
+#DetailPagesCon .mainCon .Product_Info .jtico{text-align: left;overflow: hidden;display: block!important;height: 16px!important;padding-left: 20px!important;background: url(../img/jiathis_ico.png) no-repeat left;cursor: pointer;}
+#DetailPagesCon .mainCon .Product_Info #ckepop .jtico_tsina{background-position: 0px -96px;}
+#DetailPagesCon .mainCon .Product_Info #ckepop .jtico_tqq{background-position: 0px -144px;}
+#DetailPagesCon .mainCon .Product_Info #ckepop .jtico_douban{background-position: 0px -560px;}
+#DetailPagesCon .mainCon .Product_Info #ckepop .jtico_qzone{background-position: 0px -64px;}
+#DetailPagesCon .mainCon .Product_Info #ckepop .jtico_jiathis{background-position: 0px -1408px;}
+
+#DetailPagesCon .mainCon .Product_right{width: 655px;height: 545px;float: right;}
+#DetailPagesCon .mainCon .Product_right #Product_Info_Top{width: 655px;height: 54px;float: left;}
+#DetailPagesCon .mainCon .Product_right #Product_Info_Top .Product_Name{width: 645px;height: 44px;padding: 0 5px 10px 5px;text-align: left;font-size: 16px;font-weight: 600;line-height: 20px;}
+#DetailPagesCon .mainCon .Product_right #Product_Info_Top .Product_Name .r14{color: #b90149;}
+#DetailPagesCon .mainCon .Product_right .Pro_baseinfo{width: 645px;height: 285px;padding: 5px 0 0 10px;margin-bottom: 10px;border: dotted #dedede;border-width: 1px 0;font-size: 12px;float: left;}
+#DetailPagesCon .mainCon .Product_right .Pro_baseinfo .Pro_l{width: 470px;height: 30px;line-height: 30px;}
+#DetailPagesCon .mainCon .Product_right #brand-bar-pop {float: right;width: 155px;margin-top: 10px;color: #333;}
+#DetailPagesCon .mainCon .Product_right .choose{width: 655px;height: 177px;margin-bottom: 20px;float: left;font-size: 12px;}
+#DetailPagesCon .mainCon .Product_right .choose .outborder{width: 650px;height: 127px;float: left;}
+#DetailPagesCon .mainCon .Product_right .choose .outborder .incon{width: 620px;height: 119px;padding: 0 8px 8px 8px;}
+#DetailPagesCon .mainCon .Product_right .choose .outborder dt{width: 60px;height: 16px;padding-top: 6px;float: left;}
+#DetailPagesCon .mainCon .Product_right .choose .outborder dd{width: 560px;height: 83px;padding: 5px 0;float: left;}
+#DetailPagesCon .mainCon .Product_right .choose .outborder dd li{width: 63px;height: 77px;padding: 1px;float: left;margin: 2px;position: relative;}
+#DetailPagesCon .mainCon .Product_right .choose .outborder dd li a{width: 49px;height: 75px;padding:0 6px;border: 1px solid #ddd;display: block;color: #999;}
+#DetailPagesCon .mainCon .Product_right .choose .outborder dd li .changeBor{border: 1px solid #f00;}
+#DetailPagesCon .mainCon .Product_right .choose .outborder dd li .btnBor{border: 1px solid #f00;}
+#DetailPagesCon .mainCon .Product_right .choose .outborder dd li a img{width: 45px;height: 50px;padding:3px 2px 2px 2px;}
+#DetailPagesCon .mainCon .Product_right .choose .outborder dd li a span{width: 48px;height: 20px;display: block;padding-left: 1px;line-height: 20px;text-align: center;}
+#DetailPagesCon .mainCon .Product_right .choose .outborder dd li i{text-indent: -9999em;display: block;width: 12px;height: 12px;position: absolute;bottom: 0;right: 0;background: url(../img/b_v5.png) no-repeat center;cursor: pointer;}
+#DetailPagesCon .mainCon .Product_right .choose .btn-append{display: block;width: 160px;height: 33px;margin-right: 5px;background: url(../img/gmanniu13.gif) no-repeat ;overflow: hidden;float: left;}
+#DetailPagesCon .mainCon .Product_right .choose .btn-appendd{display: block;width: 160px;height: 33px;line-height: 100px;margin-left: 5px;margin-right: 10px;background-image: url(../img/gmanniu13.gif);background-position: left -45px;overflow: hidden;float: left;cursor: pointer;}
+#DetailPagesCon .mainCon .Product_right .choose .btns .li {margin-top: 1px;float: right;padding-right: 20px;overflow: hidden;background-image: url(http://www.2688.com/Images/icons/gmanniu13.gif);background-position: left -88px;width: 100px;height: 32px;}
+#DetailPagesCon .productDetail .left{width: 211px;min-height: 788px;float: left;}
+#DetailPagesCon .productDetail .left h2{width: 195px;height: 24px;background-image: url(../img/lefttop.gif);background-repeat: no-repeat;background-position: 0px 0px;padding-top: 6px;padding-right: 8px;padding-bottom: 0;padding-left: 8px;font-size: 14px;font-weight: bold;color: #666;}
+#DetailPagesCon .productDetail .left .p{margin-bottom: 10px;}
+#DetailPagesCon .productDetail .left .ProShow4 .pb{width: 209px;min-height: 612px;border: 1px solid #ddd;}
+#DetailPagesCon .productDetail .left .ProShow4 .pb ul{width: 209px;min-height: 612px;}
+#DetailPagesCon .productDetail .left .ProShow4 li {padding: 5px 0;overflow: hidden;border-top: 1px dotted #DEDEDE;zoom: 1;width: 209px;height: 62px;}
+#DetailPagesCon .productDetail .left .ProShow4 li .p-img{width: 55px;height: 55px;padding-left: 8px;margin-right: 5px;float: left;}
+#DetailPagesCon .productDetail .left .ProShow4 li .p-img img{width: 55px;height: 55px;}
+#DetailPagesCon .productDetail .left .ProShow4 .p-li{overflow: hidden;margin-top: 6px;padding-left: 10px;width: 131px;height: 51px;font-size: 12px;float: left;}
+#DetailPagesCon .productDetail .left .ProShow4 .p-li .p-name{overflow: hidden;width: 125px;height: 35px;}
+#DetailPagesCon .productDetail .left .ProShow4 .p-li a{font-size: 12px;color: #000;}
+#DetailPagesCon .productDetail .left .ProShow4 .p-li a:hover{color: #f00;}
+#DetailPagesCon .productDetail .left .ProShow4 .p-li .p-price{color: #f00;}
+
+#DetailPagesCon .productDetail .right {width: 803px;min-height: 100px;float: right;}
+#DetailPagesCon .productDetail .right .tab_menutwo{width: 803px;height: 29px;border-bottom: 2px solid #AF0039;}
+#DetailPagesCon .productDetail .right .tab_menutwo li {text-align: center;padding-top: 3px;width: 90px;height: 26px;line-height: 26px;font-size: 14px;font-weight: bold;background-image: url(../img/gmanniu13.gif);background-repeat: no-repeat;background-position: left -261px;}
+#DetailPagesCon .productDetail .right .boxCon{width: 803px;height: 38px;border: 1px solid #ddd;border-top: 0;font-size: 12px;}
+#DetailPagesCon .productDetail .right .boxCon li{float: left;line-height: 38px;margin-left: 20px;}
+
+
+/*fenge*/
+#fenge{height: 32px;border-bottom: 1px solid #CCCCCC;margin-top:10px;margin-bottom: 15px;}
+/*bottom*/
+
+
+
+

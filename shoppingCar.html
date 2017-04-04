@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>shoppingCar</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/shoppingCar.css"/>
+	<script src="js/cookieUtil.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/shoppingCar.js" type="text/javascript" charset="utf-8"></script>
+	<body>
+		<div class="gwc">
+			<div class="logo">
+				<a style="width:280px; height:122px; display:block;" href="index.html"></a>
+			</div>
+			
+			<div class="wdgwc">
+				<ul>
+					<li><font color="#ffffff">1.我的购物车</font></li>
+					<li>2.填写核对订单信息</li>
+					<li>3.成功提交订单</li>
+				</ul>
+			</div>
+			
+		</div>
+		<div class="center">
+            <div class="divTable">
+	            <div class="allShop h">
+	                <p>全部商品</p>
+	                <div class="shop_price">已选商品（含运费）： 
+	                    <strong class="heji1">￥0.00</strong>&nbsp;
+	                    <a href="###" id="but" action="n" style="background-color: rgb(187, 187, 187);">结算</a>
+	                </div>
+	            </div>
+	            <div class="generation hideShow">
+	            	<div class="check_all">                            
+	            		<input name="test" type="checkbox" value="" id="inputBut">&nbsp;全选
+	            	</div>
+	            	<div class="check_s">商品信息</div>
+	            	<div class="check_p">单价(元)</div>
+	            	<div class="check_l">数量</div>
+	            	<div class="check_l">价格小计(元)</div>
+	            	<div class="check_f"></div>
+	            	<div class="check_c">操作</div>
+	            </div>
+	            <div class="allShop  hideShow" style="height: 1px;font-size: 0px;"><div class="shop_generation"></div></div>
+	            <div class="shop-name  hideShow">
+	            	<p>世纪丰沃<a href="###"><img src="img/zx_03.jpg"></a></p>
+	            </div>
+	            <div class="shop-table  hideShow" id="tableshop" canmix="0">
+	            	<div class="mixed" style="padding-top:5px;"><div class="tabli" style="margin-left:25px;"></div><div class="tabli2" style=""></div></div>
+	            	<ul>
+	            		<!--<li>
+	            			<input name="qtest" type="checkbox" value="" class="inputBut">
+	            			<img src="img/12340152_ZJS.jpg"/>
+	            			<div class="productDetail">
+	            				<a href="###">华为 5.2寸高清大屏 海思八核 双卡双待 荣耀 7 移动4G手机[典雅灰]</a>
+	          					<p>[<span>12404358</span>]</p>
+	            			</div>
+	            			<div class="strong" style="color:#d51317">1798.00</div>
+	            			<div id="a" class="Spinner">
+	            				<a class="Decrease" href="javascript:void(0)"><i>-</i></a>
+	            				<input class="Amount" value="1" autocomplete="off" maxlength="3" type="text">
+	            				<a class="Increase" href="javascript:void(0)"><i>+</i></a>
+	            			</div>
+	            			<div class="total-price">1798.00</div>
+	            			<div class="cz"><a href="javascript:void(0)">删除</a></div>
+	            		</li>-->
+	            	</ul>
+	            </div>	
+	            	
+	            <div class="settlement">
+	            	<div class="continue"><a href="productCon.html">继续采购</a></div> 
+	            	<div class="total"><strong><em>合计：</em>￥<span class="heji">0.00</span></strong></div>
+	            	<div class="freight">运费：<em>￥<span style="color: #f00;">0.00</span></em></div> 
+	            	<div class="yxshop">已选商品<strong style="color: #f00;" class="yxshopNum">0</strong>种</div> 
+	            	<a href="###" class="but" id="but" action="n" style="background-color: rgb(187, 187, 187);">结算</a> 
+	            </div>
+	            
+	            <div class="noShop" style="float:left;width: 1024px;height: 50px;background: #fff;line-height: 50px;font-size: 14px;text-align: center;">
+	            	购物车中还没有商品，<a href="productCon.html" style="color: #f00;">去购物</a>
+	            </div>
+       		</div>
+        </div>
+        
+        <!--bottom-->
+		<div id="bottom">
+			<div id="bottomCon">
+				<p>
+					Copyright 2014 - 2015 www.2688.com All Rights Reserved   2688商城 版权所有 
+					<br />
+        			邮政地址：(100084)北京市海淀区清华科技园创业大厦11层 客服热线：400-888-2688 传真：(010) 62790628
+        			<br />
+        			北京市公安局海淀分局备案编号:110108902133
+				</p>
+				<div class="link">
+					<a href="#"><img src="img/footer_haidian.jpg"/></a>
+					<a href="#"><img src="img/footer_yinlian.jpg"/></a>
+				</div>
+			</div>	
+		</div>
+		
+		<div id="tishi1" style="position: fixed;margin: 200px auto;top: 0;left: 0;right: 0;bottom: 0;width: 150px;font-size: 14px;color: red;height: 80px;line-height: 40px;background: black;opacity: 0.4;text-align: center;display: none;">
+			确定删除该商品吗？
+			<div id="" style="width: 100%;height: 30px;">
+				<button style="font-size: 12px;padding: 3px;">确定</button>
+				<button style="font-size: 12px;padding: 3px;">取消</button>
+			</div>
+		</div>
+	</body>
+</html>

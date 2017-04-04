@@ -1,12 +1,2071 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    hello world 
-</body>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>index</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/indexStyle.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
+	<script type="text/javascript" src="js/cookieUtil.js"></script>
+	<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery-ui.js" ></script>
+	<script src="js/indexjs.js" type="text/javascript" charset="utf-8"></script>
+	<body>
+		<!--top-->
+		<div id="top">
+			<div id="topCon">
+				<h3>您好：欢迎来2688商城！</h3>
+				<h4><a href="login.html" id="pleaseLogin">请登录</a></h4>
+				<h5><a href="register.html">免费注册</a></h5>
+				<h6 id="setMargin">全场正品 假一赔三 免费送货 货到付款</h6>
+				<div id="phoneC">
+					<a href="#" class="phoneC">手机客户端</a>
+					<div id="ewm">
+						<img src="img/rwm.jpg"/>
+					</div>	
+				</div>
+				<a href="shoppingCar.html" class="shopCar">购物车<span  class="gouwuche">(00)</span></a>
+				<div id="my2688">
+					<a href="my2688.html" class="my2688">我的2688</a>
+					<ul id="my2688_1">
+						<li><a href="#">我的订单</a></li>
+						<li><a href="#">我的收藏</a></li>
+						<li><a href="#">我的评价</a></li>
+					</ul>
+				</div>
+				<a style="BEHAVIOR: url(#default#homepage)" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage(this.href);return(false);" href="http://www.2688.com">设为主页</a>
+			</div>
+		</div>
+		
+		<!--logo-->
+		<div id="logo">
+			<div id="logoCon">
+				<a href="index.html" class="logo"><img src="img/logo.gif"/></a>
+				<span class="span1">北京</span>
+				<div class="address">
+					切换城市
+				</div>
+				<div id="ssBox">	
+					<form action="" method="post" class="sousuo">
+						<input type="text" value="奔腾" autocomplete="off"/>
+						<a href="#"></a>
+					</form>
+					<p>
+						<a class="a1">热门：</a>
+						<a href="#" class="a2">连衣裙</a>
+						<a href="#">护肤</a>
+						<a href="#">防晒</a>
+						<a href="#">四件套</a>
+						<a href="#">手机</a>
+						<span>客服：400-888-2688</span>
+					</p>
+				</div>
+				
+				<div class="city-select" id="JS_hide_city_menu_11" style="z-index: 10001;position: absolute; left: 310px; top: 42px;display: none;">
+						<!--待添加数据-->
+						<div class="hide_city_group" id="JS_header_city_bar_box">
+							<div class="hideMap">
+								<div class="showPanel clearfix">
+									<div class="Left mycity">
+										<div id="JS_current_city_box">当前城市：
+											<strong id="JS_city_current_city">北京</strong><span style=" color:#c6033b;"> &nbsp;&nbsp;请选择您所在的城市</span>
+											<a class="red" id="JS_set_default_city_header" href="javascript:City.setDefaultCity(" 35 ')'=""></a>
+										</div>
+										<div id="JS_default_city_delete" style="display: none;"></div>
+									</div>
+									<a class="Right near" id="JS_my_near_expr" href="http://www.2688.com/#" style="display:none">附近的体验馆</a>
+								</div>
+								<div class="showPanel showPanel2 clearfix">
+									<div class="hot_city" id="JS_header_city_hot">
+										<a class="site_all Left" href="javascript:void(0)"><strong style="color: #000;">热门城市</strong> </a>&nbsp;
+										<a href="javascript:void(0)" onclick="setCity(this)" value="370900">泰安</a>
+										<a href="javascript:void(0)" onclick="setCity(this)" value="410500">安阳</a>
+										<a href="javascript:void(0)" onclick="setCity(this)" value="610100">西安</a>
+										<a href="javascript:void(0)" onclick="setCity(this)" value="610400">咸阳</a>
+										<a href="javascript:void(0)" onclick="setCity(this)" value="211200">铁岭</a>
+										<a href="javascript:void(0)" onclick="setCity(this)" value="140900">忻州</a>
+										<a href="javascript:void(0)" onclick="setCity(this)" value="530100">昆明</a>
+										<a href="javascript:void(0)" onclick="setCity(this)" value="130100">石家庄</a>
+										<div class="mt10" style="display:none;">
+											<div class="search_city_tip" id="JS_search_city_tip_header" style="display: none;">抱歉，该城市暂无设点！</div><input class="search_city_input" type="text" id="JS_search_city_input_header" placeholder="城市名称/字母/邮编" onkeydown="executeSearchBtn(event)"><input class="search_city_submit" id="JS_search_city_submit_header" onclick=" return submitSearchInput() " type="button" value="搜索"></div>
+										<div class="city_words mt10" id="JS_header_city_char">
+											<a href="javascript:;">A</a>
+											<a href="javascript:;">B</a>
+											<a href="javascript:;">C</a>
+											<a href="javascript:;">D</a>
+											<a href="javascript:;">E</a>
+											<a href="javascript:;">F</a>
+											<a href="javascript:;">G</a>
+											<a href="javascript:;">H</a>
+											<a href="javascript:;">J</a>
+											<a href="javascript:;">K</a>
+											<a href="javascript:;">L</a>
+											<a href="javascript:;">M</a>
+											<a href="javascript:;">N</a>
+											<a href="javascript:;">P</a>
+											<a href="javascript:;">Q</a>
+											<a href="javascript:;">R</a>
+											<a href="javascript:;">S</a>
+											<a href="javascript:;">T</a>
+											<a href="javascript:;">W</a>
+											<a href="javascript:;">X</a>
+											<a href="javascript:;">Y</a>
+											<a href="javascript:;">Z</a>
+										</div>
+									</div>
+									<div class="scrollBody">
+										<div class="cityMap clearfix" style="position: absolute;">
+											<table class="city_list" id="JS_header_city_list" style="margin-top: 0px;float: left;">
+												<tbody>
+													<tr>
+														<th>
+															<div>A</div>
+														</th>
+														<td>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="410500">安阳</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="152900">阿拉善</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="210300">鞍山</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="340800">安庆</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="410500">安阳</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="513200">阿坝藏族羌族</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="520400">安顺</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="542500">阿里</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="610900">安康</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="652900">阿克苏</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="654300">阿勒泰</a>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div>B</div>
+														</th>
+														<td>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="110000">北京</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="130600">保定</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="150200">包头</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="150800">巴彦淖尔</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="210500">本溪</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="220600">白山</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="220800">白城</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="340300">蚌埠</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="341600">亳州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="371600">滨州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="450500">北海</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="451000">百色</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="511900">巴中</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="522400">毕节</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="530500">保山</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="610300">宝鸡</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="620400">白银</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="652700">博尔塔拉</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="652800">巴音郭楞</a>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div>C</div>
+														</th>
+														<td>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="500000">重庆</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="130800">承德</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="130900">沧州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="140400">长治</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="150400">赤峰</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="211300">朝阳</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="220100">长春</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="320400">常州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="341100">滁州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="341400">巢湖</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="341700">池州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="430100">长沙</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="430700">常德</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="431000">郴州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="445100">潮州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="451400">崇左</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="510100">成都</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="532300">楚雄彝族</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="542100">昌都</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="652300">昌吉回族</a>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div>D</div>
+														</th>
+														<td>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="140200">大同</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="210200">大连</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="210600">丹东</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="230600">大庆</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="232700">大兴安岭</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="370500">东营</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="371400">德州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="441900">东莞</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="510600">德阳</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="511700">达州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="532900">大理白族</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="533100">德宏傣族景颇族</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="533400">迪庆藏族</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="621100">定西</a>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div>E</div>
+														</th>
+														<td>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="150600">鄂尔多斯</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="420700">鄂州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="422800">恩施土家族苗族</a>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div>F</div>
+														</th>
+														<td>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="210400">抚顺</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="210900">阜新</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="341200">阜阳</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="350100">福州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="361000">抚州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="440600">佛山</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="450600">防城港</a>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div>G</div>
+														</th>
+														<td>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="440100">广州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="360700">赣州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="440100">广州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="450300">桂林</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="450800">贵港</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="510800">广元</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="511600">广安</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="513300">甘孜藏族</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="520100">贵阳</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="623000">甘南藏族</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="632600">果洛藏族</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="640400">固原</a>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div>H</div>
+														</th>
+														<td>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="130400">邯郸</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="131100">衡水</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="150100">呼和浩特</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="150700">呼伦贝尔</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="211400">葫芦岛</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="230100">哈尔滨</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="230400">鹤岗</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="231100">黑河</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="320800">淮安</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="330100">杭州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="330500">湖州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="340100">合肥</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="340400">淮南</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="340600">淮北</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="341000">黄山</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="371700">荷泽</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="410600">鹤壁</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="420200">黄石</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="421100">黄冈</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="430400">衡阳</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="431200">怀化</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="441300">惠州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="441600">河源</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="451100">贺州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="451200">河池</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="460100">海口</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="532500">红河哈尼族彝族</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="610700">汉中</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="632100">海东</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="632200">海北藏族</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="632300">黄南藏族</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="632500">海南藏族</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="632800">海西蒙古族藏族</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="652200">哈密</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="653200">和田</a>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div>J</div>
+														</th>
+														<td>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="140500">晋城</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="140700">晋中</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="210700">锦州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="220200">吉林</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="230300">鸡西</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="230800">佳木斯</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="330400">嘉兴</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="330700">金华</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="360200">景德镇</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="360400">九江</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="360800">吉安</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="370100">济南</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="370800">济宁</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="410800">焦作</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="420800">荆门</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="421000">荆州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="440700">江门</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="445200">揭阳</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="620200">嘉峪关</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="620300">金昌</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="620900">酒泉</a>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div>K</div>
+														</th>
+														<td>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="410200">开封</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="530100">昆明</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="650200">克拉玛依</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="653000">克孜勒苏柯尔克孜</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="653100">喀什</a>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div>L</div>
+														</th>
+														<td>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="131000">廊坊</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="141000">临汾</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="141100">吕梁</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="211000">辽阳</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="220400">辽源</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="320700">连云港</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="331100">丽水</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="341500">六安</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="350800">龙岩</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="371200">莱芜</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="371300">临沂</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="371500">聊城</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="410300">洛阳</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="411100">漯河</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="431300">娄底</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="450200">柳州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="451300">来宾</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="510500">泸州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="511100">乐山</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="513400">凉山彝族</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="520200">六盘水</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="530700">丽江</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="530900">临沧</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="540100">拉萨</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="542600">林芝</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="620100">兰州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="621200">陇南</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="622900">临夏回族</a>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div>M</div>
+														</th>
+														<td>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="231000">牡丹江</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="340500">马鞍山</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="440900">茂名</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="441400">梅州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="510700">绵阳</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="511400">眉山</a>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div>N</div>
+														</th>
+														<td>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="320100">南京</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="320600">南通</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="330200">宁波</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="350700">南平</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="350900">宁德</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="360100">南昌</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="411300">南阳</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="450100">南宁</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="511000">内江</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="511300">南充</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="533300">怒江傈僳族</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="542400">那曲</a>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div>P</div>
+														</th>
+														<td>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="211100">盘锦</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="350300">莆田</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="360300">萍乡</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="410400">平顶山</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="410900">濮阳</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="510400">攀枝花</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="530800">普洱</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="620800">平凉</a>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div>Q</div>
+														</th>
+														<td>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="130300">秦皇岛</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="230200">齐齐哈尔</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="230900">七台河</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="330800">衢州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="350500">泉州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="370200">青岛</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="441800">清远</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="450700">钦州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="522300">黔西南布依族苗族</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="522600">黔东南苗族侗族</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="522700">黔南布依族苗族</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="530300">曲靖</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="621000">庆阳</a>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div>R</div>
+														</th>
+														<td>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="371100">日照</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="542300">日喀则</a>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div>S</div>
+														</th>
+														<td>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="310000">上海</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="130100">石家庄</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="140600">朔州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="210100">沈阳</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="220300">四平</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="220700">松原</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="230500">双鸭山</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="231200">绥化</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="320500">苏州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="321300">宿迁</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="330600">绍兴</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="341300">宿州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="350400">三明</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="361100">上饶</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="411200">三门峡</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="411400">商丘</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="420300">十堰</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="421300">随州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="430500">邵阳</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="440200">韶关</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="440300">深圳</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="440500">汕头</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="441500">汕尾</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="460200">三亚</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="510900">遂宁</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="542200">山南</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="611000">商洛</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="640200">石嘴山</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="659000">石河子</a>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div>T</div>
+														</th>
+														<td>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="120000">天津</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="130200">唐山</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="140100">太原</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="150500">通辽</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="211200">铁岭</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="220500">通化</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="321200">泰州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="331000">台州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="340700">铜陵</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="370900">泰安</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="522200">铜仁</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="610200">铜川</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="620500">天水</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="652100">吐鲁番</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="654200">塔城</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="710100">台北</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="370900">泰安</a>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div>W</div>
+														</th>
+														<td>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="150300">乌海</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="150900">乌兰察布</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="320200">无锡</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="330300">温州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="340200">芜湖</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="370700">潍坊</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="371000">威海</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="420100">武汉</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="450400">梧州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="532600">文山壮族苗族</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="610500">渭南</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="620600">武威</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="640300">吴忠</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="650100">乌鲁木齐</a>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div>X</div>
+														</th>
+														<td>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="610100">西安</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="130500">邢台</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="140900">忻州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="152200">兴安</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="152500">锡林郭勒</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="320300">徐州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="341800">宣城</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="350200">厦门</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="360500">新余</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="410700">新乡</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="411000">许昌</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="411500">信阳</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="420600">襄樊</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="420900">孝感</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="421200">咸宁</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="430300">湘潭</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="433100">湘西土家族苗族</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="532800">西双版纳傣族</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="610100">西安</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="610400">咸阳</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="630100">西宁</a>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div>Y</div>
+														</th>
+														<td>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="140300">阳泉</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="140800">运城</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="210800">营口</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="222400">延边朝鲜族</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="230700">伊春</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="320900">盐城</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="321000">扬州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="360600">鹰潭</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="360900">宜春</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="370600">烟台</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="420500">宜昌</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="430600">岳阳</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="430900">益阳</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="431100">永州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="441700">阳江</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="445300">云浮</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="450900">玉林</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="511500">宜宾</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="511800">雅安</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="530400">玉溪</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="610600">延安</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="610800">榆林</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="632700">玉树藏族</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="640100">银川</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="654000">伊犁哈萨克</a>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div>Z</div>
+														</th>
+														<td>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="130700">张家口</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="321100">镇江</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="330900">舟山</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="350600">漳州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="370300">淄博</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="370400">枣庄</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="410100">郑州</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="411600">周口</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="411700">驻马店</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="430200">株洲</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="430800">张家界</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="440400">珠海</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="440800">湛江</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="441200">肇庆</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="442000">中山</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="510300">自贡</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="512000">资阳</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="520300">遵义</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="530600">昭通</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="620700">张掖</a>
+															<a href="javascript:void(0)" onclick="setCity(this)" value="640500">中卫</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="scrollBar" style="position: relative;"><span id="JS_header_city_bar" style="margin-top: 0px;position: absolute;"></span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+			</div>
+		</div>
+		
+		<!--nav-->
+		<div id="nav">
+			<div id="navCon">
+				<ul id="nav_1">
+					<li class="li1"><a href="#">全部商品分类</a></li>
+					<li class="li2"><a href="index.html">首页</a></li>
+					<li class="li3"><a href="#">新品</a></li>
+					<li class="li4"><a href="#">客户端下载</a></li>
+					<ul id="nav_2">
+						<li><a href="#">个性化妆/宠物生活</a></li>
+						<li><a href="#">家居家装/厨具/家具</a></li>
+						<li><a href="#">大家电/家用电器</a></li>
+						<li><a href="#">男装/女装/内衣</a></li>
+						<li><a href="#">鞋靴/礼品箱包</a></li>
+						<li><a href="#">珠宝首饰/钟表</a></li>
+						<li><a href="#">手机通讯/数码</a></li>
+						<li><a href="#">电脑/办公/配件</a></li>
+						<li><a href="#">食品/生鲜/酒类/特产</a></li>
+						<li><a href="#">母婴/玩具乐器/营养保健</a></li>
+						<li><a href="#">户外运动/汽车用品</a></li>
+						<li><a href="#">本地生活/教育培训</a></li>
+					</ul>
+					<div id="menu_2" style="display: none;">
+						<!--个性护肤-->
+						<div class="fenkuai" style="display: none;">
+				        	<div class="zonglei_a">
+						       	<div class="dalei">
+						        	<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMSMETIC&amp;Pt=COMSMETIC">个护化妆</a>
+						        	<span class="arrow" > > </span>
+						        </div>
+						        <div class="second_level">
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=comsmetic&amp;Pt=101">面部护肤</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=comsmetic&amp;Pt=102">香水彩妆</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=comsmetic&amp;Pt=103">身体护肤</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=comsmetic&amp;Pt=104">口腔护理</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=comsmetic&amp;Pt=105">女性护理</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=comsmetic&amp;Pt=106">洗发护理</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=comsmetic&amp;Pt=107">化妆工具</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=comsmetic&amp;Pt=108">快消品</a>
+						   		</div>
+				        	</div>
+						</div>
+						<!--家居家装-->
+						<div class="fenkuai" style="display: none;">
+							<div class="zonglei_a">
+						        <div class="dalei">
+						        	<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=101">家<span class="wide"></span>纺</a>
+						        	<span class="arrow"> &gt; </span>
+						        </div>
+						        <div class="second_level">
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=101.2001"><span class="violet">抱枕靠垫</span></a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=101.2001">毛巾浴巾</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=101.2002">枕芯</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=101.2003"><span class="violet">床单被罩</span></a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=101.2004">毯子</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=101.2005">床垫/床褥</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=101.2006">蚊帐</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=101.2007">床品套件</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=101.2008">被子</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=101.209">电热毯</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=101.2041"><span class="violet">窗帘/窗纱</span></a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=101.2011">布艺软饰</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=101.2012">凉席</a>
+						        </div>
+				        	</div>
+				        
+					        <div class="zonglei_a">
+					        	<div class="dalei">
+					        		<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=103" >生活</a><a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=104" >家装</a>
+					        		<span class="arrow"> &gt; </span>
+					        	</div>
+						        <div class="second_level">
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=103.0001">五金工具</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=104.0001">手工/十字绣</a>
+						        </div>
+					        </div>
+					        <div class="zonglei_a borderBig">
+						        <div class="line_two" >
+							        <div class="dalei">
+							        	<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=105">清洁用品</a>
+							        	<span class="arrow"> &gt; </span>
+							        </div>
+							        <div class="second_level" style="border-bottom: 0px solid #f2f2f2; margin-bottom:0px;">
+								        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=105.2001">家庭清洁</a>
+								        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=105.2002"><span class="violet">衣物清洁</span></a>
+								        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=105.2003"><span class="violet">纸品湿巾</span></a>
+								        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=105.2004">一次性用品</a>
+								        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=105.2005">清洁工具</a>
+								        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=105.2006"><span class="violet">驱虫用品</span></a>
+								        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=105.2007">皮具护理</a>
+								    </div>
+						    	</div>
+					        </div>
+					        
+					        <div class="zonglei_a">
+						        <div class="dalei">
+						        	<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=COMMODITY">家<span class="wide"></span>装</a>
+						        	<span class="arrow"> &gt; </span>
+						        </div>
+						        <div class="second_level">
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=102">灯具</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMMODITY&amp;Pt=106">快消品</a>
+						        </div>
+					        </div>
+							        
+					        <div class="zonglei_a">
+					        	<div class="dalei">
+					        		<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=FURNITURE&amp;Pt=FURNITURE">家<span class="wide"></span>具</a>
+					        		<span class="arrow"> &gt; </span>
+					        	</div>
+						        <div class="second_level">
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=furniture&amp;Pt=101">卧室家具</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=furniture&amp;Pt=102">客厅家具</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=furniture&amp;Pt=103">餐厅家具</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=furniture&amp;Pt=104">书房家具</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=furniture&amp;Pt=105">储物家具</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=furniture&amp;Pt=106">阳台/户外</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=furniture&amp;Pt=107">商业办公</a>
+						        </div>
+					        </div>
+							        
+					        <div class="zonglei_a">
+					        	<div class="dalei">
+					        		<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=KITCHEN&amp;Pt=KITCHEN">厨<span class="wide"></span>具</a>
+					        		<span class="arrow"> &gt; </span>
+					        	</div>
+						        <div class="second_level">
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=kitchen&amp;Pt=101">烹饪锅具</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=kitchen&amp;Pt=102">刀剪菜板</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=kitchen&amp;Pt=103">厨房配件</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=kitchen&amp;Pt=104">水具酒具</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=kitchen&amp;Pt=105">餐具</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=kitchen&amp;Pt=106">酒店用品</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=kitchen&amp;Pt=107">茶具/咖啡具</a>
+						        </div>
+					        </div>
+						</div>
+						<!--家用电器-->
+						<div class="fenkuai" style="display: none;">
+					        <div class="zonglei_a">
+						        <div class="dalei">
+						        	<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=ELECTRIC&amp;Pt=101">生活电器</a>
+						        	<span class="arrow"> &gt; </span>
+						        </div>
+						        <div class="second_level">
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=101.2001">取暖电器</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=101.2002"><span class="violet">净化器</span></a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=101.2003">加湿器</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=101.2004"><span class="violet">吸尘器</span></a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=101.2005">挂烫机</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=101.2006">熨斗</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=101.2007">插座</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=101.2008">电话机</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=101.2009">干衣机</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=101.2010"><span class="violet">电风扇</span></a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=101.2011">冷风扇</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=101.2012"><span class="violet">饮水机</span></a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=101.2013">灯具</a>
+						        </div>
+					        </div>
+						        
+					        <div class="zonglei_a">
+					        	<div class="dalei">
+					        		<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=ELECTRIC&amp;Pt=102">厨房电器</a>
+					        		<span class="arrow"> &gt; </span>
+					        	</div>
+						        <div class="second_level">
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=102.2001"><span class="violet">豆浆机</span></a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=102.2002">微波炉</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=102.2003">电饭煲</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=102.2004">电压力锅</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=102.2005"><span class="violet">电水壶</span></a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=102.2006">电热水瓶</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=102.2007">电磁炉</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=102.2008">多用途锅</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=102.2009">电饼铛</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=102.2010"><span class="violet">料理/榨汁机</span></a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=102.2011">煮蛋器</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=102.2012"><span class="violet">酸奶机</span></a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=102.2013">面包机</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=102.2014">咖啡机</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=102.2015">电烤箱</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=102.2016"><span class="violet">养生壶</span></a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=102.2017">电热饭盒</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=102.2018">电炖锅</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=102.2019"><span class="violet">厨房电器配件</span></a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=102.2020">面条机</a>
+						        </div>
+					        </div>
+					        
+					        <div class="zonglei_a">
+					        	<div class="dalei">
+					        		<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=ELECTRIC&amp;Pt=103">大&ensp;家&ensp;电</a>
+					        		<span class="arrow"> &gt; </span>
+					        	</div>
+						        <div class="second_level">
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=103.2001">平板电视</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=103.2002"><span class="violet">空调</span></a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=103.2003">冰箱</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=103.2004">热水器</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=103.2005"><span class="violet">洗衣机</span></a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=103.2006">灶具</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=103.2007">家庭影院</a>
+						        </div>
+					        </div>
+				
+					        <div class="zonglei_a">
+					        	<div class="dalei">
+					        		<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=ELECTRIC&amp;Pt=104">个户健康</a>
+					        		<span class="arrow"> &gt; </span>
+					        	</div>
+						        <div class="second_level">
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=104.2001"><span class="violet">剃须刀</span></a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=104.2002">口腔护理</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=104.2003"><span class="violet">电吹风</span></a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=104.2004">脱/剃毛器</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=104.2005"><span class="violet">美容器</span></a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=104.2006">理发器</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=104.2007">卷直发器</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=104.2008">按摩椅</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=104.2009">按摩器</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=104.2010"><span class="violet">足浴盆</span></a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=104.2011">血压计</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=104.2012">血糖仪</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=104.2013">体温计</a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=104.2014"><span class="violet">健康秤/厨房秤</span></a>
+							        <a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=electric&amp;Pt=104.2015">其他健康电器</a>
+						        </div>
+						    </div>
+				        </div>
+						<!--衣服（男裝/女裝/內衣）-->
+						<div class="fenkuai" style="display: none;">
+							<div class="zonglei_a borderBig">
+								<div class="line_two">
+									<div class="dalei">
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=clothes&amp;Pt=103">服饰配件</a><span class="arrow"> &gt; </span></div>
+									<div class="second_level" style="border-bottom: 0px dashed #e6e6e6; margin-bottom:0px;">
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=clothes&amp;Pt=103.2001">围巾</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=clothes&amp;Pt=103.2002">帽子</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=clothes&amp;Pt=103.2003">手套</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=clothes&amp;Pt=103.2004">腰带</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=clothes&amp;Pt=103.2005"><span class="violet">雨伞</span></a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=clothes&amp;Pt=103.2006">毛线</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=clothes&amp;Pt=103.2007">其他</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=clothes&amp;Pt=103.2008">丝袜/袜子/连腿袜</a>
+									</div>
+								</div>
+				
+								<div class="zonglei_a">
+									<div class="dalei">
+										<a target="_blank" href="http://www.2688.com/#">服<span class="wide"></span>装</a><span class="arrow"> &gt; </span></div>
+									<div class="second_level">
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=clothes&amp;Pt=101">男装</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=clothes&amp;Pt=102">女装</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=clothes&amp;Pt=104">内衣</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--鞋靴礼品箱包-->
+						<div class="fenkuai" style="display: none;">
+							<div class="zonglei_a borderBig">
+								<div class="line_two">
+									<div class="dalei">
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=PRESENT&amp;Pt=105">礼<span class="wide"></span>品</a><span class="arrow"> &gt; </span></div>
+									<div class="second_level" style="border-bottom: 0px dashed #e6e6e6; margin-bottom:0px;">
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=PRESENT&amp;Pt=105.2001">军刀军具</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=PRESENT&amp;Pt=105.2002">礼盒礼券</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=PRESENT&amp;Pt=105.2003">火机烟具</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=PRESENT&amp;Pt=105.2004"><span class="violet">礼品文具</span></a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=PRESENT&amp;Pt=105.2005">古董把玩</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=PRESENT&amp;Pt=105.2006">创意礼品</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=PRESENT&amp;Pt=105.2007">收藏品</a>
+									</div>
+								</div>
+							</div>
+				
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=SHOE&amp;Pt=SHOE">鞋<span class="wide"></span>靴</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=shoe&amp;Pt=101">流行男鞋</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=shoe&amp;Pt=102">时尚女鞋</a>
+								</div>
+							</div>
+				
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=PRESENT&amp;Pt=PRESENT">箱<span class="wide"></span>包</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=PRESENT&amp;Pt=101">奢侈品</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=PRESENT&amp;Pt=103">精品男包</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=PRESENT&amp;Pt=104">功能箱包</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=PRESENT&amp;Pt=106">潮流女包</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=PRESENT&amp;Pt=107">皮具</a>
+								</div>
+							</div>
+						</div>
+						<!--珠宝首饰钟表-->
+						<div class="fenkuai" style="display: none;">
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=JEWELRY&amp;Pt=JEWELRY">珠宝首饰</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=JEWELRY&amp;Pt=101">翡翠玉石</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=JEWELRY&amp;Pt=102">钻石</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=JEWELRY&amp;Pt=103">铂金</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=JEWELRY&amp;Pt=104">水晶玛瑙</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=JEWELRY&amp;Pt=105">时尚饰品</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=JEWELRY&amp;Pt=106">彩宝</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=JEWELRY&amp;Pt=107">珍珠</a>
+								</div>
+							</div>
+				
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=CLOCK&amp;Pt=CLOCK">钟<span class="wide"></span>表</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=CLOCK&amp;Pt=101">国内品牌</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=CLOCK&amp;Pt=102">欧美品牌</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=CLOCK&amp;Pt=103">日韩品牌</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=CLOCK&amp;Pt=104">瑞士品牌</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=CLOCK&amp;Pt=105">智能手表</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=CLOCK&amp;Pt=106">儿童座钟</a>
+								</div>
+							</div>
+						</div>
+				
+						<!-- 手机数码-->
+						<div class="fenkuai" style="display: none;">
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=MOBILE&amp;Pt=101">手机通讯</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=mobile&amp;Pt=102.2001">手机电池</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=mobile&amp;Pt=102.2002">充电器/数据线</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=mobile&amp;Pt=102.2003"><span class="violet">蓝牙耳机</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=mobile&amp;Pt=102.2004">手机耳机</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=mobile&amp;Pt=102.2005"><span class="violet">手机贴膜</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=mobile&amp;Pt=102.2006">手机存储卡</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=mobile&amp;Pt=102.2007">手机保护套</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=mobile&amp;Pt=102.2008"><span class="violet">手机饰品</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=mobile&amp;Pt=102.2009">便携/无线音响</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=mobile&amp;Pt=102.2010">手机其他配件</a>
+								</div>
+							</div>
+				
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=101">摄影摄像</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=101.2001">数码相机</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=101.2002"><span class="violet">单反相机</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=101.2003">摄像机</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=101.2004">镜头</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=101.2005"><span class="violet">户外器材</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=101.2006">单反配件</a>
+								</div>
+							</div>
+				
+							<!--数码-->
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=102">数码配件</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=102.2001"><span class="violet">存储卡</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=102.2002">电池/充电器</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=102.2003">读卡器</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=102.2004"><span class="violet">移动电源</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=102.2005">滤镜</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=102.2006">相机包</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=102.2007">闪光灯/手柄</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=102.2008"><span class="violet">相机贴膜</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=102.2009">摄影配件</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=102.2010">数码伴侣</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=102.2011">MP3/MP4配件</a>
+								</div>
+							</div>
+				
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=103">时尚影音</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=103.2001">MP3/MP4</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=103.2002">智能设备</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=103.2003"><span class="violet">耳机/耳麦</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=103.2004">音箱</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=103.2005">麦克风</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=103.2006"><span class="violet">苹果配件</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=103.2007">高清播放器</a>
+								</div>
+							</div>
+				
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=104">智能设备</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=104.2001">智能手环</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=104.2002"><span class="violet">智能手表</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=104.2003">智能眼镜</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=104.2004">其他配件</a>
+								</div>
+							</div>
+				
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=DIGITAL&amp;Pt=105">电子教育</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=digital&amp;Pt=105.2001">电子词典</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=digital&amp;Pt=105.2002">电纸书</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=digital&amp;Pt=105.2003"><span class="violet">录音笔</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=digital&amp;Pt=105.2004">复读机</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=digital&amp;Pt=105.2005"><span class="violet">点读机/笔</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=digital&amp;Pt=105.2006">学生平板</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=digital&amp;Pt=105.2007">早教机/早教益智</a>
+								</div>
+							</div>
+						</div>
+				
+						<!--电脑办公-->
+						<div class="fenkuai" style="display: none;">
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=101">电脑整机</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=101.2001"><span class="violet">笔记本</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=101.2002">超极本</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=101.2003"><span class="violet">平板电脑</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=101.2004">台式机</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=101.2005">笔记本配件</a>
+								</div>
+							</div>
+				
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=102">电脑配件</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=102.2001"><span class="violet">主板</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=102.2002">显卡</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=102.2003">电源</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=102.2004"><span class="violet">散热器</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=102.2005">声卡</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=102.2006">其他</a>
+								</div>
+							</div>
+				
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=103">外设产品</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=103.2001">鼠标</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=103.2002">键盘</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=103.2003">移动硬盘</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=103.2004">鼠标垫</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=103.2005">电脑工具</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=103.2006"><span class="violet">摄像头</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=103.2007">插座</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=103.2008">线缆</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=103.2009">电玩</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=103.2010"><span class="violet">电脑清洁</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=103.2011">手写板</a>
+								</div>
+							</div>
+				
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=104">网络产品</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=104.2001">路由器</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=104.2002"><span class="violet">网卡</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=104.2003">交换机</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=104.2004">其他</a>
+								</div>
+							</div>
+				
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=105">办公设备</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=105.2001">打印机</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=105.2002">多功能一体机</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=105.2003">投影机</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=105.2004"><span class="violet">传真设备</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=105.2005">考勤机</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=105.2006"><span class="violet">点钞机</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=105.2007">保险柜</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=105.2008">墨粉</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=105.2009">白板</a>
+								</div>
+							</div>
+				
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=106">文具耗材</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=106.2001">墨盒</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=106.2002">硒鼓/墨粉</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=106.2003">色带</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=106.2004"><span class="violet">计算器</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=106.2005">激光笔</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=106.2006"><span class="violet">财会用品</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=106.2007">学生文具</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=COMPUTER&amp;Pt=106.2008">纸类</a>
+								</div>
+							</div>
+						</div>
+				
+						<!--食品生鲜酒类-->
+						<div class="fenkuai" style="display: none;">
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=103">进口食品</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=103.2001">冲饮</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=103.2002">饼干蛋糕</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=103.2003">糖果巧克力</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=103.2004"><span class="violet">休闲零食</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=103.2005"><span class="violet">粮油调味</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=103.2006">牛奶</a>
+								</div>
+							</div>
+				
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=104">休闲食品</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=104.2001">休闲零食</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=104.20072"><span class="violet">坚果炒货</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=104.2003">糖果/巧克力</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=104.2004">饼干蛋糕</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=104.2005">肉干肉松</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=104.2006">蜜饯果脯</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=104.2007"><span class="violet">进口食品</span></a>
+								</div>
+							</div>
+				
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=105">粮油调味</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=105.2001"><span class="violet">五谷杂粮</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=105.2002">米面杂粮</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=105.2003"><span class="violet">食用油</span></a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=105.2004">调味品</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=105.2005">方便食品</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=105.2006">南北干货</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=105.2007"><span class="violet">有机食品</span></a>
+								</div>
+							</div>
+				
+							<div class="zonglei_a borderBig">
+								<div class="line_two">
+									<div class="dalei">
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=106">饮料冲调</a><span class="arrow"> &gt; </span></div>
+									<div class="second_level" style="border-bottom: 0px dashed #e6e6e6; margin-bottom:0px;">
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=106.2001">成人奶粉</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=106.2002"><span class="violet">水</span></a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=106.2003">蜂蜜/柚子茶</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=106.2004">冲饮谷物</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=106.2005">咖啡/奶茶</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=106.2006">饮料</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=106.2007"><span class="violet">牛奶</span></a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=106.2008"><span class="violet">茶叶</span></a>
+									</div>
+								</div>
+							</div>
+				
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=101">茗茶特产</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=101">茗茶</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=102">地方特产</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=107">民勤县西北特产</a>
+								</div>
+							</div>
+				
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=FRESH&amp;Pt=FRESH">生<span class="wide"></span>鲜</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=FRESH&amp;Pt=101">肉禽蛋奶</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=FRESH&amp;Pt=102">海鲜水产</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=FRESH&amp;Pt=103">蔬菜/水果</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=FRESH&amp;Pt=104">熟食/腊肉</a>
+								</div>
+							</div>
+				
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=GROCERY&amp;Pt=101">酒<span class="wide"></span>类</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=WINE&amp;Pt=101">白酒</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=WINE&amp;Pt=102">葡萄酒</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=WINE&amp;Pt=103">洋酒</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=WINE&amp;Pt=104">白酒</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=WINE&amp;Pt=105">黄酒/养生酒</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=WINE&amp;Pt=106">收藏酒/陈年酒</a>
+								</div>
+							</div>
+						</div>
+				
+						<!--母婴玩具-->
+						<div class="fenkuai" style="display: none;">
+							<div class="zonglei_a borderBig">
+								<div class="line_two">
+									<div class="dalei">
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=MOTHERBABY&amp;Pt=110">妈妈专区</a><span class="arrow"> &gt; </span></div>
+									<div class="second_level" style="border-bottom: 0px dashed #e6e6e6; margin-bottom:0px;">
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=MOTHERBABY&amp;Pt=110.2001">孕妇食品</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=MOTHERBABY&amp;Pt=110.2002">妈妈美容</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=MOTHERBABY&amp;Pt=110.2003"><span class="violet">产后塑身</span></a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=MOTHERBABY&amp;Pt=110.2004">包/背婴带</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=MOTHERBABY&amp;Pt=110.2005">妈妈护理</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=MOTHERBABY&amp;Pt=110.2006">待产/新生</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=MOTHERBABY&amp;Pt=110.2007"><span class="violet">孕妇装</span></a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=MOTHERBABY&amp;Pt=110.2008"><span class="violet">防辐射服</span></a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=MOTHERBABY&amp;Pt=110.2009">孕妇内衣</a>
+										<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=MOTHERBABY&amp;Pt=110.2010">月子装</a>
+									</div>
+								</div>
+							</div>
+				
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=MOTHERBABY&amp;Pt=MOTHERBABY">母婴用品</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=MOTHERBABY&amp;Pt=101">奶粉</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=MOTHERBABY&amp;Pt=102">营养辅食奶粉</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=MOTHERBABY&amp;Pt=103">辅食寝居</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=MOTHERBABY&amp;Pt=104">童装童鞋</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=MOTHERBABY&amp;Pt=105">尿裤湿巾</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=MOTHERBABY&amp;Pt=106">安全座椅</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=MOTHERBABY&amp;Pt=107">喂养用品</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=MOTHERBABY&amp;Pt=108">洗护用品</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=MOTHERBABY&amp;Pt=109">童车童床</a>
+								</div>
+							</div>
+				
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=TOY&amp;Pt=TOY">玩具乐器</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=TOY&amp;Pt=101">适用年龄</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=TOY&amp;Pt=102">遥控/电动</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=TOY&amp;Pt=103">毛绒布艺</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=TOY&amp;Pt=104">娃娃玩具</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=TOY&amp;Pt=105">模型玩具</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=TOY&amp;Pt=106">健身玩具</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=TOY&amp;Pt=107">动漫玩具</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=TOY&amp;Pt=108">益智玩具</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=TOY&amp;Pt=109">积木拼插</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=TOY&amp;Pt=110">DIY玩具</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=TOY&amp;Pt=111">创意减压</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=TOY&amp;Pt=112">乐器相关</a>
+								</div>
+							</div>
+				
+							<!--营养保健-->
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=health&amp;Pt=101">营养健康</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=health&amp;Pt=102">传统滋补</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=health&amp;Pt=103">营养成分</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=health&amp;Pt=104">成人用品</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=health&amp;Pt=105">保健器械</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?Mt=health&amp;Pt=106">急救卫生</a>
+								</div>
+							</div>
+						</div>
+				
+						<!--运动户外/汽车用品-->
+						<div class="fenkuai" style="display: none;">
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=SPORT&amp;Pt=SPORT">运动户外</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=SPORT&amp;Pt=101">运动鞋包</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=SPORT&amp;Pt=102">运动服饰</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=SPORT&amp;Pt=103">骑行运动</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=SPORT&amp;Pt=104">垂钓用品</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=SPORT&amp;Pt=105">游泳用品</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=SPORT&amp;Pt=106">户外鞋服</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=SPORT&amp;Pt=107">户外装备</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=SPORT&amp;Pt=108">健身训练</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=SPORT&amp;Pt=109">纤体瑜伽</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=SPORT&amp;Pt=110">体育娱乐</a>
+								</div>
+							</div>
+				
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=CAR&amp;Pt=CAR">汽车用品</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=CAR&amp;Pt=101">维修保养</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=CAR&amp;Pt=102">车载电器</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=CAR&amp;Pt=103">美容清洗</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=CAR&amp;Pt=104">汽车装饰</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=CAR&amp;Pt=105">安全自驾</a>
+								</div>
+							</div>
+						</div>
+				
+						<!--本地生活-->
+						<div class="fenkuai" style="display: none;">
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=LOCALLIFE&amp;Pt=106">本地生活</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=LOCALLIFE&amp;Pt=101">旅游</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=LOCALLIFE&amp;Pt=102">酒店</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=LOCALLIFE&amp;Pt=103">商旅</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=LOCALLIFE&amp;Pt=104">机票</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=LOCALLIFE&amp;Pt=105">票务</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=LOCALLIFE&amp;Pt=106">便民</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=LOCALLIFE&amp;Pt=107">钟表</a>
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=LOCALLIFE&amp;Pt=109">教育</a>
+								</div>
+							</div>
+				
+							<div class="zonglei_a">
+								<div class="dalei">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=Education&amp;Pt=Education">教育培训</a><span class="arrow"> &gt; </span></div>
+								<div class="second_level">
+									<a target="_blank" href="http://www.2688.com/Search/iResult.aspx?&amp;Mt=Education&amp;Pt=101">出国游</a>
+								</div>
+							</div>
+						</div>	
+						
+						<!---->
+					</div>
+				</ul>
+			</div>
+		</div>
+	
+		<!--banner-->
+		<div id="banner">
+			<div id="bannerCon">
+				<div id="bannerImg">
+					<ul>
+						<li><a href=""><img src=""/></a></li><!--头-->
+						<li><a href=""><img src=""/></a></li><!--尾-->
+						
+					</ul>	
+					<div class="prev" style="position: absolute;top: 170px;left: 0;border-radius: 50%;opacity: 0.3;cursor: pointer;">
+						<img src="img/prev.png" />
+					</div>
+					<div class="next" style="position: absolute;top: 170px;right: 0;border-radius: 50%;opacity: 0.3;cursor: pointer;">
+						<img src="img/next.png" alt="" />
+					</div>
+				</div>
+				<div id="notic">
+					<div class="noticTitle">
+						<p>公告</p>
+						<p class="p2">招商</p>
+					</div>
+					<div class="noticCon">
+						<ul>
+							<li><a href="#">[秋装] 翡翠森林 童年时光自由绽放</a></li>
+							<li><a href="#">[背包] 走起悲伤青春寻找梦想</a></li>
+							<li><a href="#">[辣酱] 古秘法百年传承 香辣酱</a></li>
+							<li><a href="#">[睡袋] 呵护萌宝，再细致也不为过</a></li>
+							<li><a href="#">[玩具] 益智玩具 宝宝越玩越聪明</a></li>
+						</ul>
+					</div>
+					<ul class="noticCon_1">
+						<li><a href="#">2688生态电商平台项目招商</a></li>
+					</ul>
+					<div class="video">
+						<embed src="http://www.tudou.com/v/N9EsWP7WVL0/&amp;bid=05&amp;rpid=389288503&amp;resourceId=389288503_05_05_99/v.swf" 
+							type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" 
+							wmode="opaque" width="248" height="208" title="Adobe Flash Player">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--boutique-->
+		<div id="boutique">
+			<div id="boutiqueCon">
+				<h2><p class="p1">精选商品</p><p class="p2">品质生活焕新颜</p></h2>
+				<ul>
+					<li><a href="#"><img src="" alt="" /></a></li>
+					<li><a href="#"><img src="" alt="" /></a></li>
+					<li><a href="#"><img src="" alt="" /></a></li>
+					<li><a href="#"><img src="" alt="" /></a></li>
+					<li class="li5"><a href="#"><img src="" alt="" /></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--skincare-->
+		<div id="skincare" class="commodity">
+			<div id="skincareCon" class="commodityCon">
+				<div id="title_1F" class="commodity_F">
+					<h3>1F</h3>
+					<h4>美容护肤</h4>
+					<h5>查看更多>></h5>
+				</div>
+				<div class="skincareCon commodityCon_1">
+					<div class="skincareTitle commodityTitle">
+						<a href="#"><img src=""/></a>
+						<div class="brand brandCom">
+							<a href="#" class="bor1"><img src="" alt="" /></a>
+							<a href="#" class="bor1"><img src="" alt="" /></a>
+							<a href="#"  class="bor3"><img src="" alt="" /></a>
+							<a href="#"><img src="" alt="" /></a>
+							<a href="#" class="bor2"><img src="" alt="" /></a>
+							<a href="#"><img src="" alt="" /></a>
+						</div>
+					</div>
+					<div class="product productCom">
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img /></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img /></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img /></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img /></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img /></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img /></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img /></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img /></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img /></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img /></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--homeStore-->
+		<div class="commodity" id="homeStore">
+			<div class="commodityCon" id="homeStoreCon">
+				<div class="title_2F commodity_F">
+					<h3>2F</h3>
+					<h4>家居家装</h4>
+					<h5>查看更多>></h5>
+				</div>
+				<div class="commodityCon_1 homeStoreCon">
+					<div class="commodityTitle homeStoreTitle">
+						<a href="#"><img src=""/></a>
+						<div class="brand brandCom">
+							<a href="#" class="bor1"><img src="" alt="" /></a>
+							<a href="#" class="bor1"><img src="" alt="" /></a>
+							<a href="#"  class="bor3"><img src="" alt="" /></a>
+							<a href="#"><img src="" alt="" /></a>
+							<a href="#" class="bor2"><img src="" alt="" /></a>
+							<a href="#"><img src="" alt="" /></a>
+						</div>
+					</div>
+					<div class="product productCom">
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--xinjiang red dates-->
+		<div id="redDates">
+			<div class="redDates">
+				<a href="#"><img src=""/></a>
+			</div>
+		</div>
+		
+		<!--numerical code-->
+		<div class="commodity" id="numericalCode">
+			<div class="commodityCon" id="numericalCodeCon">
+				<div class="title_3F commodity_F">
+					<h3>3F</h3>
+					<h4>数码家电</h4>
+					<h5>查看更多>></h5>
+				</div>
+				<div class="commodityCon_1 numericalCodeCon">
+					<div class="commodityTitle numericalCodeTitle">
+						<a href="#"><img src=""/></a>
+						<div class="brandCom">
+							<a href="#" class="bor1"><img src="" alt="" /></a>
+							<a href="productCon.html" class="bor1"><img src="" alt="" /></a>
+							<a href="#"  class="bor3"><img src="" alt="" /></a>
+							<a href="#"><img src="" alt="" /></a>
+							<a href="#" class="bor2"><img src="" alt="" /></a>
+							<a href="#"><img src="" alt="" /></a>
+						</div>
+					</div>
+					<div class="productCom">
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		
+		<!--clothes-->
+		<div class="commodity" id="clothes">
+			<div class="commodityCon" id="clothesCon">
+				<div class="title_4F commodity_F">
+					<h3>4F</h3>
+					<h4>服饰箱包</h4>
+					<h5>查看更多>></h5>
+				</div>
+				<div class="commodityCon_1 clothesCon">
+					<div class="commodityTitle clothesTitle">
+						<a href="#"><img src=""/></a>
+						<div class="brandCom">
+							<a href="#" class="bor1"><img src="" alt="" /></a>
+							<a href="#" class="bor1"><img src="" alt="" /></a>
+							<a href="#"  class="bor3"><img src="" alt="" /></a>
+							<a href="#"><img src="img/f4.jpg" alt="" /></a>
+							<a href="#" class="bor2"><img src="" alt="" /></a>
+							<a href="#"><img src="" alt="" /></a>
+						</div>
+					</div>
+					<div class="productCom">
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img /></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+						<div class="product_1">
+							<div class="productImgBox">
+								<a href=""><img src=""/></a>
+							</div>
+							<div class="productName">
+								<a href=""></a>
+							</div>
+							<div class="productPrice">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--hot product-->
+		<div id="hotProduct">
+			<div id="hotProductCon">
+				<div class="title_hot">
+					<h4>热推商品</h4>
+					<h5>查看更多>></h5>
+				</div>
+				<div class="homeStoreCon">
+					<div class="homeStoreCon_1">
+						<div class="productImgBox">
+							<a href=""><img src=""/></a>
+						</div>
+						<div class="productName">
+							<a href=""></a>
+						</div>
+						<div class="productPrice">
+							
+						</div>
+					</div>
+					<div class="homeStoreCon_1">
+						<div class="productImgBox">
+							<a href=""><img src=""/></a>
+						</div>
+						<div class="productName">
+							<a href=""></a>
+						</div>
+						<div class="productPrice">
+							
+						</div>
+					</div>
+					<div class="homeStoreCon_1">
+						<div class="productImgBox">
+							<a href=""><img src=""/></a>
+						</div>
+						<div class="productName">
+							<a href=""></a>
+						</div>
+						<div class="productPrice">
+							
+						</div>
+					</div>
+					<div class="homeStoreCon_1">
+						<div class="productImgBox">
+							<a href=""><img src=""/></a>
+						</div>
+						<div class="productName">
+							<a href=""></a>
+						</div>
+						<div class="productPrice">
+						
+						</div>
+					</div>
+					<div class="homeStoreCon_1">
+						<div class="productImgBox">
+							<a href=""><img src=""/></a>
+						</div>
+						<div class="productName">
+							<a href=""></a>
+						</div>
+						<div class="productPrice">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--parting line-->
+		<div id="partingLine">
+			
+		</div>
+		
+		<!--bottom-->
+		<div id="bottom">
+			<div id="bottomCon">
+				<p>
+					Copyright 2014 - 2015 www.2688.com All Rights Reserved 2688商城 版权所有 京ICP证130237号 北京市公安局海淀分局备案编号:110108902133
+					<br />
+        			邮政地址：(100084)北京市海淀区清华科技园创业大厦11层客服热线：400-888-2688
+				</p>
+				<div class="link">
+					<a href="#"><img src="img/footer_haidian.jpg"/></a>
+					<a href="#"><img src="img/footer_yinlian.jpg"/></a>
+				</div>
+			</div>	
+		</div>
+		
+	</body>
 </html>
+
+
+
+
+
+
+
+

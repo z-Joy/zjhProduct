@@ -1,0 +1,68 @@
+@charset "utf-8";
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,input,textarea,select{ margin:0; padding:0; }
+html,body{height: 100%;width: 100%;}
+ul,ol,li{list-style:none;}
+a,u{text-decoration:none;}
+img{border:0;display:block;}
+h1,h2,h3,h4,h5,h6{font-size:16px;font-weight:100;}
+em,i{font-style:normal;}
+b,strong{font-weight:100;}
+input{border: none;outline: 0 none;}
+.clearfix:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
+
+.gwc{width: 990px;height: 122px;margin: 0 auto;background: #fff;}
+.gwc .logo{float: left;width: 280px;height: 122px;}
+.gwc .logo a{width: 280px;height: 122px;float: left;background: url(../img/logo.gif) no-repeat center;}
+.gwc .wdgwc{width: 710px;height: 122px;float: left;}
+.gwc .wdgwc ul{float: left;background: url(../img/gwc.png) no-repeat left 19px;overflow: hidden;margin-left: 30px;}
+.gwc .wdgwc ul li{height: 22px;margin: 62px 50px 0 35px;font-size: 12px;float: left;padding: 0 3px;}
+
+.center{width: 1024px;min-height: 85px;background: #fff;margin: 0 auto;}
+.center .allShop{width: 100%;border-bottom: 2px solid #46bcb0;float: left;position: relative;height: 40px;}
+
+.center .allShop p{width: 110px;height: 40px;padding-left: 12px;border-bottom: 2px solid #d51317;font-size: 16px;line-height: 40px;color: #d51317;}
+.center .allShop .shop_price{width: 280px;height: 19px;font-size: 12px;line-height: 19px;color: #000;position: absolute;top: 15px;right: 10px;}
+.center .allShop .shop_price strong{color: #AF0039;font-size: 14px;}
+.center .allShop .shop_price a{background: #999999;font-size: 12px;padding: 6px 14px;color: #FFF;}
+.center .generation {width: 1024px;height: 30px;float: left;padding-top: 10px;font-size: 12px;}
+.center .generation .check_all{width: 110px;_width: 123px;height: 30px;line-height: 30px;float: left;padding-left: 15px;}
+.center .generation .check_s{width: 200px;height: 30px;line-height: 30px;float: left;}
+.center .generation .check_p{width: 141px;height: 30px;line-height: 30px;float: left;padding-left: 10px;}
+.center .generation .check_l{width: 150px;height: 30px;line-height: 30px;float: left;}
+.center .generation .check_f{width: 130px;_width: 120px;height: 30px;line-height: 30px;float: left;}
+.center .generation .check_c{width: 24px;height: 30px;line-height: 30px;float: left;}
+.center .shop-name p{position: relative;color: #3b3b3b;line-height: 38px;margin-left: 14px;width: 978px;height: 38px;padding-left: 14px;float: left;font-size: 12px;}
+.center .shop-name p a{width: 81px;height: 23px;position: absolute;top: 8px;left:100px;display: block;}
+.center .shop-table{width: 1022px;height: auto;float: left;border: 1px solid #CCC;background-color: #fcfcfc; }
+.center .shop-table .mixed .tabli{width: 100px;height: 28px;line-height: 28px;background: #f5f5f5;border: 1px solid #e8e8e8;border-bottom: 0;text-align: center;color: #6c6c6c;float: left;}
+.center .shop-table ul{width:100%;height: auto;float: left;}
+.center .shop-table ul li{width:100%;height: 90px;border-top: 1px solid #E8E8E8;}
+.center .shop-table ul li input{margin: 35px 0 0 15px;float: left;}
+.center .shop-table ul li img{width: 67px;height: 67px;padding: 12px 0 0 10px;float: left;}
+.center .shop-table ul li .productDetail{font-size:12px;width: 200px;height: 78px;padding: 12px 0 0 10px;float: left;line-height: 18px;color: #666;}
+.center .shop-table ul li .productDetail a{font-size: 12px;color: #000;}
+.center .shop-table ul li .productDetail a:hover{color: #f00;}
+.center .shop-table ul li .strong{width: 150px;height: 78px;float: left;padding: 12px 0 0 12px;}
+.center .shop-table ul li .Spinner{width: 100px;height: 27px;float: left;padding: 12px 50px 15px 0px;}
+.center .shop-table ul li .Spinner a{width: 25px;height: 25px;float: left;border: 1px solid #E8E8E8;text-align: center;line-height: 25px;color: #000;}
+.center .shop-table ul li .Spinner input{width: 36px;height: 17px;float: left;border:solid #E8E8E8;border-width: 1px 0;text-align: center;line-height: 17px;color: #000;padding: 4px 5px;margin: 0;}
+.center .shop-table ul li .total-price{width: 151px;height: 19px;float: left;line-height: 19px;color: #f00;padding: 12px 0px 0 0;margin: 0;}
+.center .shop-table ul li .cz{width: 104px;height: 16px;padding: 12px 0 0 130px;float: left;}
+.center .shop-table ul li .cz a{font-size: 12px;line-height: 16px;color: #000;}
+.center .settlement{width: 1024px;height: 50px;margin: 18px auto 0;background: #e5e5e5;float: left;position: relative;}
+.center .settlement .continue{width: 48px;height: 45px;margin: 5px 0 0 25px;float: left;line-height: 45px;}
+.center .settlement .continue a{color: #000;font-size: 12px;}
+.center .settlement .continue a:hover{text-decoration: underline;}
+.center .settlement .total{height: 47px;margin: 3px 150px 0 0;float: right;}
+.center .settlement .total strong{color: #d51317;width: 101px;height: 47px;font-size: 20px;}
+.center .settlement .total strong em{line-height: 46px;font-size: 12px;color: #000;}
+.center .settlement .freight{height: 47px;margin: 3px 20px 0 0;float: right;font-size: 12px;line-height: 47px;}
+.center .settlement .yxshop{width: 80px;height: 45px;margin: 5px 50px 0 0;float: right;font-size: 12px;line-height: 47px;}
+.center .settlement .but{width: 120px;height: 50px;font-size: 20px;line-height: 50px;text-align: center;position: absolute;right: 0;top: 0;color: #fff;}
+.center .settlement .but:hover{text-decoration: underline;}
+.center .hideShow{display: none;}
+/*bottom*/
+#bottom{height: 146px;float: left;margin: 0 auto;width: 100%;}
+#bottomCon{height: 136px;background: #FFFFFF;padding-top: 10px;text-align: center;margin: 0 auto;width: 1024px;}
+#bottomCon p{font-size: 12px;line-height: 16px;margin-bottom: 20px;}
+#bottomCon .link a img{display: inline-block;}
